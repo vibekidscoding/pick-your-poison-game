@@ -14,1941 +14,509 @@ const generalCards = [
         resultA: "Pizza party nonstop! Kamarádky ti budou závidět, jen ta zelenina ti možná bude chybět. 🥬",
         resultB: "Zmrzlinové nebe! Ale připrav se na mrazivé mozkové bouře a hodně čištění zoubků! 🦷"
     },
-
-    // Minecraft themed cards
     {
-        question: "Co by sis v Minecraftu radši postavila?",
-        optionA: "🏰 Mega hrad z diamantů",
-        optionB: "🌋 Tajnou základnu pod lávou",
-        resultA: "Diamantový palác! Všichni tě obdivují, ale Creeprům se tvůj hrad líbí k vyhazování. 💥",
-        resultB: "Lávové doupě! Fakt husté, jen se někdy zapomeneš a skončíš jako opečený marshmallow. 🔥"
+        question: "Kde by sis chtěla bydlet?",
+        optionA: "🏰 Na kouzelném hradě v oblacích",
+        optionB: "🌳 V super cool domku na stromě",
+        resultA: "Královská paráda! Úžasný výhled, jen pizza delivery je fakt problém! 📦",
+        resultB: "Přírodní ráj! Veverky jsou tvoji sousedé, ale WiFi signál je mizivý! 📶"
     },
     {
-        question: "Jakého Minecraft mazlíčka by sis vybrala?",
-        optionA: "🐺 Partu věrných vlků",
-        optionB: "🐱 Deset kočiček všech barev",
-        resultA: "Vlčí banda! Hlí­dají tě před monstry, ale pořád se rvou o kosti a dělají megahluk! 🦴",
-        resultB: "Kočičí parta! Vyhání Creepry, jen ti zabere celý dům a mňouká celou noc! 😸"
+        question: "Jakou superschopnost bys chtěla?",
+        optionA: "🗣️ Mluvit se všemi zvířátky",
+        optionB: "🎨 Tvoje kresby ožijí",
+        resultA: "Pejsci ti řeknou všechna svá tajemství! Kočky... no, ty jsou pořád nafoukaní. 🐦",
+        resultB: "Úžasný výtvarný výtvor! Jen si dej pozor, abys nekreslila žádný monstrum! 👹"
     },
     {
-        question: "Jakou minecraftovou superschopnost bys chtěla mít?",
-        optionA: "⛏️ Bleskové těžení",
-        optionB: "🏗️ Stavění bez bloků",
-        resultA: "Těžíš jako raketa! Diamanty létají, ale vykopala jsi takové díry, že tam zabloudíš. 💎",
-        resultB: "Stavíš cokoliv bez bloků! Jen občas nevíš, kde končí tvé stavby a kde začíná normální svět. 🧱"
+        question: "Jakého mazlíčka bys chtěla?",
+        optionA: "🐲 Malého přátelského draka",
+        optionB: "🦄 Miniaturního jednorožce",
+        resultA: "Tvůj drak ti opéká marshmallows! Ale pořád spouští požární hlásič! 🚨",
+        resultB: "Duhová magie všude! Jen ti bude pořád sypat třpytky do batohu! ✨"
     },
     {
-        question: "Jaký minecraftový svět bys chtěla prozkoumat?",
-        optionA: "🌈 Duhový les plný barevných oveček",
-        optionB: "🍭 Sladký svět z bonbónů",
-        resultA: "Duhová říše! Ovečky mění barvu každou chvíli, takže nikdy nevíš, jakou vlnu si ostříháš. 🐑",
-        resultB: "Cukrový ráj! Všechno je sladké, jen se připrav na mravenčí invazi! 🐜"
+        question: "Jaké zaměstnání by bylo úžasné?",
+        optionA: "🧙‍♀️ Profesionální čarodějka",
+        optionB: "🍰 Majitelka cukrárny",
+        resultA: "Abrakadbra! Domácí úkoly zmizí! Ale občas omylem proměníš ponožky v křečky! 🐹",
+        resultB: "Nekonečný přístup k sladkostem! Děti se na tebe postaví fronta, ale musíš se rozdělit se zubařem! 🦷"
     },
     {
-        question: "Kterého Minecraft bosse bys chtěla porazit?",
-        optionA: "🐉 Enderdraka s partou kamarádek",
-        optionB: "💀 Withera úplně sama",
-        resultA: "Týmová jízda! Drak padne, ale pak se handrkujete, kdo si vezme jeho vajíčko. 🥚",
-        resultB: "Solo hrdinka! Legendární výkon, jenže Wither ti rozbije půl základny. 💣"
-    },
-
-    // Gaming themed cards
-    {
-        question: "Jakou herní konzoli bys chtěla mít?",
-        optionA: "🎮 Konzoli se všemi hrami zadarmo",
-        optionB: "🕹️ Retro konzoli s tisícem starých her",
-        resultA: "Nekonečný výběr! Jen strávíš věčnost rozhodováním, co zkusit dřív. 🤔",
-        resultB: "Retro paráda! Super klasiky, ale ovladače se pořád kazí a grafika je jako kostičky. 👾"
+        question: "Jak bys chtěla cestovat?",
+        optionA: "🌈 Klouzat po duhách",
+        optionB: "☁️ Poskakovat po mračnech",
+        resultA: "Barevné a rychlé! Ale vždycky dorazíš pokrytá duhovým prachem a totálně závratě! 🌀",
+        resultB: "Měkké a pružné! Super na spaní, ale někdy poskočíš moc vysoko a vystrašíš letadla! ✈️"
     },
     {
-        question: "Jakou herní superschopnost bys chtěla?",
-        optionA: "🏆 Nikdy nic neprohrát",
-        optionB: "🎯 Být top streamerka světa",
-        resultA: "Neporazitelná! Všichni se tě ale bojí vyzvat, protože vždycky vyhraješ. 😔",
-        resultB: "Streamovací hvězda! Miliony followerů, ale musíš bavit lidi nonstop a někdy už fakt nevíš co říkat. 📹"
+        question: "Co bys chtěla najít na zahradě?",
+        optionA: "🏴‍☠️ Pokladnici plnou hraček",
+        optionB: "🌸 Zahradu, kde rostou bonbóny",
+        resultA: "X označuje místo! Nejlepší hračky ever, ale teď všechny děti z okolí chtějí kopat ve vaší zahradě! ⛏️",
+        resultB: "Sladká úroda! Gumový medvídci rostou na stromech, ale mravenci si myslí, že je to jejich osobní bufet! 🐜"
     },
     {
-        question: "V jaké herní postavě by ses chtěla probudit?",
-        optionA: "🦸‍♀️ Superhrdinka z akční hry",
-        optionB: "🧙‍♀️ Kouzelnice z fantasy světa",
-        resultA: "Akční hrdinka! Zachraňuješ svět každý den, ale záporáci ti pořád ničí oblíbenou cukrárnu. 🍔",
-        resultB: "Mocná čarodějka! Kouzlíš neuvěřitelné věci, jen někdy zapomeneš zaklínadlo a proměníš čaj v žábu! ☕"
+        question: "V čem bys byla nejlepší?",
+        optionA: "🎪 Úžasné cirkusové kousky",
+        optionB: "🎵 Hrát na jakýkoliv nástroj perfektně",
+        resultA: "Jsi hvězda každého hřiště! Ale už neumíš chodit rovně! 🤸‍♀️",
+        resultB: "Každá písnička zní úžasně! Ale nemůžeš přestat hrát hudbu, ani v době klidu! 🤫"
     },
     {
-        question: "Jaký herní tým bys radši vedla?",
-        optionA: "🚀 Partu, co dělá vesmírné hry",
-        optionB: "🏠 Tým, co tvoří rodinné hry",
-        resultA: "Vesmírná mise! Stavíte galaxie, ale všichni se hádají o černé díry. 🌌",
-        resultB: "Rodinná pohoda! Hry milují i rodiče, ale testovat je musí i babička. 👵"
-    },
-
-    // Animal themed cards
-    {
-        question: "Jakého exotického mazlíčka by sis přála?",
-        optionA: "🦜 Papouška, který umí 20 jazyků",
-        optionB: "🐧 Tučňáka, který umí tancovat",
-        resultA: "Ukecaný papoušek! Povídá si s každým, ale pořád opakuje tvoje tajnosti. 🙈",
-        resultB: "Tancující tučňák! Skvělý parťák na party, jen potřebuje obří ledničku a spoustu ryb. 🐟"
+        question: "Co bys chtěla umět?",
+        optionA: "🧠 Znát odpověď na každou otázku ve škole",
+        optionB: "😂 Rozesmát každého svými vtipy",
+        resultA: "Škola je super easy! Ale všichni chtějí opisovat domácí úkoly a učitelé si myslí, že podvádíš! 📚",
+        resultB: "Jsi nejzábavnější člověk na světě! Ale nemůžeš přestat vtipkovat, ani v důležitých chvílích! 🤐"
     },
     {
-        question: "Jaké zvíře bys chtěla umět kreslit úplně dokonale?",
-        optionA: "🐅 Tygry s mega detaily",
-        optionB: "🦋 Motýly se třpytivými křídly",
-        resultA: "Tygrí mistryně! Všichni žasnou, jen učitelé se bojí, že tygr skočí z papíru. 😱",
-        resultB: "Motýlí malířka! Obrázky nádherné, ale motýli se od nich nechtějí odlepit a poletují po třídě. 🎨"
+        question: "Jak bys chtěla trávit víkendy?",
+        optionA: "🏖️ Mít pláž na zahradě",
+        optionB: "🎿 Mít sjezdovku na zahradě",
+        resultA: "Surf kdy chceš! Ale písek je všude, dokonce i v müsli! 🥣",
+        resultB: "Lyžování v pyžamu! Super cool, ale tučňáci, co se přistěhovali, ti pořád kradou rybí prsty! 🐧"
     },
     {
-        question: "Se kterými zvířátky bys chtěla umět mluvit?",
-        optionA: "🐕 Všemi pejsky v okolí",
-        optionB: "🐈 Všemi kočičkami ve městě",
-        resultA: "Psí tlumočnice! Pejsci ti všechno vyštěkají, hlavně jak málo pamlsků dostávají. 🦴",
-        resultB: "Kočičí šeptanda! Kočky sdílí svá tajemství, ale většinou komentují tvůj outfit a jídlo. 😼"
-    },
-    {
-        question: "Jakého mořského tvora bys chtěla potkat?",
-        optionA: "🐙 Přátelskou mega chobotnici",
-        optionB: "🐬 Partu veselých delfínů",
-        resultA: "Chobotnicový kámoš! Má osm paží na objetí, ale když se rozruší, zacáká tě inkoustem. 🖤",
-        resultB: "Delfíní parta! Jsou chytré a hravé, ale pořád tě šplíchají vodou a smějí se svým vtipům. 💦"
-    },
-
-    // Friendship themed cards
-    {
-        question: "Jakého kamaráda bys chtěla mít?",
-        optionA: "🤡 Kamaráda, co tě vždycky rozesměje",
-        optionB: "🧠 Kamaráda, co zná odpověď na všechno",
-        resultA: "Věčný vtipálek! Směješ se nonstop, ale někdy bys ráda chvíli klidu. 😂",
-        resultB: "Chytrá hlava! Ví úplně vše, ale občas se vedle něj cítíš jako školka. 🤓"
-    },
-    {
-        question: "Jakou skupinovou zábavu bys chtěla podniknout s kámoškami?",
-        optionA: "🏕️ Táborák pod hvězdami",
-        optionB: "🎳 Super bowlingový turnaj",
-        resultA: "Hvězdný táborák! Romantika, ale kamarádka se bojí pavouků a jiná chrápe. 🕷️",
-        resultB: "Bowlingový turnaj! Spousta legrace, jen někdo je profík a někdo netrefí ani kuželku. 🎳"
-    },
-    {
-        question: "Jak bys nejradši pomohla kamarádce v nesnázích?",
-        optionA: "🦸‍♀️ Superhrdinská záchrana",
-        optionB: "🤗 Dlouhé povídání a objímání",
-        resultA: "Hrdinská pomoc! Zachráníš situaci, ale pak všichni čekají, že spasíš úplně všechno. 🚑",
-        resultB: "Emo podpora! Jsi nejlepší posluchačka, ale rozhovor trvá celou noc a další den máš školu. 💤"
-    },
-    {
-        question: "Jaký dárek bys radši dostala od nejlepší kamarádky?",
-        optionA: "🎁 Vlastnoručně vyrobený dárek",
-        optionB: "💰 Něco fakt drahého",
-        resultA: "Domácí poklad! Je od srdce, ale vypadá trošku divně... hlavně to neříkej nahlas! 😅",
-        resultB: "Luxusní dárek! Paráda, ale teď máš pocit, že jí musíš koupit něco stejně drahého. 💸"
-    },
-    {
-        question: "Jak bys nejradši prožila víkend s kámoškami?",
-        optionA: "🏠 Přespávačka u někoho doma",
-        optionB: "🎢 Výlet do zábavního parku",
-        resultA: "Domácí párty! Pohoda, jen někdo pořád něco zapomíná doma a rodiče volají. 📞",
-        resultB: "Zábavní park! Spousta adrenalinu, jenže fronty jsou nekonečné a někdo se bojí horských drah. 🎠"
-    },
-
-    // More creative cards mixing themes
-    {
-        question: "Kdyby tvoje nejlepší kámoška byla Pokémon, koho by sis vybrala?",
-        optionA: "⚡ Pikachu, který umí vařit",
-        optionB: "🔥 Charizard, co hraje videohry",
-        resultA: "Kuchař Pikachu! Vaří božsky, jen občas zapomene na elektřinu a večeře shoří. ⚡",
-        resultB: "Gamer Charizard! Nejlepší pařmen, ale když prohraje, spálí ti ovladač. 🎮"
-    },
-    {
-        question: "Jakou superschopnost by měl mít tvůj domácí mazlíček?",
-        optionA: "🐕 Pejsek, co se umí teleportovat",
-        optionB: "🐱 Kočka, co čte myšlenky",
-        resultA: "Teleportující pejsek! Nikdy se neztratí, ale občas skočí k sousedům a ukradne jim večeři. 🍖",
-        resultB: "Telepatická kočka! Ví, co si myslíš, jen tě často soudí a ignoruje. 😒"
-    },
-    {
-        question: "V jakém fantasy světě bys chtěla žít s kamarádkami?",
-        optionA: "🧙‍♀️ Kouzelná škola jako Hogwarts",
-        optionB: "🌳 Elfí les s magickými stromy",
-        resultA: "Kouzelná škola! Učíš se čarovat, ale úkoly jsou těžké a klidně omylem proměníš učitele v žábu! 🐸",
-        resultB: "Elfí les! Žiješ s přírodou, ale elfové mají pravidla na všechno a jsou dost přísní. 📜"
-    },
-    {
-        question: "Jakou technologii by sis chtěla vymyslet s kamarádkami?",
-        optionA: "🤖 Robota, který ti udělá domácí úkoly",
-        optionB: "🚀 Stroj času na super výlety",
-        resultA: "Úkolový robot! Máš hromadu volného času, ale robot dělá chyby v matice a učitelům je to podezřelé. 🤔",
-        resultB: "Časostroj! Skvělá dobrodružství, ale pořád zapomínáte, do kterého století patříte. ⏰"
-    },
-    {
-        question: "Kdyby zvířata mohla hrát videohry, které bys chtěla trénovat?",
-        optionA: "🐒 Opice hrající Minecraft",
-        optionB: "🐧 Tučňáky hrající fotbalové hry",
-        resultA: "Opičí Minecraft tým! Staví super věci, ale pořád hází banány na klávesnici a ničí ti počítač. 🍌",
-        resultB: "Tučňačí fotbal! Perfektní tým, ale potřebují ledovou arénu a rybí svačinku každých pět minut. 🐟"
+        question: "Co bys chtěla nosit?",
+        optionA: "👑 Korunu, která plní přání",
+        optionB: "👟 Boty, které tě nechají běžet super rychle",
+        resultA: "Vaše královské výsosti! Každé přání se splní, ale musíš mluvit jako královna POŘÁD! 👸",
+        resultB: "Zoom zoom! Jsi rychlejší než auta, ale nemůžeš zpomalit a pořád přeběhneš cíl! 🏃‍♀️"
     }
 ];
 
 const minecraftCards = [
     {
-        "question": "Minecraft volba 1?",
-        "optionA": "🧱 možnost A 1",
-        "optionB": "⚔️ možnost B 1",
-        "resultA": "Výsledek A 1",
-        "resultB": "Výsledek B 1"
+        question: "Co by sis chtěla postavit v Minecraftu?",
+        optionA: "🏰 Obrovský hrad z diamantů",
+        optionB: "🌋 Tajnou základnu pod lávou",
+        resultA: "Diamantový palác! Všichni tě obdivují, ale Creepři se pořád snaží tvůj hrad vyhodit do vzduchu! 💥",
+        resultB: "Lávová tajná základna! Super cool, ale občas zapomeneš vypnout koordináty a spadneš do lávy! 🔥"
     },
     {
-        "question": "Minecraft volba 2?",
-        "optionA": "🧱 možnost A 2",
-        "optionB": "⚔️ možnost B 2",
-        "resultA": "Výsledek A 2",
-        "resultB": "Výsledek B 2"
+        question: "Jakého Minecraft mazlíčka bys chtěla?",
+        optionA: "🐺 Smečku věrných vlků",
+        optionB: "🐱 Desítku koček různých barev",
+        resultA: "Vlčí armáda! Chrání tě před všemi monstry, ale pořád se perou o kosti a dělají strašný hluk! 🦴",
+        resultB: "Kočičí gang! Odhánějí Creepry, ale obsadily ti celý dům a mňoukají celou noc! 😸"
     },
     {
-        "question": "Minecraft volba 3?",
-        "optionA": "🧱 možnost A 3",
-        "optionB": "⚔️ možnost B 3",
-        "resultA": "Výsledek A 3",
-        "resultB": "Výsledek B 3"
+        question: "Jakou Minecraft sílu bys chtěla mít?",
+        optionA: "⛏️ Nekonečně rychlé těžení",
+        optionB: "🏗️ Stavět bez materiálů",
+        resultA: "Super rychlé těžení! Máš hory diamantů, ale vykopala jsi tak velké díry, že se v nich ztrácíš! 💎",
+        resultB: "Nekonečné stavění! Můžeš postavit cokoliv, ale zapomínáš, kde končí tvoje stavby a kde začíná skutečný svět! 🧱"
     },
     {
-        "question": "Minecraft volba 4?",
-        "optionA": "🧱 možnost A 4",
-        "optionB": "⚔️ možnost B 4",
-        "resultA": "Výsledek A 4",
-        "resultB": "Výsledek B 4"
+        question: "Jaký Minecraft biom bys chtěla objevit?",
+        optionA: "🌈 Duhový les s barevnými ovečkami",
+        optionB: "🍭 Sladký biom z cukrovinek",
+        resultA: "Duhová říše! Krásné barvy všude, ale ovečky se pořád mění na různé barvy a nikdy nevíš, jakou vlnu dostaneš! 🐑",
+        resultB: "Cukrovinkový ráj! Všechno je sladké, ale mravenci z celého serveru se sjeli na hostinu! 🐜"
     },
     {
-        "question": "Minecraft volba 5?",
-        "optionA": "🧱 možnost A 5",
-        "optionB": "⚔️ možnost B 5",
-        "resultA": "Výsledek A 5",
-        "resultB": "Výsledek B 5"
+        question: "Kterého Minecraft bosse bys chtěla porazit?",
+        optionA: "🐉 Enderdraka s přáteli",
+        optionB: "💀 Withera sama",
+        resultA: "Týmová práce! Společně jste nepřemožitelní, ale kdo dostane dračí vajíčko je věčný problém! 🥚",
+        resultB: "Sólová hrdinka! Jsi legenda serveru, ale Wither ti zničil polovinu základny a teď máš jen trosky! 💣"
     },
     {
-        "question": "Minecraft volba 6?",
-        "optionA": "🧱 možnost A 6",
-        "optionB": "⚔️ možnost B 6",
-        "resultA": "Výsledek A 6",
-        "resultB": "Výsledek B 6"
+        question: "Jaký Minecraft mod bys chtěla mít?",
+        optionA: "🚀 Vesmírný mod s raketami",
+        optionB: "🧚‍♀️ Víla mod s kouzly",
+        resultA: "Kosmická dobrodružství! Můžeš létat na Mars, ale občas se ztratíš v kosmu a nevíš cestu domů! 🌌",
+        resultB: "Magické kouzla! Můžeš čarovat, ale někdy se zaklínadlo pokazí a proměníš sebe v žábu! 🐸"
     },
     {
-        "question": "Minecraft volba 7?",
-        "optionA": "🧱 možnost A 7",
-        "optionB": "⚔️ možnost B 7",
-        "resultA": "Výsledek A 7",
-        "resultB": "Výsledek B 7"
+        question: "Jaké Minecraft jídlo bys chtěla, aby nikdy nedošlo?",
+        optionA: "🍰 Nekonečný dort",
+        optionB: "🥖 Magický chléb",
+        resultA: "Dortový ráj! Vždy máš sladké, ale zubaři tě znají jménem a čekají tě s výčitkami! 🦷",
+        resultB: "Chlebová pohoda! Nikdy nehladovíš, ale po čase ti chutná všechno jako toast! 🍞"
     },
     {
-        "question": "Minecraft volba 8?",
-        "optionA": "🧱 možnost A 8",
-        "optionB": "⚔️ možnost B 8",
-        "resultA": "Výsledek A 8",
-        "resultB": "Výsledek B 8"
+        question: "Jakou Minecraft výzvu bys chtěla zvládnout?",
+        optionA: "🌙 Přežít 100 nocí bez umření",
+        optionB: "🏔️ Postavit nejvyšší horu na serveru",
+        resultA: "Survival expert! Jsi neporazitelná, ale po tolika nocích už máš strach z vlastního stínu! 👻",
+        resultB: "Stavební mistryně! Tvoje hora se vidí z celého serveru, ale trvalo ti to půl roku! ⛰️"
     },
     {
-        "question": "Minecraft volba 9?",
-        "optionA": "🧱 možnost A 9",
-        "optionB": "⚔️ možnost B 9",
-        "resultA": "Výsledek A 9",
-        "resultB": "Výsledek B 9"
+        question: "Jaký Minecraft transport bys chtěla?",
+        optionA: "🐴 Létající koně",
+        optionB: "🚂 Mega rychlé minecart dráhy",
+        resultA: "Nebeský kůň! Úžasné výhledy, ale někdy zapomene, že umí létat a spadnete z nebe! 🌤️",
+        resultB: "Kolejová síť! Super rychlé, ale občas se rozjedou tak rychle, že proletíš celou mapu! 🎢"
     },
     {
-        "question": "Minecraft volba 10?",
-        "optionA": "🧱 možnost A 10",
-        "optionB": "⚔️ možnost B 10",
-        "resultA": "Výsledek A 10",
-        "resultB": "Výsledek B 10"
+        question: "Jaké Minecraft kouzlo bys chtěla na nástroje?",
+        optionA: "⚡ Nekonečná energie",
+        optionB: "🔮 Automatické opravy",
+        resultA: "Věčná výdrž! Nástroje se nikdy nepokazí, ale zapomeneš, jak se vyrábějí nové! 🔧",
+        resultB: "Samooprávky! Vše se opraví samo, ale nástroje začnou žít vlastním životem a někdy utečou! 🏃‍♂️"
     },
     {
-        "question": "Minecraft volba 11?",
-        "optionA": "🧱 možnost A 11",
-        "optionB": "⚔️ možnost B 11",
-        "resultA": "Výsledek A 11",
-        "resultB": "Výsledek B 11"
+        question: "Jaký Minecraft server bys chtěla vlastnit?",
+        optionA: "🎪 Zábavní park server",
+        optionB: "🏫 Škola kouzel server",
+        resultA: "Minecraft Disneyland! Všichni se baví, ale musíš vymýšlet nové atrakce každý den! 🎠",
+        resultB: "Hogwarts server! Učíš kouzelné Minecraft kouzla, ale někteří hráči proměňují ovečky v draky! 🐉"
     },
     {
-        "question": "Minecraft volba 12?",
-        "optionA": "🧱 možnost A 12",
-        "optionB": "⚔️ možnost B 12",
-        "resultA": "Výsledek A 12",
-        "resultB": "Výsledek B 12"
-    },
-    {
-        "question": "Minecraft volba 13?",
-        "optionA": "🧱 možnost A 13",
-        "optionB": "⚔️ možnost B 13",
-        "resultA": "Výsledek A 13",
-        "resultB": "Výsledek B 13"
-    },
-    {
-        "question": "Minecraft volba 14?",
-        "optionA": "🧱 možnost A 14",
-        "optionB": "⚔️ možnost B 14",
-        "resultA": "Výsledek A 14",
-        "resultB": "Výsledek B 14"
-    },
-    {
-        "question": "Minecraft volba 15?",
-        "optionA": "🧱 možnost A 15",
-        "optionB": "⚔️ možnost B 15",
-        "resultA": "Výsledek A 15",
-        "resultB": "Výsledek B 15"
-    },
-    {
-        "question": "Minecraft volba 16?",
-        "optionA": "🧱 možnost A 16",
-        "optionB": "⚔️ možnost B 16",
-        "resultA": "Výsledek A 16",
-        "resultB": "Výsledek B 16"
-    },
-    {
-        "question": "Minecraft volba 17?",
-        "optionA": "🧱 možnost A 17",
-        "optionB": "⚔️ možnost B 17",
-        "resultA": "Výsledek A 17",
-        "resultB": "Výsledek B 17"
-    },
-    {
-        "question": "Minecraft volba 18?",
-        "optionA": "🧱 možnost A 18",
-        "optionB": "⚔️ možnost B 18",
-        "resultA": "Výsledek A 18",
-        "resultB": "Výsledek B 18"
-    },
-    {
-        "question": "Minecraft volba 19?",
-        "optionA": "🧱 možnost A 19",
-        "optionB": "⚔️ možnost B 19",
-        "resultA": "Výsledek A 19",
-        "resultB": "Výsledek B 19"
-    },
-    {
-        "question": "Minecraft volba 20?",
-        "optionA": "🧱 možnost A 20",
-        "optionB": "⚔️ možnost B 20",
-        "resultA": "Výsledek A 20",
-        "resultB": "Výsledek B 20"
-    },
-    {
-        "question": "Minecraft volba 21?",
-        "optionA": "🧱 možnost A 21",
-        "optionB": "⚔️ možnost B 21",
-        "resultA": "Výsledek A 21",
-        "resultB": "Výsledek B 21"
-    },
-    {
-        "question": "Minecraft volba 22?",
-        "optionA": "🧱 možnost A 22",
-        "optionB": "⚔️ možnost B 22",
-        "resultA": "Výsledek A 22",
-        "resultB": "Výsledek B 22"
-    },
-    {
-        "question": "Minecraft volba 23?",
-        "optionA": "🧱 možnost A 23",
-        "optionB": "⚔️ možnost B 23",
-        "resultA": "Výsledek A 23",
-        "resultB": "Výsledek B 23"
-    },
-    {
-        "question": "Minecraft volba 24?",
-        "optionA": "🧱 možnost A 24",
-        "optionB": "⚔️ možnost B 24",
-        "resultA": "Výsledek A 24",
-        "resultB": "Výsledek B 24"
-    },
-    {
-        "question": "Minecraft volba 25?",
-        "optionA": "🧱 možnost A 25",
-        "optionB": "⚔️ možnost B 25",
-        "resultA": "Výsledek A 25",
-        "resultB": "Výsledek B 25"
-    },
-    {
-        "question": "Minecraft volba 26?",
-        "optionA": "🧱 možnost A 26",
-        "optionB": "⚔️ možnost B 26",
-        "resultA": "Výsledek A 26",
-        "resultB": "Výsledek B 26"
-    },
-    {
-        "question": "Minecraft volba 27?",
-        "optionA": "🧱 možnost A 27",
-        "optionB": "⚔️ možnost B 27",
-        "resultA": "Výsledek A 27",
-        "resultB": "Výsledek B 27"
-    },
-    {
-        "question": "Minecraft volba 28?",
-        "optionA": "🧱 možnost A 28",
-        "optionB": "⚔️ možnost B 28",
-        "resultA": "Výsledek A 28",
-        "resultB": "Výsledek B 28"
-    },
-    {
-        "question": "Minecraft volba 29?",
-        "optionA": "🧱 možnost A 29",
-        "optionB": "⚔️ možnost B 29",
-        "resultA": "Výsledek A 29",
-        "resultB": "Výsledek B 29"
-    },
-    {
-        "question": "Minecraft volba 30?",
-        "optionA": "🧱 možnost A 30",
-        "optionB": "⚔️ možnost B 30",
-        "resultA": "Výsledek A 30",
-        "resultB": "Výsledek B 30"
-    },
-    {
-        "question": "Minecraft volba 31?",
-        "optionA": "🧱 možnost A 31",
-        "optionB": "⚔️ možnost B 31",
-        "resultA": "Výsledek A 31",
-        "resultB": "Výsledek B 31"
-    },
-    {
-        "question": "Minecraft volba 32?",
-        "optionA": "🧱 možnost A 32",
-        "optionB": "⚔️ možnost B 32",
-        "resultA": "Výsledek A 32",
-        "resultB": "Výsledek B 32"
-    },
-    {
-        "question": "Minecraft volba 33?",
-        "optionA": "🧱 možnost A 33",
-        "optionB": "⚔️ možnost B 33",
-        "resultA": "Výsledek A 33",
-        "resultB": "Výsledek B 33"
-    },
-    {
-        "question": "Minecraft volba 34?",
-        "optionA": "🧱 možnost A 34",
-        "optionB": "⚔️ možnost B 34",
-        "resultA": "Výsledek A 34",
-        "resultB": "Výsledek B 34"
-    },
-    {
-        "question": "Minecraft volba 35?",
-        "optionA": "🧱 možnost A 35",
-        "optionB": "⚔️ možnost B 35",
-        "resultA": "Výsledek A 35",
-        "resultB": "Výsledek B 35"
-    },
-    {
-        "question": "Minecraft volba 36?",
-        "optionA": "🧱 možnost A 36",
-        "optionB": "⚔️ možnost B 36",
-        "resultA": "Výsledek A 36",
-        "resultB": "Výsledek B 36"
-    },
-    {
-        "question": "Minecraft volba 37?",
-        "optionA": "🧱 možnost A 37",
-        "optionB": "⚔️ možnost B 37",
-        "resultA": "Výsledek A 37",
-        "resultB": "Výsledek B 37"
-    },
-    {
-        "question": "Minecraft volba 38?",
-        "optionA": "🧱 možnost A 38",
-        "optionB": "⚔️ možnost B 38",
-        "resultA": "Výsledek A 38",
-        "resultB": "Výsledek B 38"
-    },
-    {
-        "question": "Minecraft volba 39?",
-        "optionA": "🧱 možnost A 39",
-        "optionB": "⚔️ možnost B 39",
-        "resultA": "Výsledek A 39",
-        "resultB": "Výsledek B 39"
-    },
-    {
-        "question": "Minecraft volba 40?",
-        "optionA": "🧱 možnost A 40",
-        "optionB": "⚔️ možnost B 40",
-        "resultA": "Výsledek A 40",
-        "resultB": "Výsledek B 40"
-    },
-    {
-        "question": "Minecraft volba 41?",
-        "optionA": "🧱 možnost A 41",
-        "optionB": "⚔️ možnost B 41",
-        "resultA": "Výsledek A 41",
-        "resultB": "Výsledek B 41"
-    },
-    {
-        "question": "Minecraft volba 42?",
-        "optionA": "🧱 možnost A 42",
-        "optionB": "⚔️ možnost B 42",
-        "resultA": "Výsledek A 42",
-        "resultB": "Výsledek B 42"
-    },
-    {
-        "question": "Minecraft volba 43?",
-        "optionA": "🧱 možnost A 43",
-        "optionB": "⚔️ možnost B 43",
-        "resultA": "Výsledek A 43",
-        "resultB": "Výsledek B 43"
-    },
-    {
-        "question": "Minecraft volba 44?",
-        "optionA": "🧱 možnost A 44",
-        "optionB": "⚔️ možnost B 44",
-        "resultA": "Výsledek A 44",
-        "resultB": "Výsledek B 44"
-    },
-    {
-        "question": "Minecraft volba 45?",
-        "optionA": "🧱 možnost A 45",
-        "optionB": "⚔️ možnost B 45",
-        "resultA": "Výsledek A 45",
-        "resultB": "Výsledek B 45"
-    },
-    {
-        "question": "Minecraft volba 46?",
-        "optionA": "🧱 možnost A 46",
-        "optionB": "⚔️ možnost B 46",
-        "resultA": "Výsledek A 46",
-        "resultB": "Výsledek B 46"
-    },
-    {
-        "question": "Minecraft volba 47?",
-        "optionA": "🧱 možnost A 47",
-        "optionB": "⚔️ možnost B 47",
-        "resultA": "Výsledek A 47",
-        "resultB": "Výsledek B 47"
-    },
-    {
-        "question": "Minecraft volba 48?",
-        "optionA": "🧱 možnost A 48",
-        "optionB": "⚔️ možnost B 48",
-        "resultA": "Výsledek A 48",
-        "resultB": "Výsledek B 48"
-    },
-    {
-        "question": "Minecraft volba 49?",
-        "optionA": "🧱 možnost A 49",
-        "optionB": "⚔️ možnost B 49",
-        "resultA": "Výsledek A 49",
-        "resultB": "Výsledek B 49"
-    },
-    {
-        "question": "Minecraft volba 50?",
-        "optionA": "🧱 možnost A 50",
-        "optionB": "⚔️ možnost B 50",
-        "resultA": "Výsledek A 50",
-        "resultB": "Výsledek B 50"
+        question: "Jakou Minecraft postavu bys chtěla být?",
+        optionA: "👑 Královna villagerů",
+        optionB: "🦸‍♀️ Superhrdinka proti monster",
+        resultA: "Velliger royalty! Všichni tě poslouchají, ale pořád jen říkají 'Hmm' a 'Hrrr'! 🤔",
+        resultB: "Monster hunter! Zachraňuješ všechny, ale Endermani se na tebe zlobí, že jim bereš práci! 👀"
     }
 ];
 
 const harryPotterCards = [
     {
-        "question": "Harry Potter volba 1?",
-        "optionA": "🪄 možnost A 1",
-        "optionB": "🧹 možnost B 1",
-        "resultA": "Výsledek A 1",
-        "resultB": "Výsledek B 1"
+        question: "Do kterého bradavického koleji bys chtěla?",
+        optionA: "🦁 Nebelvír s odvážnými",
+        optionB: "🐍 Zmijozel s mazanými",
+        resultA: "Nebelvírská lvice! Jsi statečná a všichni tě obdivují, ale pořád se dostáváš do problémů! ⚔️",
+        resultB: "Zmijozelo mazanost! Jsi chytrá a strategická, ale všichni si myslí, že plánuješ něco zlého! 🐍"
     },
     {
-        "question": "Harry Potter volba 2?",
-        "optionA": "🪄 možnost A 2",
-        "optionB": "🧹 možnost B 2",
-        "resultA": "Výsledek A 2",
-        "resultB": "Výsledek B 2"
+        question: "Jaké kouzlo bys chtěla umět nejlépe?",
+        optionA: "✨ Wingardium Leviosa",
+        optionB: "🔥 Expelliarmus",
+        resultA: "Levitační mistryně! Můžeš létat s čímkoliv, ale občas ti uletí talíř s večeří ke stropu! 🍽️",
+        resultB: "Odzbrojovací expert! Nikdo na tebe nevytáhne hůlku, ale někdy odzbrojíš lidi i s vidličkou! 🍴"
     },
     {
-        "question": "Harry Potter volba 3?",
-        "optionA": "🪄 možnost A 3",
-        "optionB": "🧹 možnost B 3",
-        "resultA": "Výsledek A 3",
-        "resultB": "Výsledek B 3"
+        question: "Jakého magického tvora bys chtěla jako mazlíčka?",
+        optionA: "🦉 Sovu pro doručování pošty",
+        optionB: "🐱 Kouzelnou kočku",
+        resultA: "Sova pošťačka! Nejrychlejší pošta na světě, ale občas ti donese dopisy určené pro někoho jiného! 📮",
+        resultB: "Magická kočka! Umí kouzlit, ale je to pořád kočka, takže tě ignoruje a dělá si co chce! 😼"
     },
     {
-        "question": "Harry Potter volba 4?",
-        "optionA": "🪄 možnost A 4",
-        "optionB": "🧹 možnost B 4",
-        "resultA": "Výsledek A 4",
-        "resultB": "Výsledek B 4"
+        question: "Jaký magický předmět bys chtěla vlastnit?",
+        optionA: "🧙‍♀️ Neviditelný plášť",
+        optionB: "🪄 Nejsilnější kouzelnou hůlku",
+        resultA: "Neviditelnost on demand! Můžeš se schovat kdykoli, ale občas zapomeneš, že jsi neviditelná a strašíš lidi! 👻",
+        resultB: "Mega mocná hůlka! Nejsilnější čarodějka ever, ale hůlka má vlastní hlavu a někdy nekouzelí co chceš! ⚡"
     },
     {
-        "question": "Harry Potter volba 5?",
-        "optionA": "🪄 možnost A 5",
-        "optionB": "🧹 možnost B 5",
-        "resultA": "Výsledek A 5",
-        "resultB": "Výsledek B 5"
+        question: "Jaký kouzelný sport bys chtěla hrát?",
+        optionA: "🧹 Famfrpál na koštěti",
+        optionB: "🎯 Kouzelné šipky",
+        resultA: "Famfrpál hvězda! Létat a hrát je úžasné, ale bludgery se pořád snaží tě srazit z koštěte! 💥",
+        resultB: "Magické šipky šampionka! Vždy trefíš terč, ale šipky létají samy a někdy trefí špatný cíl! 🎪"
     },
     {
-        "question": "Harry Potter volba 6?",
-        "optionA": "🪄 možnost A 6",
-        "optionB": "🧹 možnost B 6",
-        "resultA": "Výsledek A 6",
-        "resultB": "Výsledek B 6"
+        question: "Jakou kouzelnou schopnost bys chtěla?",
+        optionA: "🔮 Vidět do budoucnosti",
+        optionB: "📖 Číst myšlenky",
+        resultA: "Věštkyně! Víš, co se stane, ale někdy vidíš věci, které nechceš vědět, jako zítrašní zkouška! 😱",
+        resultB: "Telepat! Slyšíš myšlenky všech, ale zjistíš, že většina lidí myslí na jídlo a blbosti! 🤯"
     },
     {
-        "question": "Harry Potter volba 7?",
-        "optionA": "🪄 možnost A 7",
-        "optionB": "🧹 možnost B 7",
-        "resultA": "Výsledek A 7",
-        "resultB": "Výsledek B 7"
+        question: "Kde bys chtěla studovat kouzelnictví?",
+        optionA: "🏰 Bradavice v Anglii",
+        optionB: "🗼 Beauxbatons ve Francii",
+        resultA: "Bradavice legend! Nejslavnější škola kouzel, ale pořád se něco děje a školní rok se často ruší! 📚",
+        resultB: "Francouzská elegance! Krásná škola a skvělé jídlo, ale všechno musíš dělat s grácií! 💃"
     },
     {
-        "question": "Harry Potter volba 8?",
-        "optionA": "🪄 možnost A 8",
-        "optionB": "🧹 možnost B 8",
-        "resultA": "Výsledek A 8",
-        "resultB": "Výsledek B 8"
+        question: "Jaký kouzelný nápoj bys chtěla uvařit?",
+        optionA: "🧪 Mnohotvárný lektvar",
+        optionB: "❤️ Lektvar lásky",
+        resultA: "Metamorfosa expertka! Můžeš vypadat jako kdokoli, ale někdy zapomeneš, jak vypadáš doopravdy! 🪞",
+        resultB: "Láska v láhvi! Všichni tě milují, ale není to opravdová láska a když lektvar přestane účinkovat, je to trapné! 💔"
     },
     {
-        "question": "Harry Potter volba 9?",
-        "optionA": "🪄 možnost A 9",
-        "optionB": "🧹 možnost B 9",
-        "resultA": "Výsledek A 9",
-        "resultB": "Výsledek B 9"
+        question: "Jakého kouzelného učitele bys chtěla mít?",
+        optionA: "🧙‍♂️ Albus Brumbál",
+        optionB: "🦅 Profesorka McGonagallová",
+        resultA: "Brumbálova moudrost! Naučíš se všechno o kouzlech, ale mluví v hádankách a nikdy nechápeš pointu! 🤔",
+        resultB: "McGonagall přísnost! Budeš úžasná v proměnách, ale pokud uděláš chybu, budeš mít takový pohled, že se propadneš zemí! 😤"
     },
     {
-        "question": "Harry Potter volba 10?",
-        "optionA": "🪄 možnost A 10",
-        "optionB": "🧹 možnost B 10",
-        "resultA": "Výsledek A 10",
-        "resultB": "Výsledek B 10"
+        question: "Jaké kouzelné místo bys chtěla navštívit?",
+        optionA: "🛍️ Diagon Alley pro nákupy",
+        optionB: "🌲 Zakázaný les pro dobrodružství",
+        resultA: "Nákupní ráj! Všechny kouzelné věci na jednom místě, ale utratíš všechny galleony za sladkosti! 🍭",
+        resultB: "Zakázané dobrodružství! Potkáš úžasné bytosti, ale některé z nich tě chtějí sežrat! 🕷️"
     },
     {
-        "question": "Harry Potter volba 11?",
-        "optionA": "🪄 možnost A 11",
-        "optionB": "🧹 možnost B 11",
-        "resultA": "Výsledek A 11",
-        "resultB": "Výsledek B 11"
+        question: "Jakou kouzelnou knihu bys chtěla číst?",
+        optionA: "📚 Dějiny Bradavic",
+        optionB: "🐉 Fantastická zvířata",
+        resultA: "Historická expertka! Znáš všechny tajnosti školy, ale kniha je tak tlustá, že ti padá na nohy! 📖",
+        resultB: "Magizoložka! Víš všechno o kouzelných tvorech, ale někteří z nich vyskočí z knihy a pobíhají po pokoji! 🦄"
     },
     {
-        "question": "Harry Potter volba 12?",
-        "optionA": "🪄 možnost A 12",
-        "optionB": "🧹 možnost B 12",
-        "resultA": "Výsledek A 12",
-        "resultB": "Výsledek B 12"
-    },
-    {
-        "question": "Harry Potter volba 13?",
-        "optionA": "🪄 možnost A 13",
-        "optionB": "🧹 možnost B 13",
-        "resultA": "Výsledek A 13",
-        "resultB": "Výsledek B 13"
-    },
-    {
-        "question": "Harry Potter volba 14?",
-        "optionA": "🪄 možnost A 14",
-        "optionB": "🧹 možnost B 14",
-        "resultA": "Výsledek A 14",
-        "resultB": "Výsledek B 14"
-    },
-    {
-        "question": "Harry Potter volba 15?",
-        "optionA": "🪄 možnost A 15",
-        "optionB": "🧹 možnost B 15",
-        "resultA": "Výsledek A 15",
-        "resultB": "Výsledek B 15"
-    },
-    {
-        "question": "Harry Potter volba 16?",
-        "optionA": "🪄 možnost A 16",
-        "optionB": "🧹 možnost B 16",
-        "resultA": "Výsledek A 16",
-        "resultB": "Výsledek B 16"
-    },
-    {
-        "question": "Harry Potter volba 17?",
-        "optionA": "🪄 možnost A 17",
-        "optionB": "🧹 možnost B 17",
-        "resultA": "Výsledek A 17",
-        "resultB": "Výsledek B 17"
-    },
-    {
-        "question": "Harry Potter volba 18?",
-        "optionA": "🪄 možnost A 18",
-        "optionB": "🧹 možnost B 18",
-        "resultA": "Výsledek A 18",
-        "resultB": "Výsledek B 18"
-    },
-    {
-        "question": "Harry Potter volba 19?",
-        "optionA": "🪄 možnost A 19",
-        "optionB": "🧹 možnost B 19",
-        "resultA": "Výsledek A 19",
-        "resultB": "Výsledek B 19"
-    },
-    {
-        "question": "Harry Potter volba 20?",
-        "optionA": "🪄 možnost A 20",
-        "optionB": "🧹 možnost B 20",
-        "resultA": "Výsledek A 20",
-        "resultB": "Výsledek B 20"
-    },
-    {
-        "question": "Harry Potter volba 21?",
-        "optionA": "🪄 možnost A 21",
-        "optionB": "🧹 možnost B 21",
-        "resultA": "Výsledek A 21",
-        "resultB": "Výsledek B 21"
-    },
-    {
-        "question": "Harry Potter volba 22?",
-        "optionA": "🪄 možnost A 22",
-        "optionB": "🧹 možnost B 22",
-        "resultA": "Výsledek A 22",
-        "resultB": "Výsledek B 22"
-    },
-    {
-        "question": "Harry Potter volba 23?",
-        "optionA": "🪄 možnost A 23",
-        "optionB": "🧹 možnost B 23",
-        "resultA": "Výsledek A 23",
-        "resultB": "Výsledek B 23"
-    },
-    {
-        "question": "Harry Potter volba 24?",
-        "optionA": "🪄 možnost A 24",
-        "optionB": "🧹 možnost B 24",
-        "resultA": "Výsledek A 24",
-        "resultB": "Výsledek B 24"
-    },
-    {
-        "question": "Harry Potter volba 25?",
-        "optionA": "🪄 možnost A 25",
-        "optionB": "🧹 možnost B 25",
-        "resultA": "Výsledek A 25",
-        "resultB": "Výsledek B 25"
-    },
-    {
-        "question": "Harry Potter volba 26?",
-        "optionA": "🪄 možnost A 26",
-        "optionB": "🧹 možnost B 26",
-        "resultA": "Výsledek A 26",
-        "resultB": "Výsledek B 26"
-    },
-    {
-        "question": "Harry Potter volba 27?",
-        "optionA": "🪄 možnost A 27",
-        "optionB": "🧹 možnost B 27",
-        "resultA": "Výsledek A 27",
-        "resultB": "Výsledek B 27"
-    },
-    {
-        "question": "Harry Potter volba 28?",
-        "optionA": "🪄 možnost A 28",
-        "optionB": "🧹 možnost B 28",
-        "resultA": "Výsledek A 28",
-        "resultB": "Výsledek B 28"
-    },
-    {
-        "question": "Harry Potter volba 29?",
-        "optionA": "🪄 možnost A 29",
-        "optionB": "🧹 možnost B 29",
-        "resultA": "Výsledek A 29",
-        "resultB": "Výsledek B 29"
-    },
-    {
-        "question": "Harry Potter volba 30?",
-        "optionA": "🪄 možnost A 30",
-        "optionB": "🧹 možnost B 30",
-        "resultA": "Výsledek A 30",
-        "resultB": "Výsledek B 30"
-    },
-    {
-        "question": "Harry Potter volba 31?",
-        "optionA": "🪄 možnost A 31",
-        "optionB": "🧹 možnost B 31",
-        "resultA": "Výsledek A 31",
-        "resultB": "Výsledek B 31"
-    },
-    {
-        "question": "Harry Potter volba 32?",
-        "optionA": "🪄 možnost A 32",
-        "optionB": "🧹 možnost B 32",
-        "resultA": "Výsledek A 32",
-        "resultB": "Výsledek B 32"
-    },
-    {
-        "question": "Harry Potter volba 33?",
-        "optionA": "🪄 možnost A 33",
-        "optionB": "🧹 možnost B 33",
-        "resultA": "Výsledek A 33",
-        "resultB": "Výsledek B 33"
-    },
-    {
-        "question": "Harry Potter volba 34?",
-        "optionA": "🪄 možnost A 34",
-        "optionB": "🧹 možnost B 34",
-        "resultA": "Výsledek A 34",
-        "resultB": "Výsledek B 34"
-    },
-    {
-        "question": "Harry Potter volba 35?",
-        "optionA": "🪄 možnost A 35",
-        "optionB": "🧹 možnost B 35",
-        "resultA": "Výsledek A 35",
-        "resultB": "Výsledek B 35"
-    },
-    {
-        "question": "Harry Potter volba 36?",
-        "optionA": "🪄 možnost A 36",
-        "optionB": "🧹 možnost B 36",
-        "resultA": "Výsledek A 36",
-        "resultB": "Výsledek B 36"
-    },
-    {
-        "question": "Harry Potter volba 37?",
-        "optionA": "🪄 možnost A 37",
-        "optionB": "🧹 možnost B 37",
-        "resultA": "Výsledek A 37",
-        "resultB": "Výsledek B 37"
-    },
-    {
-        "question": "Harry Potter volba 38?",
-        "optionA": "🪄 možnost A 38",
-        "optionB": "🧹 možnost B 38",
-        "resultA": "Výsledek A 38",
-        "resultB": "Výsledek B 38"
-    },
-    {
-        "question": "Harry Potter volba 39?",
-        "optionA": "🪄 možnost A 39",
-        "optionB": "🧹 možnost B 39",
-        "resultA": "Výsledek A 39",
-        "resultB": "Výsledek B 39"
-    },
-    {
-        "question": "Harry Potter volba 40?",
-        "optionA": "🪄 možnost A 40",
-        "optionB": "🧹 možnost B 40",
-        "resultA": "Výsledek A 40",
-        "resultB": "Výsledek B 40"
-    },
-    {
-        "question": "Harry Potter volba 41?",
-        "optionA": "🪄 možnost A 41",
-        "optionB": "🧹 možnost B 41",
-        "resultA": "Výsledek A 41",
-        "resultB": "Výsledek B 41"
-    },
-    {
-        "question": "Harry Potter volba 42?",
-        "optionA": "🪄 možnost A 42",
-        "optionB": "🧹 možnost B 42",
-        "resultA": "Výsledek A 42",
-        "resultB": "Výsledek B 42"
-    },
-    {
-        "question": "Harry Potter volba 43?",
-        "optionA": "🪄 možnost A 43",
-        "optionB": "🧹 možnost B 43",
-        "resultA": "Výsledek A 43",
-        "resultB": "Výsledek B 43"
-    },
-    {
-        "question": "Harry Potter volba 44?",
-        "optionA": "🪄 možnost A 44",
-        "optionB": "🧹 možnost B 44",
-        "resultA": "Výsledek A 44",
-        "resultB": "Výsledek B 44"
-    },
-    {
-        "question": "Harry Potter volba 45?",
-        "optionA": "🪄 možnost A 45",
-        "optionB": "🧹 možnost B 45",
-        "resultA": "Výsledek A 45",
-        "resultB": "Výsledek B 45"
-    },
-    {
-        "question": "Harry Potter volba 46?",
-        "optionA": "🪄 možnost A 46",
-        "optionB": "🧹 možnost B 46",
-        "resultA": "Výsledek A 46",
-        "resultB": "Výsledek B 46"
-    },
-    {
-        "question": "Harry Potter volba 47?",
-        "optionA": "🪄 možnost A 47",
-        "optionB": "🧹 možnost B 47",
-        "resultA": "Výsledek A 47",
-        "resultB": "Výsledek B 47"
-    },
-    {
-        "question": "Harry Potter volba 48?",
-        "optionA": "🪄 možnost A 48",
-        "optionB": "🧹 možnost B 48",
-        "resultA": "Výsledek A 48",
-        "resultB": "Výsledek B 48"
-    },
-    {
-        "question": "Harry Potter volba 49?",
-        "optionA": "🪄 možnost A 49",
-        "optionB": "🧹 možnost B 49",
-        "resultA": "Výsledek A 49",
-        "resultB": "Výsledek B 49"
-    },
-    {
-        "question": "Harry Potter volba 50?",
-        "optionA": "🪄 možnost A 50",
-        "optionB": "🧹 možnost B 50",
-        "resultA": "Výsledek A 50",
-        "resultB": "Výsledek B 50"
+        question: "Jaký kouzelný transport bys chtěla používat?",
+        optionA: "🚗 Létající auto",
+        optionB: "🔥 Floo Network",
+        resultA: "Nebeské auto! Můžeš létat kamkoli, ale občas se pokazí motor a spadneš na vrbu mlátičku! 🌳",
+        resultB: "Krb teleport! Instantní cestování, ale vždycky dorazíš pokrytá sazemi a kašleš zelený prach! 💚"
     }
 ];
 
 const tocaWorldCards = [
     {
-        "question": "Toca World volba 1?",
-        "optionA": "🏙️ možnost A 1",
-        "optionB": "🎉 možnost B 1",
-        "resultA": "Výsledek A 1",
-        "resultB": "Výsledek B 1"
+        question: "Jaké Toca Boca místo bys chtěla navštívit?",
+        optionA: "🏠 Toca Life World dům",
+        optionB: "🏫 Toca School",
+        resultA: "Domácí pohoda! Můžeš dělat co chceš, ale občas se ztratíš v tolika pokojích! 🛏️",
+        resultB: "Školní zábava! Učení je super cool, ale někteří spolužáci pořád dělají neplechu! 📝"
     },
     {
-        "question": "Toca World volba 2?",
-        "optionA": "🏙️ možnost A 2",
-        "optionB": "🎉 možnost B 2",
-        "resultA": "Výsledek A 2",
-        "resultB": "Výsledek B 2"
+        question: "Jakou Toca Boca postavu bys chtěla být?",
+        optionA: "👩‍🍳 Šéfkuchařka v restauraci",
+        optionB: "👩‍⚕️ Doktorka v nemocnici",
+        resultA: "Kuchařská hvězda! Vaříš nejlepší jídla, ale někdy se ti úplně popálí a hosté utíkají! 🔥",
+        resultB: "Lékařská expertka! Zachraňuješ všechny, ale někteří pacienti jsou hypochondři a přijdou kvůli každé škrábance! 🩹"
     },
     {
-        "question": "Toca World volba 3?",
-        "optionA": "🏙️ možnost A 3",
-        "optionB": "🎉 možnost B 3",
-        "resultA": "Výsledek A 3",
-        "resultB": "Výsledek B 3"
+        question: "Jaké Toca zvířátko bys chtěla mít?",
+        optionA: "🐱 Roztomilou kočičku",
+        optionB: "🐶 Hravého pejska",
+        resultA: "Kočičí kamarádka! Je roztomilá a nezávislá, ale někdy zmizí na celý den a pak se objeví v ledničce! 😹",
+        resultB: "Psí parťák! Vždy věrný a hravý, ale rozžvýká ti všechno oblečení a boty! 👟"
     },
     {
-        "question": "Toca World volba 4?",
-        "optionA": "🏙️ možnost A 4",
-        "optionB": "🎉 možnost B 4",
-        "resultA": "Výsledek A 4",
-        "resultB": "Výsledek B 4"
+        question: "Jakou Toca Boca aktivitu bys chtěla dělat?",
+        optionA: "🎨 Malování v art studiu",
+        optionB: "🍳 Vaření v kuchyni",
+        resultA: "Umělecká duše! Tvoříš krásné obrazy, ale vždycky se umazáš barvami od hlavy k patě! 🎭",
+        resultB: "Kuchyňská čarodějka! Vaříš úžasné jídla, ale někdy se ti splete sůl s cukrem! 🧂"
     },
     {
-        "question": "Toca World volba 5?",
-        "optionA": "🏙️ možnost A 5",
-        "optionB": "🎉 možnost B 5",
-        "resultA": "Výsledek A 5",
-        "resultB": "Výsledek B 5"
+        question: "Kde bys chtěla pracovat v Toca světě?",
+        optionA: "🏪 V obchodě s hračkami",
+        optionB: "💇‍♀️ V kadeřnictví",
+        resultA: "Hračková královna! Obklopena nejlepšími hračkami, ale zákazníci ti všechno rozházejí! 🧸",
+        resultB: "Kadeřnický styling! Děláš úžasné účesy, ale někdy se ti povede trochu moc kreativní střih! ✂️"
     },
     {
-        "question": "Toca World volba 6?",
-        "optionA": "🏙️ možnost A 6",
-        "optionB": "🎉 možnost B 6",
-        "resultA": "Výsledek A 6",
-        "resultB": "Výsledek B 6"
+        question: "Jaký Toca Boca výlet bys chtěla podniknout?",
+        optionA: "🏖️ Na pláž",
+        optionB: "🏕️ Do kempu",
+        resultA: "Plážová pohoda! Slunce, písek a vlny, ale občas tě píchne medúza nebo krab! 🦀",
+        resultB: "Kempování pro pokročilé! Krásná příroda a táborák, ale v noci slyšíš divné zvuky z lesů! 🐺"
     },
     {
-        "question": "Toca World volba 7?",
-        "optionA": "🏙️ možnost A 7",
-        "optionB": "🎉 možnost B 7",
-        "resultA": "Výsledek A 7",
-        "resultB": "Výsledek B 7"
+        question: "Jaké Toca Boca jídlo bys chtěla ochutnat?",
+        optionA: "🍰 Obří duhový dort",
+        optionB: "🍕 Pizza s čímkoliv",
+        resultA: "Dortový ráj! Nejsladší věc na světě, ale po snězení máš takovou cukrovou horečku, že poskakuješ! 🌈",
+        resultB: "Pizza extravaganza! Jakákoliv chuť, ale někdy si dáš moc divnou kombinaci a pak litujž! 🤢"
     },
     {
-        "question": "Toca World volba 8?",
-        "optionA": "🏙️ možnost A 8",
-        "optionB": "🎉 možnost B 8",
-        "resultA": "Výsledek A 8",
-        "resultB": "Výsledek B 8"
+        question: "Jaký Toca Boca pokojík bys chtěla mít?",
+        optionA: "🌟 Pokojík princezny",
+        optionB: "🚀 Vesmírný pokojík",
+        resultA: "Královská nádhera! Všechno růžové a třpytivé, ale občas se ztratíš v tolika saténových polštářích! 👑",
+        resultB: "Galaktická základna! Super cool vesmírné věci, ale někdy se ti spustí raketa a proletíš stropem! 🌌"
     },
     {
-        "question": "Toca World volba 9?",
-        "optionA": "🏙️ možnost A 9",
-        "optionB": "🎉 možnost B 9",
-        "resultA": "Výsledek A 9",
-        "resultB": "Výsledek B 9"
+        question: "Jakou Toca Boca párty bys chtěla uspořádat?",
+        optionA: "🎂 Narozeninovou oslavu",
+        optionB: "🕺 Taneční večírek",
+        resultA: "Mega narozeniny! Všichni přátelé, dárky a dort, ale někdo vždycky převrátí nápoje! 🎁",
+        resultB: "Dance floor fire! Všichni tančí jako šílení, ale někdo vždycky šlápne na nohy! 💃"
     },
     {
-        "question": "Toca World volba 10?",
-        "optionA": "🏙️ možnost A 10",
-        "optionB": "🎉 možnost B 10",
-        "resultA": "Výsledek A 10",
-        "resultB": "Výsledek B 10"
+        question: "Jaký Toca Boca obchod bys chtěla vlastnit?",
+        optionA: "🍬 Obchod se sladkostmi",
+        optionB: "👗 Obchod s oblečením",
+        resultA: "Sladký biznis! Děti milují tvój obchod, ale ty sama nemůžeš přestat ochutnávat! 🍭",
+        resultB: "Fashion guru! Všichni chtějí tvoje oblečení, ale někdy se pleteš a prodáš kostým místo šatů! 👘"
     },
     {
-        "question": "Toca World volba 11?",
-        "optionA": "🏙️ možnost A 11",
-        "optionB": "🎉 možnost B 11",
-        "resultA": "Výsledek A 11",
-        "resultB": "Výsledek B 11"
+        question: "Jaký Toca Boca dopravní prostředek bys chtěla?",
+        optionA: "🚗 Roztomilé auto",
+        optionB: "🚁 Malý vrtulník",
+        resultA: "Auto snů! Pojedeš všude stylově, ale občas zaparkuješ v kašně! 🌊",
+        resultB: "Helicopter ride! Můžeš létat nad městem, ale občas přistaneš na špatné střeše! 🏠"
     },
     {
-        "question": "Toca World volba 12?",
-        "optionA": "🏙️ možnost A 12",
-        "optionB": "🎉 možnost B 12",
-        "resultA": "Výsledek A 12",
-        "resultB": "Výsledek B 12"
-    },
-    {
-        "question": "Toca World volba 13?",
-        "optionA": "🏙️ možnost A 13",
-        "optionB": "🎉 možnost B 13",
-        "resultA": "Výsledek A 13",
-        "resultB": "Výsledek B 13"
-    },
-    {
-        "question": "Toca World volba 14?",
-        "optionA": "🏙️ možnost A 14",
-        "optionB": "🎉 možnost B 14",
-        "resultA": "Výsledek A 14",
-        "resultB": "Výsledek B 14"
-    },
-    {
-        "question": "Toca World volba 15?",
-        "optionA": "🏙️ možnost A 15",
-        "optionB": "🎉 možnost B 15",
-        "resultA": "Výsledek A 15",
-        "resultB": "Výsledek B 15"
-    },
-    {
-        "question": "Toca World volba 16?",
-        "optionA": "🏙️ možnost A 16",
-        "optionB": "🎉 možnost B 16",
-        "resultA": "Výsledek A 16",
-        "resultB": "Výsledek B 16"
-    },
-    {
-        "question": "Toca World volba 17?",
-        "optionA": "🏙️ možnost A 17",
-        "optionB": "🎉 možnost B 17",
-        "resultA": "Výsledek A 17",
-        "resultB": "Výsledek B 17"
-    },
-    {
-        "question": "Toca World volba 18?",
-        "optionA": "🏙️ možnost A 18",
-        "optionB": "🎉 možnost B 18",
-        "resultA": "Výsledek A 18",
-        "resultB": "Výsledek B 18"
-    },
-    {
-        "question": "Toca World volba 19?",
-        "optionA": "🏙️ možnost A 19",
-        "optionB": "🎉 možnost B 19",
-        "resultA": "Výsledek A 19",
-        "resultB": "Výsledek B 19"
-    },
-    {
-        "question": "Toca World volba 20?",
-        "optionA": "🏙️ možnost A 20",
-        "optionB": "🎉 možnost B 20",
-        "resultA": "Výsledek A 20",
-        "resultB": "Výsledek B 20"
-    },
-    {
-        "question": "Toca World volba 21?",
-        "optionA": "🏙️ možnost A 21",
-        "optionB": "🎉 možnost B 21",
-        "resultA": "Výsledek A 21",
-        "resultB": "Výsledek B 21"
-    },
-    {
-        "question": "Toca World volba 22?",
-        "optionA": "🏙️ možnost A 22",
-        "optionB": "🎉 možnost B 22",
-        "resultA": "Výsledek A 22",
-        "resultB": "Výsledek B 22"
-    },
-    {
-        "question": "Toca World volba 23?",
-        "optionA": "🏙️ možnost A 23",
-        "optionB": "🎉 možnost B 23",
-        "resultA": "Výsledek A 23",
-        "resultB": "Výsledek B 23"
-    },
-    {
-        "question": "Toca World volba 24?",
-        "optionA": "🏙️ možnost A 24",
-        "optionB": "🎉 možnost B 24",
-        "resultA": "Výsledek A 24",
-        "resultB": "Výsledek B 24"
-    },
-    {
-        "question": "Toca World volba 25?",
-        "optionA": "🏙️ možnost A 25",
-        "optionB": "🎉 možnost B 25",
-        "resultA": "Výsledek A 25",
-        "resultB": "Výsledek B 25"
-    },
-    {
-        "question": "Toca World volba 26?",
-        "optionA": "🏙️ možnost A 26",
-        "optionB": "🎉 možnost B 26",
-        "resultA": "Výsledek A 26",
-        "resultB": "Výsledek B 26"
-    },
-    {
-        "question": "Toca World volba 27?",
-        "optionA": "🏙️ možnost A 27",
-        "optionB": "🎉 možnost B 27",
-        "resultA": "Výsledek A 27",
-        "resultB": "Výsledek B 27"
-    },
-    {
-        "question": "Toca World volba 28?",
-        "optionA": "🏙️ možnost A 28",
-        "optionB": "🎉 možnost B 28",
-        "resultA": "Výsledek A 28",
-        "resultB": "Výsledek B 28"
-    },
-    {
-        "question": "Toca World volba 29?",
-        "optionA": "🏙️ možnost A 29",
-        "optionB": "🎉 možnost B 29",
-        "resultA": "Výsledek A 29",
-        "resultB": "Výsledek B 29"
-    },
-    {
-        "question": "Toca World volba 30?",
-        "optionA": "🏙️ možnost A 30",
-        "optionB": "🎉 možnost B 30",
-        "resultA": "Výsledek A 30",
-        "resultB": "Výsledek B 30"
-    },
-    {
-        "question": "Toca World volba 31?",
-        "optionA": "🏙️ možnost A 31",
-        "optionB": "🎉 možnost B 31",
-        "resultA": "Výsledek A 31",
-        "resultB": "Výsledek B 31"
-    },
-    {
-        "question": "Toca World volba 32?",
-        "optionA": "🏙️ možnost A 32",
-        "optionB": "🎉 možnost B 32",
-        "resultA": "Výsledek A 32",
-        "resultB": "Výsledek B 32"
-    },
-    {
-        "question": "Toca World volba 33?",
-        "optionA": "🏙️ možnost A 33",
-        "optionB": "🎉 možnost B 33",
-        "resultA": "Výsledek A 33",
-        "resultB": "Výsledek B 33"
-    },
-    {
-        "question": "Toca World volba 34?",
-        "optionA": "🏙️ možnost A 34",
-        "optionB": "🎉 možnost B 34",
-        "resultA": "Výsledek A 34",
-        "resultB": "Výsledek B 34"
-    },
-    {
-        "question": "Toca World volba 35?",
-        "optionA": "🏙️ možnost A 35",
-        "optionB": "🎉 možnost B 35",
-        "resultA": "Výsledek A 35",
-        "resultB": "Výsledek B 35"
-    },
-    {
-        "question": "Toca World volba 36?",
-        "optionA": "🏙️ možnost A 36",
-        "optionB": "🎉 možnost B 36",
-        "resultA": "Výsledek A 36",
-        "resultB": "Výsledek B 36"
-    },
-    {
-        "question": "Toca World volba 37?",
-        "optionA": "🏙️ možnost A 37",
-        "optionB": "🎉 možnost B 37",
-        "resultA": "Výsledek A 37",
-        "resultB": "Výsledek B 37"
-    },
-    {
-        "question": "Toca World volba 38?",
-        "optionA": "🏙️ možnost A 38",
-        "optionB": "🎉 možnost B 38",
-        "resultA": "Výsledek A 38",
-        "resultB": "Výsledek B 38"
-    },
-    {
-        "question": "Toca World volba 39?",
-        "optionA": "🏙️ možnost A 39",
-        "optionB": "🎉 možnost B 39",
-        "resultA": "Výsledek A 39",
-        "resultB": "Výsledek B 39"
-    },
-    {
-        "question": "Toca World volba 40?",
-        "optionA": "🏙️ možnost A 40",
-        "optionB": "🎉 možnost B 40",
-        "resultA": "Výsledek A 40",
-        "resultB": "Výsledek B 40"
-    },
-    {
-        "question": "Toca World volba 41?",
-        "optionA": "🏙️ možnost A 41",
-        "optionB": "🎉 možnost B 41",
-        "resultA": "Výsledek A 41",
-        "resultB": "Výsledek B 41"
-    },
-    {
-        "question": "Toca World volba 42?",
-        "optionA": "🏙️ možnost A 42",
-        "optionB": "🎉 možnost B 42",
-        "resultA": "Výsledek A 42",
-        "resultB": "Výsledek B 42"
-    },
-    {
-        "question": "Toca World volba 43?",
-        "optionA": "🏙️ možnost A 43",
-        "optionB": "🎉 možnost B 43",
-        "resultA": "Výsledek A 43",
-        "resultB": "Výsledek B 43"
-    },
-    {
-        "question": "Toca World volba 44?",
-        "optionA": "🏙️ možnost A 44",
-        "optionB": "🎉 možnost B 44",
-        "resultA": "Výsledek A 44",
-        "resultB": "Výsledek B 44"
-    },
-    {
-        "question": "Toca World volba 45?",
-        "optionA": "🏙️ možnost A 45",
-        "optionB": "🎉 možnost B 45",
-        "resultA": "Výsledek A 45",
-        "resultB": "Výsledek B 45"
-    },
-    {
-        "question": "Toca World volba 46?",
-        "optionA": "🏙️ možnost A 46",
-        "optionB": "🎉 možnost B 46",
-        "resultA": "Výsledek A 46",
-        "resultB": "Výsledek B 46"
-    },
-    {
-        "question": "Toca World volba 47?",
-        "optionA": "🏙️ možnost A 47",
-        "optionB": "🎉 možnost B 47",
-        "resultA": "Výsledek A 47",
-        "resultB": "Výsledek B 47"
-    },
-    {
-        "question": "Toca World volba 48?",
-        "optionA": "🏙️ možnost A 48",
-        "optionB": "🎉 možnost B 48",
-        "resultA": "Výsledek A 48",
-        "resultB": "Výsledek B 48"
-    },
-    {
-        "question": "Toca World volba 49?",
-        "optionA": "🏙️ možnost A 49",
-        "optionB": "🎉 možnost B 49",
-        "resultA": "Výsledek A 49",
-        "resultB": "Výsledek B 49"
-    },
-    {
-        "question": "Toca World volba 50?",
-        "optionA": "🏙️ možnost A 50",
-        "optionB": "🎉 možnost B 50",
-        "resultA": "Výsledek A 50",
-        "resultB": "Výsledek B 50"
+        question: "Jakou Toca Boca sezonu bys chtěla zažít?",
+        optionA: "❄️ Sněhovou zimu",
+        optionB: "🌻 Slunečné léto",
+        resultA: "Zimní pohádka! Sníh, sněhuláci a lyže, ale pořád máš studené nosy a prsty! ☃️",
+        resultB: "Letní vibes! Pláže, zmrzlina a volno, ale některý dny jsou tak horké, že se roztekáš! 🌡️"
     }
 ];
 
 const pokemonCards = [
     {
-        "question": "Pokémon volba 1?",
-        "optionA": "🐾 možnost A 1",
-        "optionB": "⭐ možnost B 1",
-        "resultA": "Výsledek A 1",
-        "resultB": "Výsledek B 1"
+        question: "Jakého startovního Pokémona bys si vybrala?",
+        optionA: "🔥 Ohňového typu",
+        optionB: "💧 Vodního typu",
+        resultA: "Ohnivý parťák! Super silný v boji, ale občas ti spálí oblíbené tričko! 🔥",
+        resultB: "Vodní kamarád! Skvělý na horké dny, ale děláni malé potopy v domě! 💦"
     },
     {
-        "question": "Pokémon volba 2?",
-        "optionA": "🐾 možnost A 2",
-        "optionB": "⭐ možnost B 2",
-        "resultA": "Výsledek A 2",
-        "resultB": "Výsledek B 2"
+        question: "Jakou Pokémon schopnost bys chtěla mít?",
+        optionA: "⚡ Elektrické útoky",
+        optionB: "🌿 Bylinné léčení",
+        resultA: "Elektrická síla! Můžeš nabíjet telefon rukama, ale občas dostaneš šok z kliky! ⚡",
+        resultB: "Přírodní léčitelka! Dokážeš vyléčit každé poranění, ale přitahuješ k sobě všechny nemocné! 🏥"
     },
     {
-        "question": "Pokémon volba 3?",
-        "optionA": "🐾 možnost A 3",
-        "optionB": "⭐ možnost B 3",
-        "resultA": "Výsledek A 3",
-        "resultB": "Výsledek B 3"
+        question: "Kterého legendárního Pokémona bys chtěla potkat?",
+        optionA: "🌈 Ho-oh",
+        optionB: "🌊 Lugia",
+        resultA: "Duhový Fénix! Vidět ho je neuvěřitelný zážitek, ale jeho krásné peří vyvolává u všech závist! 🦅",
+        resultB: "Oceánský strážce! Mocný a majestátní, ale jeho křik způsobuje tsunami v každé vaně! 🌊"
     },
     {
-        "question": "Pokémon volba 4?",
-        "optionA": "🐾 možnost A 4",
-        "optionB": "⭐ možnost B 4",
-        "resultA": "Výsledek A 4",
-        "resultB": "Výsledek B 4"
+        question: "V jaké Pokémon oblasti bys chtěla žít?",
+        optionA: "🗾 Kanto region",
+        optionB: "🌋 Hoenn region",
+        resultA: "Klasická volba! Birthplace všech dobrodružství, ale pořád tam potkáváš Team Rocket! 😤",
+        resultB: "Tropický ráj! Krásné pláže a vulkány, ale občas tě pronásleduje gigantický Wailord! 🐋"
     },
     {
-        "question": "Pokémon volba 5?",
-        "optionA": "🐾 možnost A 5",
-        "optionB": "⭐ možnost B 5",
-        "resultA": "Výsledek A 5",
-        "resultB": "Výsledek B 5"
+        question: "Jaký Pokémon typ bys chtěla trénovat?",
+        optionA: "👻 Ghost typy",
+        optionB: "🧚‍♀️ Fairy typy",
+        resultA: "Duchová trenérka! Spooky a cool, ale tvoji Pokémoni se občas ztratí v stěnách! 👻",
+        resultB: "Víla trenérka! Roztomilí a magičtí, ale všichni jsou tak cute, že se nemůžeš rozhodnout! ✨"
     },
     {
-        "question": "Pokémon volba 6?",
-        "optionA": "🐾 možnost A 6",
-        "optionB": "⭐ možnost B 6",
-        "resultA": "Výsledek A 6",
-        "resultB": "Výsledek B 6"
+        question: "Jakou Pokémon evoluci bys chtěla vidět?",
+        optionA: "🦋 Caterpie → Butterfree",
+        optionB: "🐲 Dratini → Dragonite",
+        resultA: "Motýlí transformace! Od housenky k nádhernému motýlu, ale trvá to věčnost! 🐛",
+        resultB: "Dračí síla! Z malého dragon do mega beast, ale pak je moc velký na tvůj pokoj! 🏠"
     },
     {
-        "question": "Pokémon volba 7?",
-        "optionA": "🐾 možnost A 7",
-        "optionB": "⭐ možnost B 7",
-        "resultA": "Výsledek A 7",
-        "resultB": "Výsledek B 7"
+        question: "Jaký Pokémon contest bys chtěla vyhrát?",
+        optionA: "💃 Beauty contest",
+        optionB: "💪 Tough contest",
+        resultA: "Krása vítězí! Tvůj Pokémon je nejkrásnější, ale ostatní jsou žárlivý a mrzutý! 👸",
+        resultB: "Síla řeší! Nejsilnější Pokémon v soutěži, ale pak všichni chtějí s tebou bojovat! ⚔️"
     },
     {
-        "question": "Pokémon volba 8?",
-        "optionA": "🐾 možnost A 8",
-        "optionB": "⭐ možnost B 8",
-        "resultA": "Výsledek A 8",
-        "resultB": "Výsledek B 8"
+        question: "Jakou Pokémon gym bys chtěla vést?",
+        optionA: "⚡ Electric gym",
+        optionB: "🌸 Grass gym",
+        resultA: "Elektrická arena! Shocking battles, ale občas ti vypadne elektřina v celém městě! 💡",
+        resultB: "Přírodní gym! Krásné rostliny všude, ale občas se jim příliš daří a přerostou tě! 🌿"
     },
     {
-        "question": "Pokémon volba 9?",
-        "optionA": "🐾 možnost A 9",
-        "optionB": "⭐ možnost B 9",
-        "resultA": "Výsledek A 9",
-        "resultB": "Výsledek B 9"
+        question: "Jakého Pokémon parťáka bys chtěla na cesty?",
+        optionA: "🔥 Growlithe",
+        optionB: "💧 Vaporeon",
+        resultA: "Ohnivý psík! Věrný a ochranářský, ale když se vzruší, zapaluje trávu! 🐕",
+        resultB: "Vodní elegance! Krásný a klidný, ale potřebuje hodně vody a koupelen! 🛁"
     },
     {
-        "question": "Pokémon volba 10?",
-        "optionA": "🐾 možnost A 10",
-        "optionB": "⭐ možnost B 10",
-        "resultA": "Výsledek A 10",
-        "resultB": "Výsledek B 10"
+        question: "Jaký Pokémon item bys chtěla mít?",
+        optionA: "⭐ Master Ball",
+        optionB: "🍓 Poffin case",
+        resultA: "Ultimate Pokéball! Chytíš každého Pokémona, ale máš jen jednu a máš strach ji použít! 😰",
+        resultB: "Sladký case! Tvoji Pokémoni jsou vždy šťastní, ale ty taky pořád jíš sladkosti! 🍰"
     },
     {
-        "question": "Pokémon volba 11?",
-        "optionA": "🐾 možnost A 11",
-        "optionB": "⭐ možnost B 11",
-        "resultA": "Výsledek A 11",
-        "resultB": "Výsledek B 11"
+        question: "Jakou Pokémon schopnost bys chtěla v reálném životě?",
+        optionA: "🚀 Teleport",
+        optionB: "😴 Sleep powder",
+        resultA: "Instant cestování! Žádné dopravní zácpy, ale občas se teleportuješ na špatné místo! 🌀",
+        resultB: "Power nap expert! Všichni kolem tebe usnou, ale někdy usneš taky a probudíš se ve škole! 💤"
     },
     {
-        "question": "Pokémon volba 12?",
-        "optionA": "🐾 možnost A 12",
-        "optionB": "⭐ možnost B 12",
-        "resultA": "Výsledek A 12",
-        "resultB": "Výsledek B 12"
-    },
-    {
-        "question": "Pokémon volba 13?",
-        "optionA": "🐾 možnost A 13",
-        "optionB": "⭐ možnost B 13",
-        "resultA": "Výsledek A 13",
-        "resultB": "Výsledek B 13"
-    },
-    {
-        "question": "Pokémon volba 14?",
-        "optionA": "🐾 možnost A 14",
-        "optionB": "⭐ možnost B 14",
-        "resultA": "Výsledek A 14",
-        "resultB": "Výsledek B 14"
-    },
-    {
-        "question": "Pokémon volba 15?",
-        "optionA": "🐾 možnost A 15",
-        "optionB": "⭐ možnost B 15",
-        "resultA": "Výsledek A 15",
-        "resultB": "Výsledek B 15"
-    },
-    {
-        "question": "Pokémon volba 16?",
-        "optionA": "🐾 možnost A 16",
-        "optionB": "⭐ možnost B 16",
-        "resultA": "Výsledek A 16",
-        "resultB": "Výsledek B 16"
-    },
-    {
-        "question": "Pokémon volba 17?",
-        "optionA": "🐾 možnost A 17",
-        "optionB": "⭐ možnost B 17",
-        "resultA": "Výsledek A 17",
-        "resultB": "Výsledek B 17"
-    },
-    {
-        "question": "Pokémon volba 18?",
-        "optionA": "🐾 možnost A 18",
-        "optionB": "⭐ možnost B 18",
-        "resultA": "Výsledek A 18",
-        "resultB": "Výsledek B 18"
-    },
-    {
-        "question": "Pokémon volba 19?",
-        "optionA": "🐾 možnost A 19",
-        "optionB": "⭐ možnost B 19",
-        "resultA": "Výsledek A 19",
-        "resultB": "Výsledek B 19"
-    },
-    {
-        "question": "Pokémon volba 20?",
-        "optionA": "🐾 možnost A 20",
-        "optionB": "⭐ možnost B 20",
-        "resultA": "Výsledek A 20",
-        "resultB": "Výsledek B 20"
-    },
-    {
-        "question": "Pokémon volba 21?",
-        "optionA": "🐾 možnost A 21",
-        "optionB": "⭐ možnost B 21",
-        "resultA": "Výsledek A 21",
-        "resultB": "Výsledek B 21"
-    },
-    {
-        "question": "Pokémon volba 22?",
-        "optionA": "🐾 možnost A 22",
-        "optionB": "⭐ možnost B 22",
-        "resultA": "Výsledek A 22",
-        "resultB": "Výsledek B 22"
-    },
-    {
-        "question": "Pokémon volba 23?",
-        "optionA": "🐾 možnost A 23",
-        "optionB": "⭐ možnost B 23",
-        "resultA": "Výsledek A 23",
-        "resultB": "Výsledek B 23"
-    },
-    {
-        "question": "Pokémon volba 24?",
-        "optionA": "🐾 možnost A 24",
-        "optionB": "⭐ možnost B 24",
-        "resultA": "Výsledek A 24",
-        "resultB": "Výsledek B 24"
-    },
-    {
-        "question": "Pokémon volba 25?",
-        "optionA": "🐾 možnost A 25",
-        "optionB": "⭐ možnost B 25",
-        "resultA": "Výsledek A 25",
-        "resultB": "Výsledek B 25"
-    },
-    {
-        "question": "Pokémon volba 26?",
-        "optionA": "🐾 možnost A 26",
-        "optionB": "⭐ možnost B 26",
-        "resultA": "Výsledek A 26",
-        "resultB": "Výsledek B 26"
-    },
-    {
-        "question": "Pokémon volba 27?",
-        "optionA": "🐾 možnost A 27",
-        "optionB": "⭐ možnost B 27",
-        "resultA": "Výsledek A 27",
-        "resultB": "Výsledek B 27"
-    },
-    {
-        "question": "Pokémon volba 28?",
-        "optionA": "🐾 možnost A 28",
-        "optionB": "⭐ možnost B 28",
-        "resultA": "Výsledek A 28",
-        "resultB": "Výsledek B 28"
-    },
-    {
-        "question": "Pokémon volba 29?",
-        "optionA": "🐾 možnost A 29",
-        "optionB": "⭐ možnost B 29",
-        "resultA": "Výsledek A 29",
-        "resultB": "Výsledek B 29"
-    },
-    {
-        "question": "Pokémon volba 30?",
-        "optionA": "🐾 možnost A 30",
-        "optionB": "⭐ možnost B 30",
-        "resultA": "Výsledek A 30",
-        "resultB": "Výsledek B 30"
-    },
-    {
-        "question": "Pokémon volba 31?",
-        "optionA": "🐾 možnost A 31",
-        "optionB": "⭐ možnost B 31",
-        "resultA": "Výsledek A 31",
-        "resultB": "Výsledek B 31"
-    },
-    {
-        "question": "Pokémon volba 32?",
-        "optionA": "🐾 možnost A 32",
-        "optionB": "⭐ možnost B 32",
-        "resultA": "Výsledek A 32",
-        "resultB": "Výsledek B 32"
-    },
-    {
-        "question": "Pokémon volba 33?",
-        "optionA": "🐾 možnost A 33",
-        "optionB": "⭐ možnost B 33",
-        "resultA": "Výsledek A 33",
-        "resultB": "Výsledek B 33"
-    },
-    {
-        "question": "Pokémon volba 34?",
-        "optionA": "🐾 možnost A 34",
-        "optionB": "⭐ možnost B 34",
-        "resultA": "Výsledek A 34",
-        "resultB": "Výsledek B 34"
-    },
-    {
-        "question": "Pokémon volba 35?",
-        "optionA": "🐾 možnost A 35",
-        "optionB": "⭐ možnost B 35",
-        "resultA": "Výsledek A 35",
-        "resultB": "Výsledek B 35"
-    },
-    {
-        "question": "Pokémon volba 36?",
-        "optionA": "🐾 možnost A 36",
-        "optionB": "⭐ možnost B 36",
-        "resultA": "Výsledek A 36",
-        "resultB": "Výsledek B 36"
-    },
-    {
-        "question": "Pokémon volba 37?",
-        "optionA": "🐾 možnost A 37",
-        "optionB": "⭐ možnost B 37",
-        "resultA": "Výsledek A 37",
-        "resultB": "Výsledek B 37"
-    },
-    {
-        "question": "Pokémon volba 38?",
-        "optionA": "🐾 možnost A 38",
-        "optionB": "⭐ možnost B 38",
-        "resultA": "Výsledek A 38",
-        "resultB": "Výsledek B 38"
-    },
-    {
-        "question": "Pokémon volba 39?",
-        "optionA": "🐾 možnost A 39",
-        "optionB": "⭐ možnost B 39",
-        "resultA": "Výsledek A 39",
-        "resultB": "Výsledek B 39"
-    },
-    {
-        "question": "Pokémon volba 40?",
-        "optionA": "🐾 možnost A 40",
-        "optionB": "⭐ možnost B 40",
-        "resultA": "Výsledek A 40",
-        "resultB": "Výsledek B 40"
-    },
-    {
-        "question": "Pokémon volba 41?",
-        "optionA": "🐾 možnost A 41",
-        "optionB": "⭐ možnost B 41",
-        "resultA": "Výsledek A 41",
-        "resultB": "Výsledek B 41"
-    },
-    {
-        "question": "Pokémon volba 42?",
-        "optionA": "🐾 možnost A 42",
-        "optionB": "⭐ možnost B 42",
-        "resultA": "Výsledek A 42",
-        "resultB": "Výsledek B 42"
-    },
-    {
-        "question": "Pokémon volba 43?",
-        "optionA": "🐾 možnost A 43",
-        "optionB": "⭐ možnost B 43",
-        "resultA": "Výsledek A 43",
-        "resultB": "Výsledek B 43"
-    },
-    {
-        "question": "Pokémon volba 44?",
-        "optionA": "🐾 možnost A 44",
-        "optionB": "⭐ možnost B 44",
-        "resultA": "Výsledek A 44",
-        "resultB": "Výsledek B 44"
-    },
-    {
-        "question": "Pokémon volba 45?",
-        "optionA": "🐾 možnost A 45",
-        "optionB": "⭐ možnost B 45",
-        "resultA": "Výsledek A 45",
-        "resultB": "Výsledek B 45"
-    },
-    {
-        "question": "Pokémon volba 46?",
-        "optionA": "🐾 možnost A 46",
-        "optionB": "⭐ možnost B 46",
-        "resultA": "Výsledek A 46",
-        "resultB": "Výsledek B 46"
-    },
-    {
-        "question": "Pokémon volba 47?",
-        "optionA": "🐾 možnost A 47",
-        "optionB": "⭐ možnost B 47",
-        "resultA": "Výsledek A 47",
-        "resultB": "Výsledek B 47"
-    },
-    {
-        "question": "Pokémon volba 48?",
-        "optionA": "🐾 možnost A 48",
-        "optionB": "⭐ možnost B 48",
-        "resultA": "Výsledek A 48",
-        "resultB": "Výsledek B 48"
-    },
-    {
-        "question": "Pokémon volba 49?",
-        "optionA": "🐾 možnost A 49",
-        "optionB": "⭐ možnost B 49",
-        "resultA": "Výsledek A 49",
-        "resultB": "Výsledek B 49"
-    },
-    {
-        "question": "Pokémon volba 50?",
-        "optionA": "🐾 možnost A 50",
-        "optionB": "⭐ možnost B 50",
-        "resultA": "Výsledek A 50",
-        "resultB": "Výsledek B 50"
+        question: "Jaký Pokémon festival bys chtěla navštívit?",
+        optionA: "🎆 Pokémon fireworks festival",
+        optionB: "🍃 Grass festival",
+        resultA: "Ohňostroj extravaganza! Úžasné světelné show s Fire types, ale občas něco chytne! 🎇",
+        resultB: "Zelený ráj! Peaceful a relaxing, ale někdy se ztratíš v příliš hustém lese! 🌳"
     }
 ];
 
 const robloxCards = [
     {
-        "question": "Roblox volba 1?",
-        "optionA": "🎮 možnost A 1",
-        "optionB": "🏗️ možnost B 1",
-        "resultA": "Výsledek A 1",
-        "resultB": "Výsledek B 1"
+        question: "Jakou Roblox hru bys chtěla hrát?",
+        optionA: "🏃‍♀️ Obby parkour",
+        optionB: "🏠 Adopt Me!",
+        resultA: "Parkour queen! Překonáváš každou překážku, ale občas spadneš a musíš začít znovu! 😅",
+        resultB: "Pet collecting! Máš nejroztomilejší mazlíčky, ale nemůžeš se rozhodnout, kterého si necháš! 🐾"
     },
     {
-        "question": "Roblox volba 2?",
-        "optionA": "🎮 možnost A 2",
-        "optionB": "🏗️ možnost B 2",
-        "resultA": "Výsledek A 2",
-        "resultB": "Výsledek B 2"
+        question: "Jakou Roblox avatara bys chtěla mít?",
+        optionA: "👑 Luxusní s Robux oblečením",
+        optionB: "🎨 Kreativní vlastní design",
+        resultA: "Premium style! Vypadáš jako milionářka, ale utratila jsi všechny kapesné za virtuální oblečení! 💎",
+        resultB: "Artistic soul! Jedinečný look, ale někdy vypadáš tak divně, že tě lidé nedokážou identifikovat! 🎭"
     },
     {
-        "question": "Roblox volba 3?",
-        "optionA": "🎮 možnost A 3",
-        "optionB": "🏗️ možnost B 3",
-        "resultA": "Výsledek A 3",
-        "resultB": "Výsledek B 3"
+        question: "Jaký Roblox gamepass bys chtěla mít?",
+        optionA: "🚀 VIP přístup",
+        optionB: "💰 Double coins",
+        resultA: "VIP treatment! Přístup všude first, ale ostatní hráči jsou na tebe žárliví! 👸",
+        resultB: "Money maker! Coins tečou jako voda, ale pak si nemáš co koupit, protože máš všechno! 🤑"
     },
     {
-        "question": "Roblox volba 4?",
-        "optionA": "🎮 možnost A 4",
-        "optionB": "🏗️ možnost B 4",
-        "resultA": "Výsledek A 4",
-        "resultB": "Výsledek B 4"
+        question: "Jakou Roblox výzvu bys chtěla splnit?",
+        optionA: "🏆 Vyhrát všechny trofeje",
+        optionB: "👫 Najít nejlepší přátele",
+        resultA: "Trophy hunter! Sbírka je imprézní, ale trávíš tolik času hraním, že zapomínáš jíst! 🥇",
+        resultB: "Social butterfly! Úžasní kamarádi všude, ale někdy jsou moc hlučný v chatu! 💬"
     },
     {
-        "question": "Roblox volba 5?",
-        "optionA": "🎮 možnost A 5",
-        "optionB": "🏗️ možnost B 5",
-        "resultA": "Výsledek A 5",
-        "resultB": "Výsledek B 5"
+        question: "Jaký Roblox simulator bys chtěla hrát?",
+        optionA: "🍕 Pizza simulator",
+        optionB: "🌟 Star simulator",
+        resultA: "Pizza master! Děláš nejlepší pizzy v Robloxu, ale pak chceš pizza i v reálném životě! 🍕",
+        resultB: "Cosmic collector! Sbíráš hvězdy a planety, ale někdy se ztratíš v galaxii! 🌌"
     },
     {
-        "question": "Roblox volba 6?",
-        "optionA": "🎮 možnost A 6",
-        "optionB": "🏗️ možnost B 6",
-        "resultA": "Výsledek A 6",
-        "resultB": "Výsledek B 6"
+        question: "Jakou Roblox roli bys chtěla mít?",
+        optionA: "👩‍🏫 Učitelka v school RP",
+        optionB: "👮‍♀️ Policistka v city RP",
+        resultA: "Virtuální učitelka! Vzdělávás malé Robloxáky, ale někteří jsou rebels a neutíkají z hodin! 📚",
+        resultB: "Cyber policistka! Chráníš město před zločinai, ale někteří \"zločinci\" jsou tak roztomilí! 🚔"
     },
     {
-        "question": "Roblox volba 7?",
-        "optionA": "🎮 možnost A 7",
-        "optionB": "🏗️ možnost B 7",
-        "resultA": "Výsledek A 7",
-        "resultB": "Výsledek B 7"
+        question: "Jaký Roblox mode bys chtěla vyzkoušet?",
+        optionA: "🧟‍♀️ Zombie apocalypse",
+        optionB: "🏰 Medieval kingdom",
+        resultA: "Zombie fighter! Adrenalinová jízda, ale pak se bojíš i vlastního stínu! 🧟‍♀️",
+        resultB: "Medieval princess! Žiješ jako ve fairy tale, ale WiFi ve středověku je terrible! 📶"
     },
     {
-        "question": "Roblox volba 8?",
-        "optionA": "🎮 možnost A 8",
-        "optionB": "🏗️ možnost B 8",
-        "resultA": "Výsledek A 8",
-        "resultB": "Výsledek B 8"
+        question: "Jaký Roblox event bys chtěla navštívit?",
+        optionA: "🎃 Halloween event",
+        optionB: "❄️ Winter event",
+        resultA: "Spooky celebration! Costume soutěže a candy, ale některé kostýmy jsou až moc scary! 🕷️",
+        resultB: "Winter wonderland! Sněhové království a gifts, ale všichni chtějí tu same limited edition item! ⛄"
     },
     {
-        "question": "Roblox volba 9?",
-        "optionA": "🎮 možnost A 9",
-        "optionB": "🏗️ možnost B 9",
-        "resultA": "Výsledek A 9",
-        "resultB": "Výsledek B 9"
+        question: "Jaký Roblox building bys chtěla postavit?",
+        optionA: "🏝️ Tropický resort",
+        optionB: "🎢 Zábavní park",
+        resultA: "Paradise island! Relaxation zone, ale návštěvníci ti pořád žádají więcej cocktails! 🍹",
+        resultB: "Theme park empire! Everybody loves fun rides, ale občas se nějaká atrakce pokazí! 🎪"
     },
     {
-        "question": "Roblox volba 10?",
-        "optionA": "🎮 možnost A 10",
-        "optionB": "🏗️ možnost B 10",
-        "resultA": "Výsledek A 10",
-        "resultB": "Výsledek B 10"
+        question: "Jaký Roblox achievement bys chtěla unlock?",
+        optionA: "⭐ 1000 days played",
+        optionB: "👥 1000 friends",
+        resultA: "Veteran player! Znáš každý easter egg, ale realizuješ, kolik času jsi strávila online! ⏰",
+        resultB: "Social butterfly! Friends list je mega long, ale někdy se ztratíš v tolika conversation! 📱"
     },
     {
-        "question": "Roblox volba 11?",
-        "optionA": "🎮 možnost A 11",
-        "optionB": "🏗️ možnost B 11",
-        "resultA": "Výsledek A 11",
-        "resultB": "Výsledek B 11"
+        question: "Jakou Roblox group bys chtěla založit?",
+        optionA: "🎨 Art a design group",
+        optionB: "🎮 Gaming tournament group",
+        resultA: "Creative collective! Všichni vytváří amazing art, ale někdy jsou příliš perfectionist! 🖌️",
+        resultB: "Competitive gaming! Tournaments každý týden, ale někteří hráči jsou sore losers! 🏅"
     },
     {
-        "question": "Roblox volba 12?",
-        "optionA": "🎮 možnost A 12",
-        "optionB": "🏗️ možnost B 12",
-        "resultA": "Výsledek A 12",
-        "resultB": "Výsledek B 12"
-    },
-    {
-        "question": "Roblox volba 13?",
-        "optionA": "🎮 možnost A 13",
-        "optionB": "🏗️ možnost B 13",
-        "resultA": "Výsledek A 13",
-        "resultB": "Výsledek B 13"
-    },
-    {
-        "question": "Roblox volba 14?",
-        "optionA": "🎮 možnost A 14",
-        "optionB": "🏗️ možnost B 14",
-        "resultA": "Výsledek A 14",
-        "resultB": "Výsledek B 14"
-    },
-    {
-        "question": "Roblox volba 15?",
-        "optionA": "🎮 možnost A 15",
-        "optionB": "🏗️ možnost B 15",
-        "resultA": "Výsledek A 15",
-        "resultB": "Výsledek B 15"
-    },
-    {
-        "question": "Roblox volba 16?",
-        "optionA": "🎮 možnost A 16",
-        "optionB": "🏗️ možnost B 16",
-        "resultA": "Výsledek A 16",
-        "resultB": "Výsledek B 16"
-    },
-    {
-        "question": "Roblox volba 17?",
-        "optionA": "🎮 možnost A 17",
-        "optionB": "🏗️ možnost B 17",
-        "resultA": "Výsledek A 17",
-        "resultB": "Výsledek B 17"
-    },
-    {
-        "question": "Roblox volba 18?",
-        "optionA": "🎮 možnost A 18",
-        "optionB": "🏗️ možnost B 18",
-        "resultA": "Výsledek A 18",
-        "resultB": "Výsledek B 18"
-    },
-    {
-        "question": "Roblox volba 19?",
-        "optionA": "🎮 možnost A 19",
-        "optionB": "🏗️ možnost B 19",
-        "resultA": "Výsledek A 19",
-        "resultB": "Výsledek B 19"
-    },
-    {
-        "question": "Roblox volba 20?",
-        "optionA": "🎮 možnost A 20",
-        "optionB": "🏗️ možnost B 20",
-        "resultA": "Výsledek A 20",
-        "resultB": "Výsledek B 20"
-    },
-    {
-        "question": "Roblox volba 21?",
-        "optionA": "🎮 možnost A 21",
-        "optionB": "🏗️ možnost B 21",
-        "resultA": "Výsledek A 21",
-        "resultB": "Výsledek B 21"
-    },
-    {
-        "question": "Roblox volba 22?",
-        "optionA": "🎮 možnost A 22",
-        "optionB": "🏗️ možnost B 22",
-        "resultA": "Výsledek A 22",
-        "resultB": "Výsledek B 22"
-    },
-    {
-        "question": "Roblox volba 23?",
-        "optionA": "🎮 možnost A 23",
-        "optionB": "🏗️ možnost B 23",
-        "resultA": "Výsledek A 23",
-        "resultB": "Výsledek B 23"
-    },
-    {
-        "question": "Roblox volba 24?",
-        "optionA": "🎮 možnost A 24",
-        "optionB": "🏗️ možnost B 24",
-        "resultA": "Výsledek A 24",
-        "resultB": "Výsledek B 24"
-    },
-    {
-        "question": "Roblox volba 25?",
-        "optionA": "🎮 možnost A 25",
-        "optionB": "🏗️ možnost B 25",
-        "resultA": "Výsledek A 25",
-        "resultB": "Výsledek B 25"
-    },
-    {
-        "question": "Roblox volba 26?",
-        "optionA": "🎮 možnost A 26",
-        "optionB": "🏗️ možnost B 26",
-        "resultA": "Výsledek A 26",
-        "resultB": "Výsledek B 26"
-    },
-    {
-        "question": "Roblox volba 27?",
-        "optionA": "🎮 možnost A 27",
-        "optionB": "🏗️ možnost B 27",
-        "resultA": "Výsledek A 27",
-        "resultB": "Výsledek B 27"
-    },
-    {
-        "question": "Roblox volba 28?",
-        "optionA": "🎮 možnost A 28",
-        "optionB": "🏗️ možnost B 28",
-        "resultA": "Výsledek A 28",
-        "resultB": "Výsledek B 28"
-    },
-    {
-        "question": "Roblox volba 29?",
-        "optionA": "🎮 možnost A 29",
-        "optionB": "🏗️ možnost B 29",
-        "resultA": "Výsledek A 29",
-        "resultB": "Výsledek B 29"
-    },
-    {
-        "question": "Roblox volba 30?",
-        "optionA": "🎮 možnost A 30",
-        "optionB": "🏗️ možnost B 30",
-        "resultA": "Výsledek A 30",
-        "resultB": "Výsledek B 30"
-    },
-    {
-        "question": "Roblox volba 31?",
-        "optionA": "🎮 možnost A 31",
-        "optionB": "🏗️ možnost B 31",
-        "resultA": "Výsledek A 31",
-        "resultB": "Výsledek B 31"
-    },
-    {
-        "question": "Roblox volba 32?",
-        "optionA": "🎮 možnost A 32",
-        "optionB": "🏗️ možnost B 32",
-        "resultA": "Výsledek A 32",
-        "resultB": "Výsledek B 32"
-    },
-    {
-        "question": "Roblox volba 33?",
-        "optionA": "🎮 možnost A 33",
-        "optionB": "🏗️ možnost B 33",
-        "resultA": "Výsledek A 33",
-        "resultB": "Výsledek B 33"
-    },
-    {
-        "question": "Roblox volba 34?",
-        "optionA": "🎮 možnost A 34",
-        "optionB": "🏗️ možnost B 34",
-        "resultA": "Výsledek A 34",
-        "resultB": "Výsledek B 34"
-    },
-    {
-        "question": "Roblox volba 35?",
-        "optionA": "🎮 možnost A 35",
-        "optionB": "🏗️ možnost B 35",
-        "resultA": "Výsledek A 35",
-        "resultB": "Výsledek B 35"
-    },
-    {
-        "question": "Roblox volba 36?",
-        "optionA": "🎮 možnost A 36",
-        "optionB": "🏗️ možnost B 36",
-        "resultA": "Výsledek A 36",
-        "resultB": "Výsledek B 36"
-    },
-    {
-        "question": "Roblox volba 37?",
-        "optionA": "🎮 možnost A 37",
-        "optionB": "🏗️ možnost B 37",
-        "resultA": "Výsledek A 37",
-        "resultB": "Výsledek B 37"
-    },
-    {
-        "question": "Roblox volba 38?",
-        "optionA": "🎮 možnost A 38",
-        "optionB": "🏗️ možnost B 38",
-        "resultA": "Výsledek A 38",
-        "resultB": "Výsledek B 38"
-    },
-    {
-        "question": "Roblox volba 39?",
-        "optionA": "🎮 možnost A 39",
-        "optionB": "🏗️ možnost B 39",
-        "resultA": "Výsledek A 39",
-        "resultB": "Výsledek B 39"
-    },
-    {
-        "question": "Roblox volba 40?",
-        "optionA": "🎮 možnost A 40",
-        "optionB": "🏗️ možnost B 40",
-        "resultA": "Výsledek A 40",
-        "resultB": "Výsledek B 40"
-    },
-    {
-        "question": "Roblox volba 41?",
-        "optionA": "🎮 možnost A 41",
-        "optionB": "🏗️ možnost B 41",
-        "resultA": "Výsledek A 41",
-        "resultB": "Výsledek B 41"
-    },
-    {
-        "question": "Roblox volba 42?",
-        "optionA": "🎮 možnost A 42",
-        "optionB": "🏗️ možnost B 42",
-        "resultA": "Výsledek A 42",
-        "resultB": "Výsledek B 42"
-    },
-    {
-        "question": "Roblox volba 43?",
-        "optionA": "🎮 možnost A 43",
-        "optionB": "🏗️ možnost B 43",
-        "resultA": "Výsledek A 43",
-        "resultB": "Výsledek B 43"
-    },
-    {
-        "question": "Roblox volba 44?",
-        "optionA": "🎮 možnost A 44",
-        "optionB": "🏗️ možnost B 44",
-        "resultA": "Výsledek A 44",
-        "resultB": "Výsledek B 44"
-    },
-    {
-        "question": "Roblox volba 45?",
-        "optionA": "🎮 možnost A 45",
-        "optionB": "🏗️ možnost B 45",
-        "resultA": "Výsledek A 45",
-        "resultB": "Výsledek B 45"
-    },
-    {
-        "question": "Roblox volba 46?",
-        "optionA": "🎮 možnost A 46",
-        "optionB": "🏗️ možnost B 46",
-        "resultA": "Výsledek A 46",
-        "resultB": "Výsledek B 46"
-    },
-    {
-        "question": "Roblox volba 47?",
-        "optionA": "🎮 možnost A 47",
-        "optionB": "🏗️ možnost B 47",
-        "resultA": "Výsledek A 47",
-        "resultB": "Výsledek B 47"
-    },
-    {
-        "question": "Roblox volba 48?",
-        "optionA": "🎮 možnost A 48",
-        "optionB": "🏗️ možnost B 48",
-        "resultA": "Výsledek A 48",
-        "resultB": "Výsledek B 48"
-    },
-    {
-        "question": "Roblox volba 49?",
-        "optionA": "🎮 možnost A 49",
-        "optionB": "🏗️ možnost B 49",
-        "resultA": "Výsledek A 49",
-        "resultB": "Výsledek B 49"
-    },
-    {
-        "question": "Roblox volba 50?",
-        "optionA": "🎮 možnost A 50",
-        "optionB": "🏗️ možnost B 50",
-        "resultA": "Výsledek A 50",
-        "resultB": "Výsledek B 50"
+        question: "Jaký Roblox lifestyle bys chtěla žít?",
+        optionA: "💎 Rich luxury life",
+        optionB: "🌈 Creative artistic life",
+        resultA: "Diamond lifestyle! Všechno gold a glitter, ale musíš tvrdě farmit na každý Robux! 💰",
+        resultB: "Artistic soul! Creative freedom everywhere, ale někdy jsi tak absorbed v art, že zapomínáš real world! 🎪"
     }
 ];
-
