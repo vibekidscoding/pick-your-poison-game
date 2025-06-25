@@ -5,15 +5,15 @@ All text is localized into Czech.
 
 ## Features
 
-- **Family-friendly questions** – over 25 unique cards covering topics from animals to video games.
+- **Family-friendly questions** – přes 250 karet rozdělených do témat jako Minecraft, Harry Potter, Toca World, Pokémon a Roblox.
 - **Simple UI** – bright colors, large buttons and playful animations.
-- **No dependencies** – everything is in a single `index.html` file that can be opened locally or hosted using GitHub Pages.
+- **No dependencies** – hra funguje jen s `index.html` a `cards.js`, takže ji otevřete přímo v prohlížeči.
 
 ## Running the game
 
 1. Clone this repository or download the files.
 2. Open `index.html` in your favorite web browser.
-3. Click the **Pojďme hrát!** button and start choosing between the two options on each card.
+3. Zvolte téma nebo mix otázek a klikněte na **Pojďme hrát!**.
 
 Each round shows a new question with two choices. After you select one, you'll see the result text describing what happens. Click **Další výzva!** to move to the next round.
 
