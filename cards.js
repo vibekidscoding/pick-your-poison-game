@@ -963,6 +963,139 @@ const pokemonCards = [
         optionB: "🍃 Grass festival",
         resultA: "Ohňostroj extravaganza! Úžasné světelné show s Fire types, ale občas něco chytne! 🎇",
         resultB: "Zelený ráj! Peaceful a relaxing, ale někdy se ztratíš v příliš hustém lese! 🌳"
+    },
+    {
+        question: "Kdybys mohla být jakýkoli Pokémon, který bys byla?",
+        optionA: "🦋 Butterfree létající nad loukami",
+        optionB: "⚡ Pikachu běhající po světě",
+        resultA: "Motýlí svoboda! Krásně lítáš, ale v zimě musíš hibernovat! 😴",
+        resultB: "Elektrická hvězda! Všichni tě milují, ale musíš být pořád roztomilá! 😊"
+    },
+    {
+        question: "Jak bys nejradši chytala Pokémony?",
+        optionA: "🎣 Klidným přesvědčováním",
+        optionB: "⚔️ Epicými souboji",
+        resultA: "Pokémon šeptačka! Všichni k tobě přijdou sami, ale trvá to věčnost! ⏰",
+        resultB: "Bojovná trenérka! Rychle a efektně, ale někdy poškodíš Pokémona! 🤕"
+    },
+    {
+        question: "Jaký Pokémon den by byl nejlepší?",
+        optionA: "🌅 Ráno s Pokémony v přírodě",
+        optionB: "🌙 Noc hledání nočních Pokémonů",
+        resultA: "Ranní dobrodružka! Krásné svítání a zpěv Pokémonů, ale musíš vstávat v 5! 🌄",
+        resultB: "Noční lovkyně! Najdeš vzácné Pokémony, ale rodiče se bojí! 😰"
+    },
+    {
+        question: "Co bys nejradši dělala se svým partnerským Pokémonem?",
+        optionA: "🏃‍♀️ Cestovala po celém světě",
+        optionB: "🏠 Žila klidný život doma",
+        resultA: "Světová cestovatělka! Úžasná dobrodružství, ale občas se ztratíte! 🗺️",
+        resultB: "Domácí pohoda! Klid a bezpečí, ale život je trochu nudný! 😐"
+    },
+    {
+        question: "Jaké Pokémon jídlo bys nejradši zkusila?",
+        optionA: "🍯 Miltank mléko s Pecha bobulemi",
+        optionB: "🥘 Slowpoke ocas kari",
+        resultA: "Zdravé mléčko! Výživné a zdravé, ale chutná trochu divně! 🥛",
+        resultB: "Exotické kari! Úžasná chuť, ale je to trochu weird jíst Pokémona! 😅"
+    },
+    {
+        question: "Kde bys nejradši založila Pokémon centrum?",
+        optionA: "🏔️ Vysoko v horách",
+        optionB: "🏖️ Na tropické pláži",
+        resultA: "Horské centrum! Čistý vzduch a klid, ale zásobování je problém! 📦",
+        resultB: "Plážová klinika! Krásné prostředí, ale písek je všude! 🏖️"
+    },
+    {
+        question: "Jakou Pokémon schopnost bys použila ve škole?",
+        optionA: "🧠 Psychic na přemístění věcí",
+        optionB: "💨 Quick Attack na rychlý pohyb",
+        resultA: "Telekinetická školačka! Nemusíš vstávat z lavice, ale učitelé si myslí, že podvádíš! 🪄",
+        resultB: "Rychlostní studentka! Všude dorazíš první, ale občas narazíš do zdi! 💥"
+    },
+    {
+        question: "Jakého Pokémon trenéra bys nejradši porazila?",
+        optionA: "👑 Champion regionu",
+        optionB: "🚀 Team Rocket",
+        resultA: "Šampionka šampionek! Nejlepší trenérka světa, ale pak už nemáš koho vyzvat! 🏆",
+        resultB: "Rocket hunter! Zachraňuješ Pokémony, ale oni se pořád vracejí! 🔄"
+    },
+    {
+        question: "Co bys dělala, kdyby tvůj Pokémon nchtěl poslouchat?",
+        optionA: "🍬 Namlouvala mu sladkostmi",
+        optionB: "🎮 Hrála si s ním hry",
+        resultA: "Cukrová motivace! Pokémon tě poslouchá, ale pak má cukrovku! 🍭",
+        resultB: "Herní trenérka! Zábavné tréninky, ale někdy zapomínáte na cíl! 🎯"
+    },
+    {
+        question: "Jaký Pokémon předmět bys nejradši vynalezla?",
+        optionA: "📱 Pokédex s AI asistentem",
+        optionB: "👟 Boty pro chození po vodě",
+        resultA: "Smart Pokédex! Ví všechno o Pokémonech, ale je to trochu namyšlený! 🤖",
+        resultB: "Vodní boty! Můžeš chodit po vodě, ale někdy se pokazí a potopíš se! 🌊"
+    },
+    {
+        question: "Kde bys nejradši potkala legendárního Pokémona?",
+        optionA: "🏔️ Na vrcholu nejvyšší hory",
+        optionB: "🌊 V hlubinách oceánu",
+        resultA: "Horská legenda! Epické setkání na vrcholu, ale výstup tě skoro zabil! 🥵",
+        resultB: "Oceánská mystika! Nádherné setkání pod vodou, ale máš problém s dýcháním! 🫧"
+    },
+    {
+        question: "Jaký Pokémon battle style by byl tvůj?",
+        optionA: "🛡️ Obranná strategie",
+        optionB: "⚡ Rychlé útoky",
+        resultA: "Tankový styl! Pokémoni ti vydrží navěky, ale souboje trvají hodiny! ⏳",
+        resultB: "Blitzkrieg trenérka! Rychlé a efektní vítězství, ale když to nevyjde, prohraješ! 💨"
+    },
+    {
+        question: "Co bys udělala s Team Rocket, kdyby tě přepadli?",
+        optionA: "🎭 Předstírala, že ses k nim chceš přidat",
+        optionB: "⚔️ Okamžitě je vyzvala na souboj",
+        resultA: "Undercover agentka! Geniální plán, ale někdy zapomeneš, že předstíráš! 🕵️‍♀️",
+        resultB: "Přímý útok! Rychlé řešení, ale oni mají obvykle nějaký trik! 🪤"
+    },
+    {
+        question: "Jaké Pokémon evoluci bys nejradši viděla?",
+        optionA: "🐛 Caterpie → Butterfree",
+        optionB: "🗿 Geodude → Golem",
+        resultA: "Motýlí transformace! Nádherná proměna, ale trvá to dlouho! 🦋",
+        resultB: "Kamenná evoluce! Impozantní síla, ale pak se tvůj Pokémon nevejde do domu! 🏠"
+    },
+    {
+        question: "Jaký by byl tvůj Pokémon research projekt?",
+        optionA: "🔬 Studium Pokémon DNA",
+        optionB: "🎵 Pokémon komunikace a řeč",
+        resultA: "Vědecká průkopnice! Objevíš úžasné věci, ale laboratoř vypadá jak po výbuchu! 💥",
+        resultB: "Pokémon lingvistka! Rozumíš všem Pokémonům, ale pak už nemluvíš normálně! 🗣️"
+    },
+    {
+        question: "Kde bys nejradši měla svou Pokémon farmu?",
+        optionA: "🌾 Na rozsáhlých loukách",
+        optionB: "🌺 V tropické džungli",
+        resultA: "Loukový ráj! Pokémoni mají spoustu místa, ale občas se ztratí! 🐄",
+        resultB: "Džunglový domov! Exotické prostředí, ale každý den objevíš nového divoký Pokémona! 🌿"
+    },
+    {
+        question: "Jaký Pokémon turnaj bys nejradši vyhrála?",
+        optionA: "🏆 Oficiální Pokémon ligu",
+        optionB: "🎪 Pokémon talent show",
+        resultA: "Liga šampionka! Oficiální uznání, ale pak musíš bránit titul! 👑",
+        resultB: "Talent hvězda! Tvoji Pokémoni jsou umělci, ale někdy zapomínají výkon! 🎭"
+    },
+    {
+        question: "Co bys nejradši našla v opuštěné Pokémon laboratoři?",
+        optionA: "🧪 Vzácný experimentální Pokémon",
+        optionB: "📚 Ztracené vědecké poznámky",
+        resultA: "Experimentální objevy! Unikátní Pokémon, ale možná je trochu nestabilní! ⚗️",
+        resultB: "Vědecké poklady! Cenné informace, ale některé experimenty jsou nebezpečné! ⚠️"
+    },
+    {
+        question: "Jaký život bys nejradši žila s Pokémony?",
+        optionA: "🏘️ V malém městečku jako gym leader",
+        optionB: "🚀 Jako nomádka cestující světem",
+        resultA: "Městská vůdkyně! Všichni tě respektují, ale každý den máš výzvy! 🏛️",
+        resultB: "Svobodná cestovatelka! Nekonečná dobrodružství, ale občas jsi hrozně osamělá! 🌍"
     }
 ];
 
@@ -1050,5 +1183,145 @@ const robloxCards = [
         optionB: "🌈 Creative artistic life",
         resultA: "Diamond lifestyle! Všechno gold a glitter, ale musíš tvrdě farmit na každý Robux! 💰",
         resultB: "Artistic soul! Creative freedom everywhere, ale někdy jsi tak absorbed v art, že zapomínáš real world! 🎪"
+    },
+    {
+        question: "Jakou Roblox trading strategii bys používala?",
+        optionA: "📈 Investovat do limiteds",
+        optionB: "🔄 Rychlé trade flipping",
+        resultA: "Investment guru! Portfolio roste, ale někdy čekáš roky, než se item zhodnotí! 📊",
+        resultB: "Trade master! Rychlé zisky každý den, ale občas uděláš bad deal pod tlakem! ⚡"
+    },
+    {
+        question: "Jaký Roblox stream bys chtěla dělat?",
+        optionA: "🎥 Gaming livestream",
+        optionB: "🎪 Fashion show stream",
+        resultA: "Pro gamer! Chat tě miluje za skills, ale někdy musíš hrát hry, co tě nebaví! 🎮",
+        resultB: "Fashion icon! Všichni chtějí tvoje outfit tips, ale modní trendy se mění každý týden! 👗"
+    },
+    {
+        question: "Jaký Roblox skill bys chtěla mít?",
+        optionA: "⚡ Speed running rekord",
+        optionB: "🏗️ Professional building",
+        resultA: "Speed demon! Dokončíš každou hru v rekordním čase, ale pak nemáš čas si ji užít! 🏃‍♀️",
+        resultB: "Master builder! Tvoje stavby jsou incredible, ale trvá ti věčnost dokončit projekt! 🔨"
+    },
+    {
+        question: "Jaké Roblox pets bys chtěla mít?",
+        optionA: "🐉 Mythical legendary pets",
+        optionB: "🐱 Armádu cute kočiček",
+        resultA: "Dragon tamer! Nejspešší pets ever, ale všichni chtějí trade a nepustí tě na pokoji! 🔥",
+        resultB: "Cat lady! Roztomilá kočičí invaze, ale občas se mezi nimi ztratíš! 😸"
+    },
+    {
+        question: "Jaký Roblox transport bys používala?",
+        optionA: "🚁 VIP helicopter",
+        optionB: "🦄 Létající unicorn",
+        resultA: "Sky captain! Rychlé cestování všude, ale fuel je mega expensive! 🚁",
+        resultB: "Magical rider! Rainbow trails everywhere, ale unicorn má vlastní hlavu a létá kam chce! 🌈"
+    },
+    {
+        question: "Jaký Roblox contest bys chtěla vyhrát?",
+        optionA: "🏆 Building competition",
+        optionB: "🎤 Talent show contest",
+        resultA: "Architecture champion! Trophy cabinet je full, ale competitors ti pořád kopírují style! 🏗️",
+        resultB: "Stage star! Spotlight je tvoje passion, ale stage fright někdy zabíjí performance! 🌟"
+    },
+    {
+        question: "Jaké Roblox místo bys chtěla vlastnit?",
+        optionA: "🏖️ Privátní beach resort",
+        optionB: "🎮 Gaming arcade centrum",
+        resultA: "Beach boss! Paradise vibes denně, ale písek se dostává do počítače! 🏄‍♀️",
+        resultB: "Arcade owner! Všechny top games na jednom místě, ale hluk je sometimes overwhelming! 🕹️"
+    },
+    {
+        question: "Jakou Roblox superschopnost bys chtěla?",
+        optionA: "🚀 Teleportation anywhere",
+        optionB: "🎭 Perfect roleplay acting",
+        resultA: "Teleport master! Instant travel všude, ale občas se teleportuješ do wrong place! ⚡",
+        resultB: "Acting legend! Každá role je believable, ale občas zapomeneš, kdo opravdu jsi! 🎪"
+    },
+    {
+        question: "Jaký Roblox team bys chtěla vést?",
+        optionA: "⚔️ Elite PvP squad",
+        optionB: "🎨 Creative building crew",
+        resultA: "Warrior leader! Vyhráváš každou battle, ale team drama is sometimes too much! 🛡️",
+        resultB: "Creative director! Amazing projects vznikají, ale každý má jiný artistic vision! 🖼️"
+    },
+    {
+        question: "Jaký Roblox mystery bys chtěla vyřešit?",
+        optionA: "🕵️‍♀️ Murder mystery case",
+        optionB: "👻 Haunted mansion secrets",
+        resultA: "Detective master! Cases are solved quickly, ale někdy suspects jsou too scary! 🔍",
+        resultB: "Ghost hunter! Paranormal activity je exciting, ale někdy se bojíš vlastního shadow! 🕯️"
+    },
+    {
+        question: "Jakou Roblox collaboraci bys chtěla udělat?",
+        optionA: "🌟 S famous YouTuber",
+        optionB: "🎯 S top developer",
+        resultA: "Internet celebrity! Millions of views, ale pressure být funny all the time je exhausting! 📹",
+        resultB: "Developer partnership! Amazing games vznikají, ale coding je sometimes over your head! 💻"
+    },
+    {
+        question: "Jaký Roblox upgrade bys chtěla pro avatar?",
+        optionA: "✨ Glow effect permanent",
+        optionB: "🌪️ Special walk animation",
+        resultA: "Glowing goddess! Everybody notices you, ale někdy je glow too bright pro oči! 💡",
+        resultB: "Style walker! Unique movement všude, ale někdy dance moves jsou inappropriate! 🕺"
+    },
+    {
+        question: "Jakou Roblox memory bys chtěla zachytit?",
+        optionA: "📸 Epic victory moment",
+        optionB: "👫 Perfect friend hangout",
+        resultA: "Victory photographer! Všechny wins jsou documented, ale někdy jsi busy s fotěním místo hraní! 📱",
+        resultB: "Friendship documenter! Beautiful memories everywhere, ale sometimes you live více through camera než reality! 💝"
+    },
+    {
+        question: "Jaké Roblox collection bys chtěla mít?",
+        optionA: "👑 Všechny crown accessories",
+        optionB: "🎮 Každý gamepass ever",
+        resultA: "Crown collector! Royal look always, ale crown storage je chaotic mess! 👸",
+        resultB: "Gamepass hoarder! VIP everywhere, ale nikdy nevíš, which perks máš kde! 🎫"
+    },
+    {
+        question: "Jaký Roblox seasonal event bys nikdy nečekala?",
+        optionA: "🦃 Thanksgiving turkey hunt",
+        optionB: "🌸 Cherry blossom festival",
+        resultA: "Turkey hunter! Unexpected pero fun, ale všichni vegetariáni jsou upset! 🍗",
+        resultB: "Blossom photographer! Pink paradise everywhere, ale seasonal allergy symptoms online! 🌺"
+    },
+    {
+        question: "Jakou Roblox innovaci bys chtěla přinést?",
+        optionA: "🎵 Music creation studio",
+        optionB: "🎨 3D art gallery system",
+        resultA: "Music pioneer! Players compose amazing songs, ale copyright issues jsou nightmare! 🎶",
+        resultB: "Art revolutionary! Virtual galleries se amazing art, ale some pieces jsou inappropriate! 🖌️"
+    },
+    {
+        question: "Jaký Roblox achievement badge bys chtěla navrhnout?",
+        optionA: "🤝 'Ultimate Helpfulness'",
+        optionB: "🎯 'Perfect Precision'",
+        resultA: "Helping saint! Everybody loves you, ale někdy helpful actions take whole day! 😇",
+        resultB: "Precision master! Every move is flawless, ale perfection pressure je sometimes overwhelming! 🎯"
+    },
+    {
+        question: "Jaký Roblox crossover event bys nejvíc chtěla?",
+        optionA: "🚀 Space adventure se Star Wars",
+        optionB: "🏰 Fantasy quest s Lord of the Rings",
+        resultA: "Jedi master! Force powers everywhere, ale dark side temptation je strong! ⚔️",
+        resultB: "Fellowship member! Epic quests daily, ale walking to Mordor takes forever! 🧙‍♀️"
+    },
+    {
+        question: "Jakou Roblox legacy bys chtěla zanechat?",
+        optionA: "📚 Educational game empire",
+        optionB: "🎊 Party game paradise",
+        resultA: "Education pioneer! Learning je fun again, ale někdy serious topics jsou hard to gamify! 🎓",
+        resultB: "Party legend! Everyone has fun always, ale organizing celebrations is full-time job! 🎉"
+    },
+    {
+        question: "Jaký Roblox easter egg bys chtěla objevit?",
+        optionA: "💎 Secret diamond mine",
+        optionB: "🚪 Portal do hidden dimension",
+        resultA: "Treasure hunter! Infinite diamonds, ale secret je too good to keep! 💰",
+        resultB: "Dimension explorer! New worlds to discover, ale getting back home je sometimes problem! 🌌"
     }
 ];
