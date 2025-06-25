@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vyber si svůj jed - Rodinná hra</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #333;
+        }
+
+        .game-container {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            max-width: 600px;
+            width: 90%;
+            text-align: center;
+            animation: bounceIn 0.8s ease-out;
+        }
+
+        @keyframes bounceIn {
+            0% { transform: scale(0.3); opacity: 0; }
+            50% { transform: scale(1.05); }
+            70% { transform: scale(0.9); }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        h1 {
+            color: #ff6b6b;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .question {
+            font-size: 1.5em;
+            color: #4ecdc4;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+
+        .choices {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        @media (min-width: 600px) {
+            .choices {
+                flex-direction: row;
+                justify-content: space-around;
+            }
+        }
+
+        .choice {
+            background: linear-gradient(45deg, #ff9a9e 0%, #fecfef 100%);
+            border: none;
+            border-radius: 15px;
+            padding: 20px;
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #333;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            flex: 1;
+            max-width: 250px;
+            margin: 0 auto;
+        }
+
+        .choice:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        .choice:active {
+            transform: translateY(-2px);
+        }
+
+        .choice.option-b {
+            background: linear-gradient(45deg, #a8edea 0%, #fed6e3 100%);
+        }
+
+        .result {
+            display: none;
+            background: #fff3cd;
+            border: 2px solid #ffeaa7;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            font-size: 1.2em;
+            color: #856404;
+        }
+
+        .result.show {
+            display: block;
+            animation: fadeIn 0.5s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .next-btn {
+            background: linear-gradient(45deg, #4ecdc4 0%, #44a08d 100%);
+            color: white;
+            border: none;
+            border-radius: 25px;
+            padding: 15px 30px;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: none;
+        }
+
+        .next-btn.show {
+            display: inline-block;
+            animation: bounceIn 0.5s ease-out 0.3s both;
+        }
+
+        .next-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .score {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: #ff6b6b;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        .start-screen {
+            text-align: center;
+        }
+
+        .start-btn {
+            background: linear-gradient(45deg, #ff6b6b 0%, #ffa726 100%);
+            color: white;
+            border: none;
+            border-radius: 25px;
+            padding: 20px 40px;
+            font-size: 1.3em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .start-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <div class="score">Kolo: <span id="round">0</span></div>
+        
+        <div id="start-screen" class="start-screen">
+            <h1>🎮 Vyber si svůj jed!</h1>
+            <p class="subtitle">Zábavná rodinná hra plná bláznivých rozhodnutí!</p>
+            <p>Vyber si mezi dvěma možnostmi a uvidíš, co se stane!</p>
+            <button class="start-btn" onclick="startGame()">🚀 Pojďme hrát!</button>
+        </div>
+
+        <div id="game-screen" class="hidden">
+            <h1>🤔 Co by sis radši vybral...</h1>
+            <div class="question" id="question">Načítání...</div>
+            
+            <div class="choices">
+                <button class="choice" id="choice-a" onclick="selectChoice('a')">Možnost A</button>
+                <button class="choice option-b" id="choice-b" onclick="selectChoice('b')">Možnost B</button>
+            </div>
+
+            <div class="result" id="result"></div>
+            <button class="next-btn" id="next-btn" onclick="nextRound()">Další výzva! 🎯</button>
+        </div>
+    </div>
+
+    <script>
+        const gameCards = [
+            // Original cards translated to Czech
+            {
+                question: "Co bys radši měl?",
+                optionA: "🦋 Krásná motýlí křídla",
+                optionB: "👻 Sílu být neviditelný",
+                resultA: "Úžasné! Můžeš létat kamkoli a všichni si myslí, že jsi kouzelný! Ale pozor na pavučiny! 🕸️",
+                resultB: "Skvělé! Můžeš se připlížit k přátelům a nikdy nečekat ve frontě! Ale nezapomeň, kam jsi dal věci! 🔍"
+            },
+            {
+                question: "Co bys radši jedl celý měsíc?",
+                optionA: "🍕 Jen pizzu (jakýkoliv posyp)",
+                optionB: "🍦 Jen zmrzlinu (jakékoliv příchutě)",
+                resultA: "Pizza party každý den! Přátelé ti závidí, ale možná se ti začnou zdát zelenina! 🥬",
+                resultB: "Sladké sny a mrazivé bolesti hlavy! Jsi nejcoolovější dítě okolí, ale zuby potřebují extra čištění! 🦷"
+            },
+            
+            // Minecraft themed cards
+            {
+                question: "Co bys radši postavil v Minecraftu?",
+                optionA: "🏰 Obrovský hrad z diamantů",
+                optionB: "🌋 Tajnou základnu pod lávou",
+                resultA: "Diamantový palác! Všichni hráči tě obdivují, ale Creepři se pořád snaží tvůj hrad vyhodit do vzduchu! 💥",
+                resultB: "Lávová tajná základna! Super cool, ale občas zapomeneš vypnout koordináty a spadneš do lávy! 🔥"
+            },
+            {
+                question: "Jakého Minecraft mazlíčka bys radši měl?",
+                optionA: "🐺 Smečku věrných vlků",
+                optionB: "🐱 Desítku koček různých barev",
+                resultA: "Vlčí armáda! Chrání tě před všemi monstry, ale pořád se perou o kosti a dělají strašný hluk! 🦴",
+                resultB: "Kočičí gang! Odhánějí Creepry, ale obsadily ti celý dům a mňoukají celou noc! 😸"
+            },
+            {
+                question: "Jakou Minecraft sílu bys radši měl?",
+                optionA: "⛏️ Nekonečně rychlé těžení",
+                optionB: "🏗️ Stavět bez materiálů",
+                resultA: "Super rychlé těžení! Máš hory diamantů, ale vykopals už tak velké díry, že se v nich ztrácíš! 💎",
+                resultB: "Nekonečné stavění! Můžeš postavit cokoliv, ale zapomínáš, kde končí tvoje stavby a kde začíná skutečný svět! 🧱"
+            },
+            {
+                question: "Jaké Minecraft biomy bys radši objevil?",
+                optionA: "🌈 Duhový les s barevnými ovečkami",
+                optionB: "🍭 Sladký biom z cukrovinek",
+                resultA: "Duhová říše! Krásné barvy všude, ale ovečky se pořád mění na různé barvy a nikdy nevíš, jakou vlnu dostaneš! 🐑",
+                resultB: "Cukrovinkový ráj! Všechno je sladké, ale mravenci z celého serveru se sjeli na hostinu! 🐜"
+            },
+            {
+                question: "Kterého Minecraft bosse bys radši porazil?",
+                optionA: "🐉 Enderdraka s přáteli",
+                optionB: "💀 Withera sám",
+                resultA: "Týmová práce! Společně jste nepřemožitelní, ale kdo dostane dračí vajíčko je věčný problém! 🥚",
+                resultB: "Sólový hrdina! Jsi legenda serveru, ale Wither ti zničil polovinu základny a teď máš jen trosky! 💣"
+            },
+
+            // Gaming themed cards
+            {
+                question: "Jakou herní konzoli bys radši vlastnil?",
+                optionA: "🎮 Konzoli, která má všechny hry zdarma",
+                optionB: "🕹️ Retro konzoli s tisíci starými hrami",
+                resultA: "Nekonečné hry! Máš všechno, ale nikdy nevíš, co hrát, a trávíš víc času výběrem než hraním! 🤔",
+                resultB: "Retro ráj! Klasické hry jsou skvělé, ale ovladače se pořád kazí a grafika vypadá jako kostičky! 👾"
+            },
+            {
+                question: "Jakou herní schopnost bys radši měl?",
+                optionA: "🏆 Nikdy neprohrát v žádné hře",
+                optionB: "🎯 Být nejlepší streamer na světě",
+                resultA: "Neporazitelný hráč! Vyhravaš všechno, ale nikdo s tebou nechce hrát, protože vědí, že prohrají! 😔",
+                resultB: "Streaming superstar! Miliony followerů, ale musíš být vtipný 24/7 a občas ti dojdou nápady! 📹"
+            },
+            {
+                question: "V jaké herní postavě bys se radši probudil?",
+                optionA: "🦸‍♂️ Superhrdina z akční hry",
+                optionB: "🧙‍♂️ Kouzelník z fantasy RPG",
+                resultA: "Akční hrdina! Zachraňuješ svět každý den, ale zloduchové ti pořád ničí oblíbené restaurace! 🍔",
+                resultB: "Mocný mág! Kouzlíš neuvěřitelné věci, ale občas zapomeneš kouzlo a proměníš kávu v žábu! ☕"
+            },
+            {
+                question: "Jaký herní vývojářský tým bys radši vedl?",
+                optionA: "🚀 Tým vyvíjející vesmírné hry",
+                optionB: "🏠 Tým tvořící rodinné hry",
+                resultA: "Vesmírné dobrodružství! Vytváříš epické galaxie, ale všichni zaměstnanci se pořád hádají o fyziku černých děr! 🌌",
+                resultB: "Rodinná zábava! Všichni si vaše hry milují, ale musíš testovat každou hru se svými rodiči a babičkou! 👵"
+            },
+
+            // Animal themed cards
+            {
+                question: "Jakého exotického mazlíčka bys radši měl?",
+                optionA: "🦜 Papoušek, který umí 20 jazyků",
+                optionB: "🐧 Tučňák, který dovede tancovat",
+                resultA: "Polyglotní papoušek! Umí mluvit s kýmkoli, ale pořád opakuje trapné věci, které říkáš v soukromí! 🙈",
+                resultB: "Tančící tučňák! Je hvězdou každé párty, ale potřebuje ledničku velikosti pokoje a ryby na každé jídlo! 🐟"
+            },
+            {
+                question: "Jaké zvíře bys radši uměl nakreslít dokonale?",
+                optionA: "🐅 Tygry s úžasnými detaily",
+                optionB: "🦋 Motýly s duhových křídlech",
+                resultA: "Tygrův mistr! Tvoje kresby jsou úžasné, ale učitelé se bojí, že tygři z papíru vyskočí! 😱",
+                resultB: "Motýlí umělec! Krásné kresby, ale motýli se od tvých obrázků nechtějí odloučit a létají po třídě! 🎨"
+            },
+            {
+                question: "Se kterými zvířaty bys radši uměl mluvit?",
+                optionA: "🐕 Všemi psy v okolí",
+                optionB: "🐈 Všemi kočkami ve městě",
+                resultA: "Psí tlumočník! Psi ti říkají všechno, ale hlavně si stěžují na kočky a nedostatek dobrot! 🦴",
+                resultB: "Kočičí šepkař! Kočky sdílejí svá tajemství, ale většinou jen kritizují tvoje oblečení a jídlo! 😼"
+            },
+            {
+                question: "Jakého mořského tvora bys radši potkal?",
+                optionA: "🐙 Přátelskou obří chobotnici",
+                optionB: "🐬 Skupinu hravých delfínů",
+                resultA: "Chobotnicový kámoš! Má osm paží pro objímání, ale pořád tě pokryje inkoustem, když se vzruší! 🖤",
+                resultB: "Delfíní gang! Nejchytřejší mořští přátelé, ale pořád tě stříkají vodou a smějí se svým delfíním vtipům! 💦"
+            },
+
+            // Friendship themed cards
+            {
+                question: "Jakého kamaráda bys radši měl?",
+                optionA: "🤡 Přítele, který tě vždy rozesměje",
+                optionB: "🧠 Přítele, který zná odpověď na všechno",
+                resultA: "Komediální kamarád! Pořád se směješ, ale občas potřebuješ být vážný a on pořád žertuje! 😂",
+                resultB: "Chytrý přítel! Ví všechno, ale občas ti připadáš hloupý a on ti vysvětluje i to nejzákladnější! 🤓"
+            },
+            {
+                question: "Jakou skupinovou aktivitu bys radši dělal s přáteli?",
+                optionA: "🏕️ Táborení pod hvězdami",
+                optionB: "🎳 Turnaj v bowlingu",
+                resultA: "Hvězdné táboření! Romantické a krásné, ale jeden přítel se bojí pavouků a druhý chrápě! 🕷️",
+                resultB: "Bowlingový turnaj! Zábavná soutěž, ale někdo je moc dobrý a někdo trefí všechno kromě kuželek! 🎳"
+            },
+            {
+                question: "Jak bys radši pomohl kamarádovi v nesnázích?",
+                optionA: "🦸‍♂️ Superhrdinské zachránění",
+                optionB: "🤗 Dlouhé povídání a objímání",
+                resultA: "Hrdinská pomoc! Zachraňuješ situaci, ale přátelé začnou očekávat, že vyřešíš všechny jejich problémy! 🚑",
+                resultB: "Emocionální podpora! Jsi nejlepší posluchač, ale někdy hovor trvá celou noc a zítra máš školu! 💤"
+            },
+            {
+                question: "Jaký dárek bys radši dostal od nejlepšího přítele?",
+                optionA: "🎁 Něco, co si sám vyrobil",
+                optionB: "💰 Něco velmi drahého",
+                resultA: "Ručně vyrobený poklad! Je to od srdce, ale vypadá to trochu... divně... ale nesmíš to říct! 😅",
+                resultB: "Drahý dárek! Super kvalita, ale teď se cítíš, že mu musíš koupit něco stejně drahého! 💸"
+            },
+            {
+                question: "Jak bys radši trávil víkend s přáteli?",
+                optionA: "🏠 Přespávání u někoho doma",
+                optionB: "🎢 Výlet do zábavního parku",
+                resultA: "Domácí párty! Pohodlné a intimní, ale někdo vždy zapomene něco důležitého doma a jeho rodiče volají! 📞",
+                resultB: "Zábavní park! Adrenalin a zábava, ale fronty jsou nekonečné a někdo se bojí horských drah! 🎠"
+            },
+
+            // More creative cards mixing themes
+            {
+                question: "Kdyby tvůj nejlepší přítel byl Pokémon, kterého bys radši měl?",
+                optionA: "⚡ Pikachu, který umí vařit",
+                optionB: "🔥 Charizard, který hraje videohry",
+                resultA: "Kuchař Pikachu! Nejlepší jídlo na světě, ale občas zapomene kontrolovat elektřinu a spálí večeři! ⚡",
+                resultB: "Gamer Charizard! Nejlepší herní partner, ale když prohraje, spálí ti ovladač! 🎮"
+            },
+            {
+                question: "Jakou supersilou by měl tvůj domácí mazlíček?",
+                optionA: "🐕 Pes, který umí teleportovat",
+                optionB: "🐱 Kočka, která čte myšlenky",
+                resultA: "Teleportující pes! Nikdy se neztratí, ale občas se teleportuje do sousedovy zahrady a krade jim jídlo! 🍖",
+                resultB: "Telepat kočka! Ví, co si myslíš, ale většinou tě soudí za tvé hloupé nápady a ignoruje tě! 😒"
+            },
+            {
+                question: "V jakém fantasy světě bys radši žil s přáteli?",
+                optionA: "🧙‍♂️ Kouzelná škola jako Hogwarts",
+                optionB: "🌳 Elfský les s magickými stromy",
+                resultA: "Kouzelná škola! Učíš se kouzla, ale domácí úkoly jsou ještě těžší a můžeš náhodou proměnit učitele v žábu! 🐸",
+                resultB: "Elfský les! Žiješ v harmonii s přírodou, ale elfové mají pravidla pro všechno a jsou velmi pedantští! 📜"
+            },
+            {
+                question: "Jakou technologii bys radši vynalezl se svými přáteli?",
+                optionA: "🤖 Robot, který dělá domácí úkoly",
+                optionB: "🚀 Stroj času pro zábavné výlety",
+                resultA: "Úkolový robot! Máš pořád volno, ale robot dělá chyby v matematice a učitelé začínají být podezřívaví! 🤔",
+                resultB: "Časová mašina! Úžasná dobrodružství, ale pořád zapomínáte, do kterého století patříte! ⏰"
+            },
+            {
+                question: "Kdyby zvířata mohla hrát videohry, které bys radši trénoval?",
+                optionA: "🐒 Opice hrající Minecraft",
+                optionB: "🐧 Tučňáky hrající fotbalové hry",
+                resultA: "Opičí Minecraft tým! Stavějí úžasné věci, ale pořád házejí banány na klávesnici a ničí ti setup! 🍌",
+                resultB: "Tučňačí fotbal! Perfektní týmová práce, ale potřebují klimatizaci na -10°C a fish snacky každých pět minut! 🐟"
+            }
+        ];
+
+        let currentRound = 0;
+        let currentCard = null;
+
+        function startGame() {
+            document.getElementById('start-screen').classList.add('hidden');
+            document.getElementById('game-screen').classList.remove('hidden');
+            nextRound();
+        }
+
+        function nextRound() {
+            currentRound++;
+            document.getElementById('round').textContent = currentRound;
+            
+            // Reset UI
+            document.getElementById('result').classList.remove('show');
+            document.getElementById('next-btn').classList.remove('show');
+            document.getElementById('choice-a').style.display = 'block';
+            document.getElementById('choice-b').style.display = 'block';
+            
+            // Get random card
+            currentCard = gameCards[Math.floor(Math.random() * gameCards.length)];
+            
+            // Update content
+            document.getElementById('question').textContent = currentCard.question;
+            document.getElementById('choice-a').textContent = currentCard.optionA;
+            document.getElementById('choice-b').textContent = currentCard.optionB;
+        }
+
+        function selectChoice(choice) {
+            // Hide choice buttons
+            document.getElementById('choice-a').style.display = 'none';
+            document.getElementById('choice-b').style.display = 'none';
+            
+            // Show result
+            const resultText = choice === 'a' ? currentCard.resultA : currentCard.resultB;
+            document.getElementById('result').textContent = resultText;
+            document.getElementById('result').classList.add('show');
+            
+            // Show next button
+            setTimeout(() => {
+                document.getElementById('next-btn').classList.add('show');
+            }, 1000);
+        }
+
+        // Auto-start the game
+        document.addEventListener('DOMContentLoaded', function() {
+            // Game is ready to play
+        });
+    </script>
+</body>
+</html>
