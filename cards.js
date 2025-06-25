@@ -1,21 +1,21 @@
 const generalCards = [
     // Original cards translated to Czech
     {
-        question: "Co by sis radši vybrala?",
+        question: "Co by sis vybrala raději?",
         optionA: "🦋 Kouzelná motýlí křidélka",
         optionB: "👻 Neviditelnost na povel",
         resultA: "Jupí! Můžeš lítat jako víla, jen pozor na pavučiny! 🕸️",
         resultB: "Tichošlápek! Předběhneš každou frontu, ale občas zapomeneš, kam ses schovala. 🔍"
     },
     {
-        question: "Co bys papala celý měsíc?",
+        question: "Co bys jedla celý měsíc?",
         optionA: "🍕 Pizza každý den (s čímkoliv na ní)",
         optionB: "🍦 Hromadu zmrzliny všech chutí",
         resultA: "Pizza party nonstop! Kamarádky ti budou závidět, jen ta zelenina ti možná bude chybět. 🥬",
         resultB: "Zmrzlinové nebe! Ale připrav se na mrazivé mozkové bouře a hodně čištění zoubků! 🦷"
     },
     {
-        question: "Kde by sis chtěla bydlet?",
+        question: "Kde bys chtěla bydlet?",
         optionA: "🏰 Na kouzelném hradě v oblacích",
         optionB: "🌳 V super cool domku na stromě",
         resultA: "Královská paráda! Úžasný výhled, jen pizza delivery je fakt problém! 📦",
@@ -221,7 +221,7 @@ const generalCards = [
 
 const minecraftCards = [
     {
-        question: "Co by sis chtěla postavit v Minecraftu?",
+        question: "Co bys chtěla postavit v Minecraftu?",
         optionA: "🏰 Obrovský hrad z diamantů",
         optionB: "🌋 Tajnou základnu pod lávou",
         resultA: "Diamantový palác! Všichni tě obdivují, ale Creepři se pořád snaží tvůj hrad vyhodit do vzduchu! 💥",
@@ -808,8 +808,8 @@ const tocaWorldCards = [
         resultB: "Comfortable style! Pohoda a pohodlí, ale nekdy vypadáš jak z pyžama! 😴"
     },
     {
-        question: "Jakým dopravem bys nejradši jezdila do školy?",
-        optionA: "🚌 Školním autobusem s přáteli",
+        question: "Jakým dopravním prostředkem bys nejraději jezdila do školy?"
+        optionA: "🚌 Školním autobusem s přáteli"
         optionB: "🚗 Autem s rodiči",
         resultA: "Školní autobus party! Zábava s přáteli each day, но je to hlučné! 📢",
         resultB: "VIP doprava! Pohodlí a klid, někdy zapomeneš na domácí úkoly v autě! 📚"
@@ -829,7 +829,7 @@ const tocaWorldCards = [
         resultB: "Fairy tale magic! Krásný příběh a zázraky, aлe někdy je to moc predictable! 👸"
     },
     {
-        question: "Jakou hračku bys si nejradší vzala на výlet?",
+        question: "Jakou hračku by sis nejraději vzala na výlet?"
         optionA: "🧸 Oblíbeného plyšáka",
         optionB: "📖 Knihu s obrázky",
         resultA: "Plyšákový společník! Nikdy nejsi sama, но můžeš ho ztratit! 😢",
@@ -850,8 +850,8 @@ const tocaWorldCards = [
         resultB: "Puzzle mistryně! Trénuješ mozek, ale některé puzzle jsou mega těžké! 🧠"
     },
     {
-        question: "Co bys nejradši dělala в дождливý день?",
-        optionA: "📚 Čtení књиг v posteli",
+        question: "Co bys nejraději dělala v deštivý den?"
+        optionA: "📚 Četla knížky v posteli"
         optionB: "🏠 Stavění fortů z polštářů",
         resultA: "Bookworm day! Úžasné příběhy a dobrodružství, ale občas usneš s knihou! 😴",
         resultB: "Fort builder! Kreativní stavění, ale pak musíš uklidit! 🧹"
@@ -871,7 +871,7 @@ const tocaWorldCards = [
         resultB: "Smart educator! Naučíš se spoustu věcí, ale домашние úkoly jsou сложные! 📝"
     },
     {
-        question: "Co bys nejradši našla в своем batohu?",
+        question: "Co bys nejraději našla ve svém batohu?",
         optionA: "🍬 Tajnou zásobu sladkostí",
         optionB: "📝 Lístek od best friend",
         resultA: "Secret candy stash! Vždycky máš něco dobrého, но zuby se ti kazí! 🦷",
@@ -888,7 +888,7 @@ const pokemonCards = [
         resultB: "Vodní kamarád! Skvělý na horké dny, ale děláni malé potopy v domě! 💦"
     },
     {
-        question: "Jakou Pokémon schopnost bys chtěla mít?",
+        question: "Jakou schopnost Pokémonů bys chtěla mít?",
         optionA: "⚡ Elektrické útoky",
         optionB: "🌿 Bylinné léčení",
         resultA: "Elektrická síla! Můžeš nabíjet telefon rukama, ale občas dostaneš šok z kliky! ⚡",
@@ -1199,7 +1199,7 @@ const robloxCards = [
         resultB: "Fashion icon! Všichni chtějí tvoje outfit tips, ale modní trendy se mění každý týden! 👗"
     },
     {
-        question: "Jaký Roblox skill bys chtěla mít?",
+        question: "Jakou dovednost v Robloxu bys chtěla mít?",
         optionA: "⚡ Speed running rekord",
         optionB: "🏗️ Professional building",
         resultA: "Speed demon! Dokončíš každou hru v rekordním čase, ale pak nemáš čas si ji užít! 🏃‍♀️",
