@@ -523,6 +523,139 @@ const harryPotterCards = [
         optionB: "🔥 Floo Network",
         resultA: "Nebeské auto! Můžeš létat kamkoli, ale občas se pokazí motor a spadneš na vrbu mlátičku! 🌳",
         resultB: "Krb teleport! Instantní cestování, ale vždycky dorazíš pokrytá sazemi a kašleš zelený prach! 💚"
+    },
+    {
+        question: "Kdybys byla na Bradavicích jen jeden den, co bys dělala?",
+        optionA: "🎓 Zkusila všechny předměty",
+        optionB: "🗺️ Prozkoumala všechny tajné chodby",
+        resultA: "Školní maratón! Za den ses naučila kouzlit, ale hlava ti praskne z toho množství informací! 🤯",
+        resultB: "Tajná expedice! Našla jsi spoustu skrytých míst, ale ztratila ses a museli tě hledat! 🔍"
+    },
+    {
+        question: "Jaký předmět by ses chtěla naučit úplně nejlíp?",
+        optionA: "🧪 Lektvarovarství s profesorem Snapem",
+        optionB: "🌿 Herbologii s profesorkou Prýtovou",
+        resultA: "Lektvarová expertka! Umíš uvařit všechno, ale Snape na tebe pořád frčí! 😤",
+        resultB: "Botanická čarodějka! Rostliny tě milují, ale občas tě pokousají! 🌱"
+    },
+    {
+        question: "Kde bys nejradši bydlela?",
+        optionA: "🏰 V některé z věží Bradavic",
+        optionB: "🏡 V chaloupce v Prasinkách",
+        resultA: "Věžová princezna! Úžasný výhled, ale schody nahoru tě zabijou! 🪜",
+        resultB: "Vesničanka! Klidný život, ale občas se objeví nějaký černokněžník! 🧙‍♂️"
+    },
+    {
+        question: "Co bys nejradši koupila v Příčné ulici?",
+        optionA: "🍭 Všechny sladkosti od Zonka",
+        optionB: "📚 Všechny knihy z Rozkvětu a Skvrn",
+        resultA: "Sladký ráj! Máš nejlepší cukrovinky, ale zuby ti odpadají! 🦷",
+        resultB: "Knihomolka! Víš všechno o kouzlech, ale taška váží jak kámen! 📖"
+    },
+    {
+        question: "Jakého kouzelného tvora bys chtěla vidět?",
+        optionA: "🦄 Jednorožce v Zakázaném lese",
+        optionB: "🐲 Draka zblízka",
+        resultA: "Jednorožčí setkání! Nádherné a čisté, ale jen ty ho vidíš a nikdo ti nevěří! ✨",
+        resultB: "Dračí dobrodružství! Impozantní bestie, ale málem tě smaží! 🔥"
+    },
+    {
+        question: "Jakou roli bys chtěla mít ve famfrpálu?",
+        optionA: "🥅 Brankářka chytající zlatonku",
+        optionB: "🏏 Palkařka mlátící bludgery",
+        resultA: "Zlatonková hvězda! Rozhoduješ zápasy, ale tlak je obrovský! 😰",
+        resultB: "Bludgerová bojovnice! Silná a fearless, ale občas někoho omylem praštíš! 💥"
+    },
+    {
+        question: "Co bys dělala o prázdninách?",
+        optionA: "🏖️ Jela na čarodějnické prázdniny",
+        optionB: "🏠 Zůstala doma a cvičila kouzla",
+        resultA: "Magické léto! Úžasné zážitky s čarodějnými rodinami, ale pak jsi na normální svět nepřipravená! 🌍",
+        resultB: "Domácí čarodějka! Perfektně připravená na školu, ale kamarádi tě zapomnou! 😢"
+    },
+    {
+        question: "Jakou věc bys chtěla mít zase úplně novou?",
+        optionA: "🪄 Hůlku přímo od Olivandera",
+        optionB: "🧙‍♀️ Klobouk přímo z Madam Malkin",
+        resultA: "Nová hůlka! Perfektně ti sedí, ale musíš si na ni zvyknout! ⚡",
+        resultB: "Nový outfit! Vypadáš jak z časopisu, ale stojí to majlant! 💰"
+    },
+    {
+        question: "Kam bys šla na první rande?",
+        optionA: "☕ Do Tří košťat na máslové pivo",
+        optionB: "🎭 Na představení do čarodějného divadla",
+        resultA: "Klasické rande! Romantické a tradiční, ale všichni z školy vás tam vidí! 👀",
+        resultB: "Kulturní večer! Elegantní a zajímavé, ale představení trvá 4 hodiny! ⏰"
+    },
+    {
+        question: "Jaký by byl tvůj nejoblíbenější kouzelný sladký?",
+        optionA: "🍫 Čokoládové žáby",
+        optionB: "🍬 Bertieho fazole",
+        resultA: "Skokanské čokolády! Sbíráš kartičky, ale žáby ti utíkají! 🐸",
+        resultB: "Překvapení fazole! Vzrušující ruleta, ale někdy narazíš na zvratky! 🤢"
+    },
+    {
+        question: "Co bys dělala, kdyby ses dostala do časové pasti?",
+        optionA: "⏰ Opravila všechny svoje chyby",
+        optionB: "🎭 Žila několik životů najednou",
+        resultA: "Perfektní život! Všechno je správně, ale už nevíš, co je realita! 🌀",
+        resultB: "Mnohonásobný život! Spoustu zkušeností, ale pletou se ti vzpomínky! 🧠"
+    },
+    {
+        question: "Jakého temného kouzelníka bys nejtěžsí porazila?",
+        optionA: "🐍 Voldemorta silou lásky",
+        optionB: "💀 Bellatrix chytrostí",
+        resultA: "Láska vítězí! Nejsilnější magie, ale musíš obětovat hodně! ❤️",
+        resultB: "Mozková hra! Přelstíš šílenku, ale skoro se z toho zblázníš! 🧩"
+    },
+    {
+        question: "Jaký kouzelný lektvar bys chtěla umět uvařit?",
+        optionA: "💕 Amortentia - lektvar lásky",
+        optionB: "🍀 Felix Felicis - tekuté štěstí",
+        resultA: "Láska v lahvičce! Romantic, ale není to pravá láska! 💔",
+        resultB: "Tekuté štěstí! Všechno se daří, ale pak je život nudný! 😐"
+    },
+    {
+        question: "Co bys dělala s mapou Pobertů?",
+        optionA: "🕵️ Špehovala všechny učitele",
+        optionB: "🏃‍♀️ Plánovala dokonalé útěky",
+        resultA: "Špionážní mise! Víš všechna tajemství, ale někdy vidíš věci, které nechceš! 🙈",
+        resultB: "Útěková mistryně! Nikdy tě nechytí, ale pořád se schovávăš! 🏃‍♀️"
+    },
+    {
+        question: "Kterou část Bradavic bys nejradši obnovila?",
+        optionA: "🏰 Věž Nebelvíru",
+        optionB: "🌿 Skleníky pro herbologii",
+        resultA: "Nebelvírská rekonstrukce! Máš nejhezčí věž, ale ostatní koleje ti závidí! 😒",
+        resultB: "Botanické centrum! Krásné rostliny, ale občas se nějaká rostlina vzepře! 🌵"
+    },
+    {
+        question: "Jakou práci bys chtěla mít po škole?",
+        optionA: "⚗️ Aurорка chytající černokněžníky",
+        optionB: "🐲 Dračí specialistka",
+        resultA: "Čarodějná policie! Zachraňuješ svět, ale pořád jsi v nebezpečí! ⚔️",
+        resultB: "Dračí whisperka! Úžasná zvířata, ale insurance je hrozně drahé! 💸"
+    },
+    {
+        question: "Co bys udělala s neviditelným pláštěm?",
+        optionA: "🎭 Objevovala školní tajemství",
+        optionB: "🍰 Kradla jídlo z kuchyní",
+        resultA: "Tajemná detektivka! Odhaluješ všechno, ale někdy narazíš na něco scary! 👻",
+        resultB: "Neviditelná zlodějka! Nikdy nehladovíš, ale trochu přibereš! 🍖"
+    },
+    {
+        question: "Jaký předmět bys chtěla vyučovat?",
+        optionA: "🔮 Věšteckařství",
+        optionB: "⚡ Obranu proti černé magii",
+        resultA: "Věštecká profesorka! Předpovídáš budoucnost, ale nikdo ti nevěří! 🔮",
+        resultB: "OOČM učitelka! Připravuješ další generaci, ale každý rok střídáš! 🎯"
+    },
+    {
+        question: "Jakého děkana bys chtěla mít?",
+        optionA: "🦅 Profesorku McGonagallovou",
+        optionB: "🐍 Profesora Snapea",
+        resultA: "McGonagall mama! Přísná ale spravedlivá, občas tě promění v kočku! 🐱",
+        resultB: "Snape tátinka! Náročný ale chytrý, ale jeho sarkasmus tě zničí! 😵"
     }
 ];
 
@@ -610,6 +743,139 @@ const tocaWorldCards = [
         optionB: "🌻 Slunečné léto",
         resultA: "Zimní pohádka! Sníh, sněhuláci a lyže, ale pořád máš studené nosy a prsty! ☃️",
         resultB: "Letní vibes! Pláže, zmrzlina a volno, ale některý dny jsou tak horké, že se roztekáš! 🌡️"
+    },
+    {
+        question: "Kde bys nejradši slavila narozeniny?",
+        optionA: "🎂 Doma s celou rodinou",
+        optionB: "🎪 V zábavním parku s přáteli",
+        resultA: "Rodinná oslava! Všichni tě milují a je to útulné, ale někdo vždycky zapomene dárek! 🎁",
+        resultB: "Zábavní narozeniny! Super atrakce a zábava, но pan je tak drahá! 💸"
+    },
+    {
+        question: "Jaký pokoj bys si nejradši zařídila?",
+        optionA: "👑 Princeznovský pokoj plný růžové",
+        optionB: "🌈 Duhový pokoj s barvami",
+        resultA: "Růžový ráj! Cítíš se jako princezna, ale návštěvy potřebují sluneční brýle! 😎",
+        resultB: "Barevná exploze! Každý den jiná nálada, ale máma má migrénu! 🤯"
+    },
+    {
+        question: "Co bys nejradši dělala ve volném čase?",
+        optionA: "🎨 Tvořila a malovala obrázky",
+        optionB: "🎵 Zpívala a tančila",
+        resultA: "Umělecká duše! Tvoříš krásné věci, ale pak máš barvy úplně všude! 🎭",
+        resultB: "Hudební hvězda! Všichni tě obdivují, ale sousedi si stěžují na hluk! 🔊"
+    },
+    {
+        question: "Jakého domácího mazlíčka bys si přála?",
+        optionA: "🐹 Roztomilého křečka",
+        optionB: "🐰 Plyšového králíčka",
+        resultA: "Křečkový kámoš! Malý a roztomilý, ale v noci běhá v kolečku a buzí tě! 🏃‍♂️",
+        resultB: "Králičí parťák! Nadýchaný a mazlivý, ale žere všechnu mrkev v lednici! 🥕"
+    },
+    {
+        question: "Jakou hru bys nejradši hrála s kamarádkami?",
+        optionA: "🏠 Přehrávání rodinného života",
+        optionB: "🎭 Divadlo a představování",
+        resultA: "Family roleplay! Všichni mají svoje role, někdo ale chce být pořád maminka! 👩",
+        resultB: "Theatrical show! Nádherné představení, ale někdo má trému! 😰"
+    },
+    {
+        question: "Kde bys nejradši trávila víkendy?",
+        optionA: "🏖️ Na pláži stavění hradů z písku",
+        optionB: "🌲 V lese hledání pokladů",
+        resultA: "Plážová architektka! Stavíš úžasné hrady, ale vlny je smýkají! 🌊",
+        resultB: "Lesní průzkumnice! Najdeš zajímavé věci, ale občas se ztratíš! 🗺️"
+    },
+    {
+        question: "Jakou práci by ses chtěla naučit?",
+        optionA: "👩‍⚕️ Být doktorkou a léčit lidi",
+        optionB: "👩‍🍳 Být kuchařkou a vařit",
+        resultA: "Dětská doktorka! Zachraňuješ všechny, ale někteří pacienti se bojí injekce! 💉",
+        resultB: "Mini šéfkuchařka! Vaříš úžasná jídla, ale občas přepálíš! 🔥"
+    },
+    {
+        question: "Co bys nejradši dostala k Vánocům?",
+        optionA: "🧸 Nového velkého plyšáka",
+        optionB: "🚲 Nové kolo či koloběžku",
+        resultA: "Plyšákový přítel! Máš super kámoša na mazlení, ale už se nevejde do postele! 🛏️",
+        resultB: "Rychlá kola! Jedeš všude stylovë, ale máma se bojí, že spadneš! 😨"
+    },
+    {
+        question: "Jakou outfitku bys nejradši nosila?",
+        optionA: "👗 Třpytivé šaty na každý den",
+        optionB: "👕 Pohodlné tepláky a tričko",
+        resultA: "Třpytivá princezna! Vypadáš úžasně, но všichni se na tebe dívají! ✨",
+        resultB: "Comfortable style! Pohoda a pohodlí, ale nekdy vypadáš jak z pyžama! 😴"
+    },
+    {
+        question: "Jakým dopravem bys nejradši jezdila do školy?",
+        optionA: "🚌 Školním autobusem s přáteli",
+        optionB: "🚗 Autem s rodiči",
+        resultA: "Školní autobus party! Zábava s přáteli each day, но je to hlučné! 📢",
+        resultB: "VIP doprava! Pohodlí a klid, někdy zapomeneš na domácí úkoly v autě! 📚"
+    },
+    {
+        question: "Co bys nejradši jedla k snídani?",
+        optionA: "🥞 Palačinky s ovocem",
+        optionB: "🍞 Toast s džemem",
+        resultA: "Palačinkové ráno! Sladké a výživné, но trvá to dlouho připravit! ⏰",
+        resultB: "Toastová rychlost! Rychlé a dobré, але někdy se toast připálí! 🔥"
+    },
+    {
+        question: "Jaký film bys nejradši sledovala?",
+        optionA: "🎬 Rodinnou komedii",
+        optionB: "🦄 Pohádku о princezné",
+        resultA: "Comedy time! Všichni se smějí a baví, но někteří vtipy nechápeš! 😅",
+        resultB: "Fairy tale magic! Krásný příběh a zázraky, aлe někdy je to moc predictable! 👸"
+    },
+    {
+        question: "Jakou hračku bys si nejradší vzala на výlet?",
+        optionA: "🧸 Oblíbeného plyšáka",
+        optionB: "📖 Knihu s obrázky",
+        resultA: "Plyšákový společník! Nikdy nejsi sama, но můžeš ho ztratit! 😢",
+        resultB: "Čítací zábava! Nikdy se nenudíš, ale někdy je tma na čtení! 🌙"
+    },
+    {
+        question: "Kde bys nejradši pořádala piknik?",
+        optionA: "🌳 V parku pod velkým stromem",
+        optionB: "🏖️ Na pláži u moře",
+        resultA: "Parkový piknik! Stín a klid, ale občas spadne něco ze stromu! 🍃",
+        resultB: "Plážový feast! Krásný výhled, но písek se dostává do jídla! 🏖️"
+    },
+    {
+        question: "Jaký druh zábavy bys nejradši měla doma?",
+        optionA: "🎮 Počítačové hry",
+        optionB: "🧩 Puzzle a hlavolamy",
+        resultA: "Gaming time! Super grafika a zábava, але oči tě bolí! 👀",
+        resultB: "Puzzle mistryně! Trénuješ mozek, ale některé puzzle jsou mega těžké! 🧠"
+    },
+    {
+        question: "Co bys nejradši dělala в дождливý день?",
+        optionA: "📚 Čtení књиг v posteli",
+        optionB: "🏠 Stavění fortů z polštářů",
+        resultA: "Bookworm day! Úžasné příběhy a dobrodružství, ale občas usneš s knihou! 😴",
+        resultB: "Fort builder! Kreativní stavění, ale pak musíš uklidit! 🧹"
+    },
+    {
+        question: "Jakou barvu bys nejradši měla všude?",
+        optionA: "💖 Růžovou jako princezny",
+        optionB: "💜 Fialovou jako jednorožci",
+        resultA: "Pink princess world! Všechno je cute, ale некоторые lidi říkají, že je to moc! 🎀",
+        resultB: "Purple unicorn life! Magické а mystické, ale občas to vypadá spooky! 🔮"
+    },
+    {
+        question: "Jakého učitele bys nejradši měla?",
+        optionA: "😊 Veselého, který se pořád směje",
+        optionB: "📖 Chytrého, který vysvětluje zajímavě",
+        resultA: "Funny teacher! Škola je zábava, но někdy se víc smějete než učíte! 😂",
+        resultB: "Smart educator! Naučíš se spoustu věcí, ale домашние úkoly jsou сложные! 📝"
+    },
+    {
+        question: "Co bys nejradši našla в своем batohu?",
+        optionA: "🍬 Tajnou zásobu sladkostí",
+        optionB: "📝 Lístek od best friend",
+        resultA: "Secret candy stash! Vždycky máš něco dobrého, но zuby se ti kazí! 🦷",
+        resultB: "Friendship note! Cítíš se milovaná, але někdy ti text rozteče! 💧"
     }
 ];
 
