@@ -170,6 +170,13 @@
             text-align: center;
         }
 
+        .theme-select {
+            margin-top: 15px;
+            padding: 10px;
+            font-size: 1em;
+            border-radius: 10px;
+        }
+
         .start-btn {
             background: linear-gradient(45deg, #ff6b6b 0%, #ffa726 100%);
             color: white;
@@ -201,6 +208,14 @@
             <h1>🎮 Vyber si svůj jed!</h1>
             <p class="subtitle">Zábavná rodinná hra plná bláznivých rozhodnutí!</p>
             <p>Vyber si mezi dvěma možnostmi a uvidíš, co se stane!</p>
+            <select id="theme-select" class="theme-select">
+                <option value="mix">Mix všech témat</option>
+                <option value="minecraft">Minecraft</option>
+                <option value="harrypotter">Harry Potter</option>
+                <option value="toca">Toca World</option>
+                <option value="pokemon">Pokémon</option>
+                <option value="roblox">Roblox</option>
+            </select>
             <button class="start-btn" onclick="startGame()">🚀 Pojďme hrát!</button>
         </div>
 
@@ -218,8 +233,9 @@
         </div>
     </div>
 
+    <script src="cards.js"></script>
     <script>
-        const gameCards = [
+        const generalCards = [
             // Original cards translated to Czech
             {
                 question: "Co by sis radši vybrala?",
@@ -411,10 +427,33 @@
         let currentRound = 0;
         let currentCard = null;
         let remainingCards = [];
+        let selectedCards = [];
 
         function startGame() {
+            const theme = document.getElementById('theme-select').value;
+            if (theme === 'minecraft') {
+                selectedCards = [...minecraftCards];
+            } else if (theme === 'harrypotter') {
+                selectedCards = [...harryPotterCards];
+            } else if (theme === 'toca') {
+                selectedCards = [...tocaWorldCards];
+            } else if (theme === 'pokemon') {
+                selectedCards = [...pokemonCards];
+            } else if (theme === 'roblox') {
+                selectedCards = [...robloxCards];
+            } else {
+                selectedCards = [
+                    ...generalCards,
+                    ...minecraftCards,
+                    ...harryPotterCards,
+                    ...tocaWorldCards,
+                    ...pokemonCards,
+                    ...robloxCards
+                ];
+            }
+
             currentRound = 0;
-            remainingCards = [...gameCards];
+            remainingCards = [...selectedCards];
             document.getElementById('start-screen').classList.add('hidden');
             document.getElementById('game-screen').classList.remove('hidden');
             nextRound();
