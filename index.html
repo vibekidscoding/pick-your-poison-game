@@ -410,26 +410,38 @@
 
         let currentRound = 0;
         let currentCard = null;
+        let remainingCards = [];
 
         function startGame() {
+            currentRound = 0;
+            remainingCards = [...gameCards];
             document.getElementById('start-screen').classList.add('hidden');
             document.getElementById('game-screen').classList.remove('hidden');
             nextRound();
         }
 
         function nextRound() {
+            if (remainingCards.length === 0) {
+                document.getElementById('question').textContent = 'Hra skončila!';
+                document.getElementById('choice-a').style.display = 'none';
+                document.getElementById('choice-b').style.display = 'none';
+                document.getElementById('next-btn').classList.add('hidden');
+                return;
+            }
+
             currentRound++;
             document.getElementById('round').textContent = currentRound;
-            
+
             // Reset UI
             document.getElementById('result').classList.remove('show');
             document.getElementById('next-btn').classList.remove('show');
             document.getElementById('choice-a').style.display = 'block';
             document.getElementById('choice-b').style.display = 'block';
-            
-            // Get random card
-            currentCard = gameCards[Math.floor(Math.random() * gameCards.length)];
-            
+
+            // Get random card from remaining cards and remove it
+            const index = Math.floor(Math.random() * remainingCards.length);
+            currentCard = remainingCards.splice(index, 1)[0];
+
             // Update content
             document.getElementById('question').textContent = currentCard.question;
             document.getElementById('choice-a').textContent = currentCard.optionA;
