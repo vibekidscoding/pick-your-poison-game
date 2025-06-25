@@ -83,6 +83,139 @@ const generalCards = [
         optionB: "👟 Boty, které tě nechají běžet super rychle",
         resultA: "Vaše královské výsosti! Každé přání se splní, ale musíš mluvit jako královna POŘÁD! 👸",
         resultB: "Zoom zoom! Jsi rychlejší než auta, ale nemůžeš zpomalit a pořád přeběhneš cíl! 🏃‍♀️"
+    },
+    {
+        question: "Kdyby ses mohla stát na jeden den kýmkoli, kým bys byla?",
+        optionA: "🎬 Slavnou herečkou",
+        optionB: "🚀 Astronautkou",
+        resultA: "Hvězda Hollywoodu! Všichni tě znají a milují, ale paparazzi tě pronásledují i na záchod! 📸",
+        resultB: "Vesmírná průzkumnice! Nádherný výhled na Zemi, ale jídlo v tubičkách fakt nechutná! 🌍"
+    },
+    {
+        question: "Jaké auto by bylo nejlepší?",
+        optionA: "🚗 Auto, co jezdí na sladkosti",
+        optionB: "🚙 Auto, co umí létat",
+        resultA: "Sladká jízda! Nikdy nepotřebuješ benzínku, ale mravenci si udělali kolonie v motoru! 🍭",
+        resultB: "Létající káravka! Žádné zácpy, ale řidičák na létání musíš dělat u orla! 🦅"
+    },
+    {
+        question: "Jakou knihu bys si chtěla přečíst?",
+        optionA: "📚 Knihu, která se čte sama nahlas",
+        optionB: "📖 Knihu, do které se dá vstoupit",
+        resultA: "Audiokniha deluxe! Úžasný hlas, ale někdy čte i v noci a neustně tě budí! 😴",
+        resultB: "Literární dobrodružství! Žiješ v příběhu, ale občas se zasekneš v nudném odstavci o počasí! 🌧️"
+    },
+    {
+        question: "Kterou superschopnost bys chtěla?",
+        optionA: "🕰️ Zastavit čas",
+        optionB: "🔄 Vrátit čas zpátky",
+        resultA: "Vládkyně času! Máš na všechno spoustu času, ale občas zapomeneš čas znovu spustit! ⏰",
+        resultB: "Časová cestovatelka! Můžeš opravit každou chybu, ale změníš náhodou historii! 📜"
+    },
+    {
+        question: "Jaký dům by byl nejúžasnější?",
+        optionA: "🏠 Dům z perníku",
+        optionB: "🏰 Dům ve stromě",
+        resultA: "Sladký domov! Vždycky máš co sníst, ale v létě se dům rozpouští a v zimě je tvrdý jak kámen! 🌡️",
+        resultB: "Stromový palác! Úžasné výhledy, ale na podzim padají listy přímo do pokoje! 🍂"
+    },
+    {
+        question: "Co by bylo nejlepší najít na půdě?",
+        optionA: "🗝️ Klíč od tajné místnosti",
+        optionB: "📦 Krabici plnou starých hraček",
+        resultA: "Tajemná místnost! Plná pokladů, ale někdy se dveře zamknou zevnitř! 🚪",
+        resultB: "Poklad z dětství! Úžasné retro hračky, ale baterie už dávno vytekly! 🔋"
+    },
+    {
+        question: "Jaký telefon by byl nejlepší?",
+        optionA: "📱 Telefon, který nikdy nevybije",
+        optionB: "📞 Telefon, který volá do budoucnosti",
+        resultA: "Věčná baterie! Nikdy se o ni nemusíš starat, ale všichni ti chtějí půjčit nabíječku! 🔌",
+        resultB: "Futuristický telefon! Mluvíš se svým budoucím já, ale většinou si stěžuje na domácí úkoly! 📞"
+    },
+    {
+        question: "Jaký dort by byl nejlepší na narozeniny?",
+        optionA: "🎂 Dort, který se nikdy nedojedí",
+        optionB: "🍰 Dort, který má každý kousek jinou chuť",
+        resultA: "Nekonečný dort! Párty může trvat věčně, ale po týdnu už všichni křičí při pohledu na dort! 😵",
+        resultB: "Překvapení dort! Každý kousek je dobrodružství, ale někdy narazíš na chuť brokolice! 🥦"
+    },
+    {
+        question: "Jakého učitele bys chtěla mít?",
+        optionA: "👩‍🏫 Učitelku, která nikdy nezadává domácí úkoly",
+        optionB: "👨‍🏫 Učitele, který učí jen zajímavé věci",
+        resultA: "Bezstarostná škola! Nikdy domácí úkoly, ale na střední tě nepřijmou, protože nic neumíš! 😅",
+        resultB: "Super zábavná škola! Každý den něco cool, ale matiku se stejně musíš naučit někde jinde! 🔢"
+    },
+    {
+        question: "Jaké oblečení by bylo nejpohodlnější?",
+        optionA: "👔 Oblečení, které se nikdy nezašpiní",
+        optionB: "👗 Oblečení, které se mění podle nálady",
+        resultA: "Vždy čistá! Nikdy se nemusíš starat o skvrny, ale máma je bez práce a nudí se! 🧺",
+        resultB: "Nálada outfit! Všichni vědí, jak se cítíš, ale ve škole to může být trapné! 😳"
+    },
+    {
+        question: "Jaké zvíře bys chtěla jako nejlepšího kamaráda?",
+        optionA: "🐧 Tučňáka, který umí tancovat",
+        optionB: "🦒 Žirafu, která dosáhne všude",
+        resultA: "Taneční parťák! Nejlepší na párty, ale potřebuje ledničku velkou jako pokoj! 🧊",
+        resultB: "Vysoký pomocník! Dostaneš všechno z vysokých polic, ale neprochází dveřmi! 🚪"
+    },
+    {
+        question: "Jaká by byla nejlepší snídaně?",
+        optionA: "🥞 Palačinky, které se pekou samy",
+        optionB: "🥣 Müsli, které zpívá písničky",
+        resultA: "Automatické palačinky! Vždycky čerstvé, ale někdy se spletou a napečou příliš mnoho! 🥞",
+        resultB: "Hudební snídaně! Veselé ráno, ale někdy zpívají příliš nahlas a budí celou rodinu! 🎵"
+    },
+    {
+        question: "Jaký batoh by byl nejužitečnější?",
+        optionA: "🎒 Batoh, který má uvnitř celý pokoj",
+        optionB: "🌟 Batoh, který umí létat",
+        resultA: "Nekonečný prostor! Můžeš si vzít všechno, ale pak hledáš věci celé hodiny! 🔍",
+        resultB: "Létající batoh! Doprava zdarma, ale někdy tě vezme špatným směrem! 🧭"
+    },
+    {
+        question: "Jakou hru bys chtěla vymyslet?",
+        optionA: "🎮 Hru, kde vyhráváš vždycky",
+        optionB: "🎲 Hru, která se nikdy neukončí",
+        resultA: "Vždycky výhra! Super sebevědomí, ale přátelé s tebou nechtějí hrát! 😔",
+        resultB: "Nekonečná hra! Nikdy se nenudíš, ale zapomínáš jíst a spát! 😴"
+    },
+    {
+        question: "Jaké kino by bylo nejlepší?",
+        optionA: "🍿 Kino s nekonečným popcornem",
+        optionB: "🎬 Kino, kde můžeš ovlivňovat děj",
+        resultA: "Popcornový ráj! Nikdy nedojde, ale pak už nemůžeš vidět popcorn! 🤢",
+        resultB: "Interaktivní film! Ovlivňuješ příběh, ale ostatní diváci se na tebe zlobí! 😠"
+    },
+    {
+        question: "Jaký park by byl nejzábavnější?",
+        optionA: "🎢 Park s nekonečnými atrakcemi",
+        optionB: "🎪 Park, kde jsou všechny atrakce zadarmo",
+        resultA: "Nekonečná zábava! Vždycky něco nového, ale pak už nevíš, co zkusit dřív! 🤯",
+        resultB: "Zadarmo zábava! Úžasné, ale fronty jsou tak dlouhé, že čekáš celý den! ⏳"
+    },
+    {
+        question: "Jakou krabici bys chtěla najít?",
+        optionA: "📦 Krabici, která plní přání",
+        optionB: "🎁 Krabici s překvapeními",
+        resultA: "Splněná přání! Všechno co chceš, ale někdy si přeješ něco hloupého! 🤦‍♀️",
+        resultB: "Překvapení každý den! Vzrušující, ale někdy je tam něco, co nechceš! 😱"
+    },
+    {
+        question: "Jakého robota bys chtěla?",
+        optionA: "🤖 Robota, který dělá domácí práce",
+        optionB: "🎭 Robota, který je tvůj dvojník",
+        resultA: "Domácí pomocník! Nikdy neuklízíš, ale robot je pořád unavený a stěžuje si! 😩",
+        resultB: "Dokonalý dvojník! Chodí za tebe do školy, ale někdy řekne něco, co bys nikdy neřekla! 🤐"
+    },
+    {
+        question: "Jaká by byla nejlepší večeře?",
+        optionA: "🍽️ Večeře, která se vaří sama",
+        optionB: "🥗 Večeře, která je vždycky tvoje oblíbená",
+        resultA: "Automatická kuchyně! Nikdy nevaříš, ale někdy se robot splete a uvaří mýdlo! 🧼",
+        resultB: "Dokonalá večeře! Vždycky to co chceš, ale pak zapomeneš, jaká jiná jídla existují! 🤔"
     }
 ];
 
@@ -170,6 +303,139 @@ const minecraftCards = [
         optionB: "🦸‍♀️ Superhrdinka proti monster",
         resultA: "Velliger royalty! Všichni tě poslouchají, ale pořád jen říkají 'Hmm' a 'Hrrr'! 🤔",
         resultB: "Monster hunter! Zachraňuješ všechny, ale Endermani se na tebe zlobí, že jim bereš práci! 👀"
+    },
+    {
+        question: "Kdybys mohla změnit jeden blok v Minecraftu, který by to byl?",
+        optionA: "🧱 Udělat dirt cenný jak diamant",
+        optionB: "💎 Aby diamanty rostly jak tráva",
+        resultA: "Bohatství z hlíny! Najednou jsi nejbohatší, но všichni si myslí, že podvádíš! 💰",
+        resultB: "Diamantová louka! Celý svět plný diamantů, ale pak už nejsou vzácné! 💸"
+    },
+    {
+        question: "Co bys nejradši postavila na spawn pointu?",
+        optionA: "🏪 Obrovský obchod se vším",
+        optionB: "🎪 Zábavní park pro nováčky",
+        resultA: "Minecraft mall! Všichni nakupují, ale ty musíš pořád doplňovat zásoby! 📦",
+        resultB: "Vítací zábava! Noví hráči milují spawn, но veteráni si stěžují na hluk! 🎢"
+    },
+    {
+        question: "Jakého moba bys chtěla ochočit?",
+        optionA: "🐉 Enderdraka jako létající koně",
+        optionB: "💀 Withera jako mazlíčka",
+        resultA: "Dračí taxi! Nejrychlejší doprava, але občas ti spálí dům! 🔥",
+        resultB: "Ničivý mazlíček! Super ochrankář, ale občas něco vyhodí! 💥"
+    },
+    {
+        question: "Kam bys postavila svou hlavní základnu?",
+        optionA: "🌊 Pod oceánem v podmořské pevnosti",
+        optionB: "☁️ Na obláku vysoko v nebi",
+        resultA: "Podmořský palác! Krásný výhled, ale drowned ti chodí на návštěvu! 🧜‍♀️",
+        resultB: "Nebeská vila! Úžasná výška, ale zásobování je problém! 📦"
+    },
+    {
+        question: "Jakou technologii bys vymyslela?",
+        optionA: "📱 Minecraft mobil pro chat",
+        optionB: "🚗 Minecraft auto",
+        resultA: "Blocky phone! Můžeš psát všem, ale text vypadá jak pixely! 📱",
+        resultB: "Kostičkové auto! Rychlá doprava, ale jezdí jen ровно! 🛤️"
+    },
+    {
+        question: "Co bys nejradši farmila?",
+        optionA: "🌽 Obří farmu jídla pro celý server",
+        optionB: "🐄 Farmu všech zvířat",
+        resultA: "Minecraft farmářka! Nikdo nehladoví, але musíš sklízet celé dny! 🌾",
+        resultB: "Zvířecí království! Máš všechna zvířata, но hluk je nesnesitelný! 🐮"
+    },
+    {
+        question: "Jaká výzva by byla nejzábavnější?",
+        optionA: "🏃‍♀️ Vyběhnout svět bez brnění",
+        optionB: "🏠 Postavit dům jen z jednoho bloku",
+        resultA: "Nahý běžec! Vzrušující, але každý monster tě zabije! ⚡",
+        resultB: "Minimalist stavba! Kreativní, ale dům vypadá nudně! 😴"
+    },
+    {
+        question: "Co bys nejradši našla v dungeonu?",
+        optionA: "👑 Korunu s admin právy",
+        optionB: "📚 Knihu se všemi recepty",
+        resultA: "Minecraft vládkyně! Můžeš všechno, ale hra tě pak nebaví! 😐",
+        resultB: "Kuchařská bible! Znáš všechny recepty, но už žádná překvapení! 🤷‍♀️"
+    },
+    {
+        question: "Jak bys nejradši získávala XP?",
+        optionA: "📖 Čtením knih v knihovně",
+        optionB: "🎵 Poslechem hudby z jukebox",
+        resultA: "Minecraft knihomolka! Vzděláváš se ve hře, ale ostatní tě považují за nudu! 📚",
+        resultB: "Hudební leveling! Zábavné, але písničky se opakují! 🎶"
+    },
+    {
+        question: "Jaký event bys uspořádala?",
+        optionA: "🏁 Závody s prasátky",
+        optionB: "🎨 Soutěž ve stavění sněhuláků",
+        resultA: "Prasečí grand prix! Všichni se baví, ale prasátka utečou! 🐷",
+        resultB: "Sněhulák festival! Krásné výtvory, v létě se roztají! ☀️"
+    },
+    {
+        question: "Jaký blok bys změnila?",
+        optionA: "🧽 Aby houby vyrostly všude",
+        optionB: "🔥 Aby oheň svítil barevně",
+        resultA: "Houbový svět! Všude houby, svět jak pohádka! 🍄",
+        resultB: "Duhové plameny! Krásné světlo, но bolí oči! 🌈"
+    },
+    {
+        question: "Kde bys hledala poklady?",
+        optionA: "🗺️ V opuštěných lodích",
+        optionB: "⚱️ V pyramidách v poušti",
+        resultA: "Námořní poklad! Dobrodružství на vodě, ale narazíš на drowned! 🧟‍♂️",
+        resultB: "Faraonovo bohatství! Starověké poklady, а̄ле pastí víc než peněz! 🕳️"
+    },
+    {
+        question: "Jakou hudbu bys chtěla slyšet?",
+        optionA: "🎼 Remixovanou Sweden",
+        optionB: "🥁 Novou battle music",
+        resultA: "Nostalgický remix! Krásné vzpomínky, po tisící-krát nudí! 😩",
+        resultB: "Epická hudba! Cítíš se jak воїн, ale jen těžíš! ⛏️"
+    },
+    {
+        question: "Jak bys překonala lávové jezero?",
+        optionA: "🧊 Zmrazit ho vodou",
+        optionB: "🌉 Postavit mega most",
+        resultA: "Ledová cesta! Rychlé a cool, obsidian neproudí! 🌋",
+        resultB: "Inženýrské dílo! Impozantní, но trvá to věčnost! ⏰"
+    },
+    {
+        question: "Co bys automatizovala?",
+        optionA: "🥖 Pečení chleba",
+        optionB: "⚔️ Boj proti mobům",
+        resultA: "Auto pekárna! Nikdy nehladovíš, nevíš jak vařit! 🍞",
+        resultB: "Robot armáda! Mob farming deluxe, přijdeš о zábavu! 🤖"
+    },
+    {
+        question: "Jaké enchantment bys vymyslela?",
+        optionA: "✨ Magický úklid inventory",
+        optionB: "🎭 Převlečení za jiného hráče",
+        resultA: "Pořádek enchant! Vždycky uklizeno, ale ztratíš věci! 🗂️",
+        resultB: "Kamufláž! Dokonalé maskování, zapomeneš kdo jsi! 🎭"
+    },
+    {
+        question: "Jaký Minecraft youtuber bys byla?",
+        optionA: "🎬 Stavařka mega projektů",
+        optionB: "🎮 Speedrunnerka",
+        resultA: "Stavební královna! Úžasné projekty, trvají měsíce! 🏗️",
+        resultB: "Rychlostní legenda! Rekord за rekordem, nemáš čas si užít! ⚡"
+    },
+    {
+        question: "Co bys udělala s nekonečným TNT?",
+        optionA: "🎆 Největší ohňostroj v historii",
+        optionB: "⛰️ Vyhloubit celou horu",
+        resultA: "Explosive show! Úžasné efekty, server тебе banuje! 💥",
+        resultB: "Ničivá těžba! Máš všechno, krajina jak měsíc! 🌙"
+    },
+    {
+        question: "Jaká by byla tvoje signature stavba?",
+        optionA: "🏰 Hrad měnící se podle počasí",
+        optionB: "🎡 Funpark s funkčními atrakcemi",
+        resultA: "Dynamický hrad! Vždycky jiný, механизmus se показuje! ⚙️",
+        resultB: "Minecraft Disneyland! Všichni se baví, obsluha složitá! 🎢"
     }
 ];
 
