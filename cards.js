@@ -308,7 +308,7 @@ const minecraftCards = [
         question: "Kdybys mohla změnit jeden blok v Minecraftu, který by to byl?",
         optionA: "🧱 Udělat dirt cenný jak diamant",
         optionB: "💎 Aby diamanty rostly jak tráva",
-        resultA: "Bohatství z hlíny! Najednou jsi nejbohatší, но všichni si myslí, že podvádíš! 💰",
+        resultA: "Bohatství z hlíny! Najednou jsi nejbohatší, ale všichni si myslí, že podvádíš! 💰",
         resultB: "Diamantová louka! Celý svět plný diamantů, ale pak už nejsou vzácné! 💸"
     },
     {
@@ -316,20 +316,20 @@ const minecraftCards = [
         optionA: "🏪 Obrovský obchod se vším",
         optionB: "🎪 Zábavní park pro nováčky",
         resultA: "Minecraft mall! Všichni nakupují, ale ty musíš pořád doplňovat zásoby! 📦",
-        resultB: "Vítací zábava! Noví hráči milují spawn, но veteráni si stěžují na hluk! 🎢"
+        resultB: "Vítací zábava! Noví hráči milují spawn, ale veteráni si stěžují na hluk! 🎢"
     },
     {
         question: "Jakého moba bys chtěla ochočit?",
         optionA: "🐉 Enderdraka jako létající koně",
         optionB: "💀 Withera jako mazlíčka",
-        resultA: "Dračí taxi! Nejrychlejší doprava, але občas ti spálí dům! 🔥",
+        resultA: "Dračí taxi! Nejrychlejší doprava, ale občas ti spálí dům! 🔥",
         resultB: "Ničivý mazlíček! Super ochrankář, ale občas něco vyhodí! 💥"
     },
     {
         question: "Kam bys postavila svou hlavní základnu?",
         optionA: "🌊 Pod oceánem v podmořské pevnosti",
         optionB: "☁️ Na obláku vysoko v nebi",
-        resultA: "Podmořský palác! Krásný výhled, ale drowned ti chodí на návštěvu! 🧜‍♀️",
+        resultA: "Podmořský palác! Krásný výhled, ale drowned ti chodí na návštěvu! 🧜‍♀️",
         resultB: "Nebeská vila! Úžasná výška, ale zásobování je problém! 📦"
     },
     {
@@ -337,20 +337,20 @@ const minecraftCards = [
         optionA: "📱 Minecraft mobil pro chat",
         optionB: "🚗 Minecraft auto",
         resultA: "Blocky phone! Můžeš psát všem, ale text vypadá jak pixely! 📱",
-        resultB: "Kostičkové auto! Rychlá doprava, ale jezdí jen ровно! 🛤️"
+        resultB: "Kostičkové auto! Rychlá doprava, ale jezdí jen rovně! 🛤️"
     },
     {
         question: "Co bys nejradši farmila?",
         optionA: "🌽 Obří farmu jídla pro celý server",
         optionB: "🐄 Farmu všech zvířat",
-        resultA: "Minecraft farmářka! Nikdo nehladoví, але musíš sklízet celé dny! 🌾",
-        resultB: "Zvířecí království! Máš všechna zvířata, но hluk je nesnesitelný! 🐮"
+        resultA: "Minecraft farmářka! Nikdo nehladoví, ale musíš sklízet celé dny! 🌾",
+        resultB: "Zvířecí království! Máš všechna zvířata, ale hluk je nesnesitelný! 🐮"
     },
     {
         question: "Jaká výzva by byla nejzábavnější?",
         optionA: "🏃‍♀️ Vyběhnout svět bez brnění",
         optionB: "🏠 Postavit dům jen z jednoho bloku",
-        resultA: "Nahý běžec! Vzrušující, але každý monster tě zabije! ⚡",
+        resultA: "Nahý běžec! Vzrušující, ale každý monster tě zabije! ⚡",
         resultB: "Minimalist stavba! Kreativní, ale dům vypadá nudně! 😴"
     },
     {
@@ -358,14 +358,14 @@ const minecraftCards = [
         optionA: "👑 Korunu s admin právy",
         optionB: "📚 Knihu se všemi recepty",
         resultA: "Minecraft vládkyně! Můžeš všechno, ale hra tě pak nebaví! 😐",
-        resultB: "Kuchařská bible! Znáš všechny recepty, но už žádná překvapení! 🤷‍♀️"
+        resultB: "Kuchařská bible! Znáš všechny recepty, ale už žádná překvapení! 🤷‍♀️"
     },
     {
         question: "Jak bys nejradši získávala XP?",
         optionA: "📖 Čtením knih v knihovně",
         optionB: "🎵 Poslechem hudby z jukebox",
-        resultA: "Minecraft knihomolka! Vzděláváš se ve hře, ale ostatní tě považují за nudu! 📚",
-        resultB: "Hudební leveling! Zábavné, але písničky se opakují! 🎶"
+        resultA: "Minecraft knihomolka! Vzděláváš se ve hře, ale ostatní tě považují za nudu! 📚",
+        resultB: "Hudební leveling! Zábavné, ale písničky se opakují! 🎶"
     },
     {
         question: "Jaký event bys uspořádala?",
@@ -379,35 +379,35 @@ const minecraftCards = [
         optionA: "🧽 Aby houby vyrostly všude",
         optionB: "🔥 Aby oheň svítil barevně",
         resultA: "Houbový svět! Všude houby, svět jak pohádka! 🍄",
-        resultB: "Duhové plameny! Krásné světlo, но bolí oči! 🌈"
+        resultB: "Duhové plameny! Krásné světlo, ale bolí oči! 🌈"
     },
     {
         question: "Kde bys hledala poklady?",
         optionA: "🗺️ V opuštěných lodích",
         optionB: "⚱️ V pyramidách v poušti",
-        resultA: "Námořní poklad! Dobrodružství на vodě, ale narazíš на drowned! 🧟‍♂️",
-        resultB: "Faraonovo bohatství! Starověké poklady, а̄ле pastí víc než peněz! 🕳️"
+        resultA: "Námořní poklad! Dobrodružství na vodě, ale narazíš na drowned! 🧟‍♂️",
+        resultB: "Faraonovo bohatství! Starověké poklady, ale pastí víc než peněz! 🕳️"
     },
     {
         question: "Jakou hudbu bys chtěla slyšet?",
         optionA: "🎼 Remixovanou Sweden",
         optionB: "🥁 Novou battle music",
         resultA: "Nostalgický remix! Krásné vzpomínky, po tisící-krát nudí! 😩",
-        resultB: "Epická hudba! Cítíš se jak воїн, ale jen těžíš! ⛏️"
+        resultB: "Epická hudba! Cítíš se jak válečník, ale jen těžíš! ⛏️"
     },
     {
         question: "Jak bys překonala lávové jezero?",
         optionA: "🧊 Zmrazit ho vodou",
         optionB: "🌉 Postavit mega most",
         resultA: "Ledová cesta! Rychlé a cool, obsidian neproudí! 🌋",
-        resultB: "Inženýrské dílo! Impozantní, но trvá to věčnost! ⏰"
+        resultB: "Inženýrské dílo! Impozantní, ale trvá to věčnost! ⏰"
     },
     {
         question: "Co bys automatizovala?",
         optionA: "🥖 Pečení chleba",
         optionB: "⚔️ Boj proti mobům",
         resultA: "Auto pekárna! Nikdy nehladovíš, nevíš jak vařit! 🍞",
-        resultB: "Robot armáda! Mob farming deluxe, přijdeš о zábavu! 🤖"
+        resultB: "Robot armáda! Mob farming deluxe, přijdeš o zábavu! 🤖"
     },
     {
         question: "Jaké enchantment bys vymyslela?",
@@ -421,20 +421,20 @@ const minecraftCards = [
         optionA: "🎬 Stavařka mega projektů",
         optionB: "🎮 Speedrunnerka",
         resultA: "Stavební královna! Úžasné projekty, trvají měsíce! 🏗️",
-        resultB: "Rychlostní legenda! Rekord за rekordem, nemáš čas si užít! ⚡"
+        resultB: "Rychlostní legenda! Rekord za rekordem, nemáš čas si užít! ⚡"
     },
     {
         question: "Co bys udělala s nekonečným TNT?",
         optionA: "🎆 Největší ohňostroj v historii",
         optionB: "⛰️ Vyhloubit celou horu",
-        resultA: "Explosive show! Úžasné efekty, server тебе banuje! 💥",
+        resultA: "Explosive show! Úžasné efekty, server tě banuje! 💥",
         resultB: "Ničivá těžba! Máš všechno, krajina jak měsíc! 🌙"
     },
     {
         question: "Jaká by byla tvoje signature stavba?",
         optionA: "🏰 Hrad měnící se podle počasí",
         optionB: "🎡 Funpark s funkčními atrakcemi",
-        resultA: "Dynamický hrad! Vždycky jiný, механизmus se показuje! ⚙️",
+        resultA: "Dynamický hrad! Vždycky jiný, mechanizmus se občas pokazí! ⚙️",
         resultB: "Minecraft Disneyland! Všichni se baví, obsluha složitá! 🎢"
     }
 ];
@@ -631,7 +631,7 @@ const harryPotterCards = [
     },
     {
         question: "Jakou práci bys chtěla mít po škole?",
-        optionA: "⚗️ Aurорка chytající černokněžníky",
+        optionA: "⚗️ Aurorka chytající černokněžníky",
         optionB: "🐲 Dračí specialistka",
         resultA: "Čarodějná policie! Zachraňuješ svět, ale pořád jsi v nebezpečí! ⚔️",
         resultB: "Dračí whisperka! Úžasná zvířata, ale insurance je hrozně drahé! 💸"
@@ -640,7 +640,7 @@ const harryPotterCards = [
         question: "Co bys udělala s neviditelným pláštěm?",
         optionA: "🎭 Objevovala školní tajemství",
         optionB: "🍰 Kradla jídlo z kuchyní",
-        resultA: "Tajemná detektivka! Odhaluješ všechno, ale někdy narazíš na něco scary! 👻",
+        resultA: "Tajemná detektivka! Odhaluješ všechno, ale někdy narazíš na něco děsivé! 👻",
         resultB: "Neviditelná zlodějka! Nikdy nehladovíš, ale trochu přibereš! 🍖"
     },
     {
@@ -749,7 +749,7 @@ const tocaWorldCards = [
         optionA: "🎂 Doma s celou rodinou",
         optionB: "🎪 V zábavním parku s přáteli",
         resultA: "Rodinná oslava! Všichni tě milují a je to útulné, ale někdo vždycky zapomene dárek! 🎁",
-        resultB: "Zábavní narozeniny! Super atrakce a zábava, но pan je tak drahá! 💸"
+        resultB: "Zábavní narozeniny! Super atrakce a zábava, ale pan je tak drahá! 💸"
     },
     {
         question: "Jaký pokoj bys si nejradši zařídila?",
@@ -804,35 +804,35 @@ const tocaWorldCards = [
         question: "Jakou outfitku bys nejradši nosila?",
         optionA: "👗 Třpytivé šaty na každý den",
         optionB: "👕 Pohodlné tepláky a tričko",
-        resultA: "Třpytivá princezna! Vypadáš úžasně, но všichni se na tebe dívají! ✨",
+        resultA: "Třpytivá princezna! Vypadáš úžasně, ale všichni se na tebe dívají! ✨",
         resultB: "Comfortable style! Pohoda a pohodlí, ale nekdy vypadáš jak z pyžama! 😴"
     },
     {
         question: "Jakým dopravním prostředkem bys nejraději jezdila do školy?"
         optionA: "🚌 Školním autobusem s přáteli"
         optionB: "🚗 Autem s rodiči",
-        resultA: "Školní autobus party! Zábava s přáteli each day, но je to hlučné! 📢",
+        resultA: "Školní autobus party! Zábava s přáteli každý den, ale je to hlučné! 📢",
         resultB: "VIP doprava! Pohodlí a klid, někdy zapomeneš na domácí úkoly v autě! 📚"
     },
     {
         question: "Co bys nejradši jedla k snídani?",
         optionA: "🥞 Palačinky s ovocem",
         optionB: "🍞 Toast s džemem",
-        resultA: "Palačinkové ráno! Sladké a výživné, но trvá to dlouho připravit! ⏰",
-        resultB: "Toastová rychlost! Rychlé a dobré, але někdy se toast připálí! 🔥"
+        resultA: "Palačinkové ráno! Sladké a výživné, ale trvá to dlouho připravit! ⏰",
+        resultB: "Toastová rychlost! Rychlé a dobré, ale někdy se toast připálí! 🔥"
     },
     {
         question: "Jaký film bys nejradši sledovala?",
         optionA: "🎬 Rodinnou komedii",
-        optionB: "🦄 Pohádku о princezné",
-        resultA: "Comedy time! Všichni se smějí a baví, но někteří vtipy nechápeš! 😅",
-        resultB: "Fairy tale magic! Krásný příběh a zázraky, aлe někdy je to moc predictable! 👸"
+        optionB: "🦄 Pohádku o princezně",
+        resultA: "Comedy time! Všichni se smějí a baví, ale někteří vtipy nechápeš! 😅",
+        resultB: "Fairy tale magic! Krásný příběh a zázraky, ale někdy je to moc předvídatelné! 👸"
     },
     {
         question: "Jakou hračku by sis nejraději vzala na výlet?"
         optionA: "🧸 Oblíbeného plyšáka",
         optionB: "📖 Knihu s obrázky",
-        resultA: "Plyšákový společník! Nikdy nejsi sama, но můžeš ho ztratit! 😢",
+        resultA: "Plyšákový společník! Nikdy nejsi sama, ale můžeš ho ztratit! 😢",
         resultB: "Čítací zábava! Nikdy se nenudíš, ale někdy je tma na čtení! 🌙"
     },
     {
@@ -840,13 +840,13 @@ const tocaWorldCards = [
         optionA: "🌳 V parku pod velkým stromem",
         optionB: "🏖️ Na pláži u moře",
         resultA: "Parkový piknik! Stín a klid, ale občas spadne něco ze stromu! 🍃",
-        resultB: "Plážový feast! Krásný výhled, но písek se dostává do jídla! 🏖️"
+        resultB: "Plážový feast! Krásný výhled, ale písek se dostává do jídla! 🏖️"
     },
     {
         question: "Jaký druh zábavy bys nejradši měla doma?",
         optionA: "🎮 Počítačové hry",
         optionB: "🧩 Puzzle a hlavolamy",
-        resultA: "Gaming time! Super grafika a zábava, але oči tě bolí! 👀",
+        resultA: "Gaming time! Super grafika a zábava, ale oči tě bolí! 👀",
         resultB: "Puzzle mistryně! Trénuješ mozek, ale některé puzzle jsou mega těžké! 🧠"
     },
     {
@@ -860,22 +860,22 @@ const tocaWorldCards = [
         question: "Jakou barvu bys nejradši měla všude?",
         optionA: "💖 Růžovou jako princezny",
         optionB: "💜 Fialovou jako jednorožci",
-        resultA: "Pink princess world! Všechno je cute, ale некоторые lidi říkají, že je to moc! 🎀",
-        resultB: "Purple unicorn life! Magické а mystické, ale občas to vypadá spooky! 🔮"
+        resultA: "Pink princess world! Všechno je cute, ale někteří lidi říkají, že je to moc! 🎀",
+        resultB: "Purple unicorn life! Magické a mystické, ale občas to vypadá spooky! 🔮"
     },
     {
         question: "Jakého učitele bys nejradši měla?",
         optionA: "😊 Veselého, který se pořád směje",
         optionB: "📖 Chytrého, který vysvětluje zajímavě",
-        resultA: "Funny teacher! Škola je zábava, но někdy se víc smějete než učíte! 😂",
-        resultB: "Smart educator! Naučíš se spoustu věcí, ale домашние úkoly jsou сложные! 📝"
+        resultA: "Funny teacher! Škola je zábava, ale někdy se víc smějete než učíte! 😂",
+        resultB: "Smart educator! Naučíš se spoustu věcí, ale domácí úkoly jsou složité! 📝"
     },
     {
         question: "Co bys nejraději našla ve svém batohu?",
         optionA: "🍬 Tajnou zásobu sladkostí",
         optionB: "📝 Lístek od best friend",
-        resultA: "Secret candy stash! Vždycky máš něco dobrého, но zuby se ti kazí! 🦷",
-        resultB: "Friendship note! Cítíš se milovaná, але někdy ti text rozteče! 💧"
+        resultA: "Secret candy stash! Vždycky máš něco dobrého, ale zuby se ti kazí! 🦷",
+        resultB: "Friendship note! Cítíš se milovaná, ale někdy ti text rozteče! 💧"
     }
 ];
 
@@ -912,7 +912,7 @@ const pokemonCards = [
         question: "Jaký Pokémon typ bys chtěla trénovat?",
         optionA: "👻 Ghost typy",
         optionB: "🧚‍♀️ Fairy typy",
-        resultA: "Duchová trenérka! Spooky a cool, ale tvoji Pokémoni se občas ztratí v stěnách! 👻",
+        resultA: "Duchová trenérka! Strašidelné a cool, ale tvoji Pokémoni se občas ztratí v stěnách! 👻",
         resultB: "Víla trenérka! Roztomilí a magičtí, ale všichni jsou tak cute, že se nemůžeš rozhodnout! ✨"
     },
     {
@@ -1153,8 +1153,8 @@ const robloxCards = [
         question: "Jaký Roblox event bys chtěla navštívit?",
         optionA: "🎃 Halloween event",
         optionB: "❄️ Winter event",
-        resultA: "Spooky celebration! Costume soutěže a candy, ale některé kostýmy jsou až moc scary! 🕷️",
-        resultB: "Winter wonderland! Sněhové království a gifts, ale všichni chtějí tu same limited edition item! ⛄"
+        resultA: "Strašidelná oslava! Soutěže v kostýmech a sladkosti, ale některé kostýmy jsou až moc děsivé! 🕷️",
+        resultB: "Zimní říše divů! Sněhové království a dárky, ale všichni chtějí ten stejný limitovaný předmět! ⛄"
     },
     {
         question: "Jaký Roblox building bys chtěla postavit?",
@@ -1251,7 +1251,7 @@ const robloxCards = [
         question: "Jaký Roblox mystery bys chtěla vyřešit?",
         optionA: "🕵️‍♀️ Murder mystery case",
         optionB: "👻 Haunted mansion secrets",
-        resultA: "Detective master! Cases are solved quickly, ale někdy suspects jsou too scary! 🔍",
+        resultA: "Detective master! Cases are solved quickly, ale někdy suspects jsou too děsivé! 🔍",
         resultB: "Ghost hunter! Paranormal activity je exciting, ale někdy se bojíš vlastního shadow! 🕯️"
     },
     {
