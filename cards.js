@@ -808,8 +808,8 @@ const tocaWorldCards = [
         resultB: "Comfortable style! Pohoda a pohodlí, ale nekdy vypadáš jak z pyžama! 😴"
     },
     {
-        question: "Jakým dopravním prostředkem bys nejraději jezdila do školy?"
-        optionA: "🚌 Školním autobusem s přáteli"
+        question: "Jakým dopravním prostředkem bys nejraději jezdila do školy?",
+        optionA: "🚌 Školním autobusem s přáteli",
         optionB: "🚗 Autem s rodiči",
         resultA: "Školní autobus party! Zábava s přáteli každý den, ale je to hlučné! 📢",
         resultB: "VIP doprava! Pohodlí a klid, někdy zapomeneš na domácí úkoly v autě! 📚"
@@ -829,7 +829,7 @@ const tocaWorldCards = [
         resultB: "Fairy tale magic! Krásný příběh a zázraky, ale někdy je to moc předvídatelné! 👸"
     },
     {
-        question: "Jakou hračku by sis nejraději vzala na výlet?"
+        question: "Jakou hračku by sis nejraději vzala na výlet?",
         optionA: "🧸 Oblíbeného plyšáka",
         optionB: "📖 Knihu s obrázky",
         resultA: "Plyšákový společník! Nikdy nejsi sama, ale můžeš ho ztratit! 😢",
@@ -850,8 +850,8 @@ const tocaWorldCards = [
         resultB: "Puzzle mistryně! Trénuješ mozek, ale některé puzzle jsou mega těžké! 🧠"
     },
     {
-        question: "Co bys nejraději dělala v deštivý den?"
-        optionA: "📚 Četla knížky v posteli"
+        question: "Co bys nejraději dělala v deštivý den?",
+        optionA: "📚 Četla knížky v posteli",
         optionB: "🏠 Stavění fortů z polštářů",
         resultA: "Bookworm day! Úžasné příběhy a dobrodružství, ale občas usneš s knihou! 😴",
         resultB: "Fort builder! Kreativní stavění, ale pak musíš uklidit! 🧹"
